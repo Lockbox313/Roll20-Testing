@@ -12,6 +12,9 @@ input.sheet-tab6:checked ~ div.sheet-tab6
     display: block;
 }
 
+
+
+
 input.sheet-tab
 {
     width: 100px;
@@ -181,6 +184,13 @@ div.repcontrol.editmode button.repcontrol_edit::before
 }
 
 /* Configuration Window*/
+
+.sheet-skillName{
+	width:115px;
+	font-size:x-small;
+}	
+
+
 .charsheet .sheet-cdiv {
     width:798px;
     /*border: 1px dotted;*/
