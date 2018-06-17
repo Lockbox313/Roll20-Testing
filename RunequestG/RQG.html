@@ -342,7 +342,8 @@
 
 			</div>
 				<hr class="sheet-hr" />
-				
+
+
 				<div class='sheet-2colrow'>
 					<div class='sheet-col' style="margin-right:30px;width:50%">
 						<div class="sheet-header">Characteristics</div>
@@ -452,143 +453,17 @@
 						<br />
 						<div class="sheet-header">Passions</div>
 						<div>
-							<div class="sheet-input_label">Honor</div><input type="text" value="0" style="margin-right:5px;" class="sheet-text_input sheet-percentiles" name="attr_honor" /><input type="checkbox"  style="margin-right:5px;" name="attr_honor_check"/><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{honor})]]}} {{fumble=[[ceil(95+([[(@{honor})]])/20))]]}} {{crit=[[round(([[(@{honor})]])/20)+1]]}}  {{special=[[round(([[(@{honor})]])/5)+1]]}}    {{success=[[(@{honor})]]}} {{roll=[[1d100]]}} {{skillname=Honor}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><button class="sheet-d100_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[@{honor}]]}} {{fumble=[[ceil(95+(@{honor}+?{Mods|0})/20)]]}} {{crit=[[round((@{honor}+?{Mods|0})/20)+1]]}}  {{special=[[round((@{honor}+?{Mods|0})/5)+1]]}}    {{success=[[@{honor}+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Honor}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>						
+							<div class="sheet-input_label">Honor</div><input type="text" value="0" style="margin-right:5px;" class="sheet-text_input sheet-percentiles" name="attr_honor" /><input type="checkbox"  style="margin-right:5px;" name="attr_honor_check"/><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{honor})]]}} {{fumble=[[ceil(95+([[(@{honor})]])/20))]]}} {{crit=[[round(([[(@{honor})]])/20)+1]]}}  {{special=[[round(([[(@{honor})]])/5)+1]]}}    {{success=[[(@{honor})]]}} {{roll=[[1d100]]}} {{skillname=Honor}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><button class="sheet-d100_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[@{honor}]]}} {{fumble=[[ceil(95+(@{honor}+?{Mods|0})/20)]]}} {{crit=[[round((@{honor}+?{Mods|0})/20)+1]]}}  {{special=[[round((@{honor}+?{Mods|0})/5)+1]]}}    {{success=[[@{honor}+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Honor}}"><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>						
 						</div>
 						<br />
 						<div>
 							<fieldset class="repeating_passions">
-								<input type="text" class="sheet-text_input" style="width:309px"  name="attr_passion" placeholder="Passion(.............)" />
+								<input type="text" class="sheet-text_input" style="width:293px"  name="attr_passion" placeholder="Passion(.............)" />
 								<input type="text" class="sheet-text_input sheet-percentiles" name="attr_value" value="0" />
 								<button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{value})]]}} {{fumble=[[ceil(95+([[(@{value})]])/20))]]}} {{crit=[[round(([[(@{value})]])/20)+1]]}}  {{special=[[round(([[(@{value})]])/5)+1]]}}    {{success=[[(@{value})]]}} {{roll=[[1d100]]}} {{skillname=@{Passion}}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><button class="sheet-d100_roll" type="roll" value=""  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 								<input type="checkbox" name="attr_passionExp" />
 							</fieldset>
 						</div>
-						<br />
-						<div class="sheet-header">Weapons</div>
-						<br />
-						<div style="margin-left:194px;margin-bottom:10px;">
-							<div>
-								<div CLASS="sheet-input_label">Modifiers</div>
-								<select name="attr_skillReduct" style="width:100px;display:inline-block" >
-									<option value="1">Full Skill</option>
-									<option value="0.5">Half Skill</option>
-								</select>
-								<input type="text"  style="display:inline-block"  class="sheet-text_input sheet-percentiles" value="0" name="attr_skillMods" />
-							</div>
-						</div>				  
-						   
-						<div class="sheet-melee_wpns_labels">
-							   <div style="margin-left:3px;">Melee</div>
-							   <div style="margin-left:26px;">WSR</div>
-							   <div style="margin-left:7px;">SR</div>
-							   <!--<div style="margin-left:14px;">STR/DEX</div>-->	   
-							   <div style="margin-left:20px;">%</div>
-							   <div style="margin-left:41px;">Damage</div>
-							   <div style="margin-left:8px;">*</div>							   							   
-							   <div style="margin-left:4px;">Type</div>
-							   <div style="margin-left:8px;">Special</div>						   
-							   <div style="margin-left:6px;" >HP</div>		
-						</div>						
-						<fieldset class="repeating_melee2">
-						   <div class="sheet-melee_wpns">
-
-					   
-							  <input type="text" class="sheet-text_input" name="attr_weapon_type" style="width:62px;font-size:xx-small" />
-
-							<input type="text"  style="width:22px;margin-left:1px" class="sheet-text_input sheet-percentiles" value="0"  name="attr_wpn_sr" />
-							  <input type="text" class="sheet-text_input sheet-percentiles"  disabled name="attr_total_wpn_sr" value="[@{wpn_sr}+@{melee_srm}]" />
-							  
-							  <!--<input type="text" class="sheet-text_input sheet-percentiles"   style="width:22px;margin-left:1px" value="9" name="attr_wpnstr" />
-							  <input type="text" class="sheet-text_input sheet-percentiles"   style="width:22px" value="9" name="attr_wpndex" />--> 
-							  <input type="text"  class="sheet-text_input sheet-percentiles"  readonly style="display:none; width:30px;" value="0" name="attr_minmod" /> 							  
-							  <input type="text"  class="sheet-text_input sheet-percentiles"  name="attr_skill" />						  
-							  <!--
-							  <input type="text"  class="sheet-text_input sheet-percentiles"  name="attr_wpn_attk_value" />
-							  <input type="text"  class="sheet-text_input sheet-percentiles" disabled name="attr_wpn_attk_total" value="@{wpn_attk_value}+@{manipulation_mod}+@{enc_mod}+@{minmod}+@{gen_mod}" />-->
-							  
-											<button  type="roll" style="margin-right:0px;margin-left:0px;" class="sheet-d100_roll" value="@{melee_value}" ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><textarea name="attr_melee_value" style="display:none">&{template:melee-roll2} {{name=@{character_name}}} {{tot=[[@{wpn_damage}+@{damagebonus}]]}}{{skillvalue=(@{skill})}} {{fumble=[[95+ceil(([[(@{skill}*@{skillReduct})+@{skillMods}]]/20))]]}} {{crit=[[round([[(@{skill}*@{skillReduct})+@{skillMods}]]/20)+1]]}} {{special=[[round(([[(@{skill}*@{skillReduct})+@{skillMods}]])/5)+1]]}}   {{spclDam=[[@{spcldamage}+@{damagebonus}]]}}   {{crshDam=[[@{wpn_damage}+@{maxDb}]]}}  {{critCrsh=[[@{critdamage}+@{maxDb}]]}} {{critSI=[[@{critdamage}+@{damagebonus}]]}} {{type="[[@{wpn_spl}"]]}}  {{success=[[(@{skill}*@{skillReduct})+@{skillMods}]]}} {{roll=[[1d100]]}} {{skillname=@{weapon_type} attack}} 
-
-											&{template:@{creature_hit_location}Melee}} {{roll=[[@{selected_die_roll}]]}}</textarea>
-											
-																		
-							  <input type="text"  class="sheet-text_input" style="width:52px" name="attr_wpn_damage" />
-							  <input type="text"  style="display:none" name="attr_spcldamage" />
-							  <input type="text"  style="display:none" name="attr_critdamage" />
-							  <input type="text"  style="display:none" name="attr_maxdamage" />
-							  <input type="checkbox" name="attr_mntDb" />								  
-							  <input  type="text" name="attr_wpn_type" title="C,CT,H,I,S"   style="width:35px">
-
-							  <select name="attr_wpn_spl" style="margin-bottom:0px;width:43px">
-								<option value="0">I</option>
-								<option value="1">S</option>
-								<option value="2">C</option>							
-							  </select>							   
-							  <input type="text"  class="sheet-text_input sheet-percentiles" style="width:23px" name="attr_wpn_hp" />
-							  <input type="checkbox" name="attr_skillcheck" />	
-							  
-						   </div>
-
-
-						   
-						</fieldset>		
-						<span>* use mount's damage bonus</span>		
-						<!--- end of melee wpns -->
-		
-						<br >
-						<!-- missile wpns -->
-						<br />
-							<div class="sheet-melee_wpns_labels">
-							   <div style="margin-left:3px;">Missile</div>
-							   <!--<div style="margin-left:47px;">STR/DEX</div> -->
-							   <div style="margin-left:63px;">%</div>
-							   <div style="margin-left:48px;">Dmg.</div>
-							   <div style="margin-left:10px;">DB</div>
-							   <div style="margin-left:3px;">Special</div>						   
-							   <div style="margin-left:8px;">Rng</div>		
-							   <div style="margin-left:4px;">Rate</div>		
-							   <div style="margin-left:12px;" >HP</div>		
-							</div>						
-						
-						<fieldset class="repeating_missle2">
-						   <div class="sheet-melee_wpns">
-							  <input type="text" class="sheet-text_input" name="attr_weapon_type" style="width:89px;font-size:xx-small" />
-							  <!--	
-							  <input type="text" class="sheet-text_input sheet-percentiles"   style="width:22px;margin-left:1px" value="9" name="attr_wpnstr" />
-							  <input type="text" class="sheet-text_input sheet-percentiles"   style="width:22px" value="9" name="attr_wpndex" />-->
-							  <input type="text"  class="sheet-text_input sheet-percentiles"  readonly style="display:none; width:30px;" value="0" name="attr_minmod" /> 							  
-							  <input type="text"  class="sheet-text_input sheet-percentiles"  name="attr_skill" />						  
-							  <!--
-							  <input type="text"  class="sheet-text_input sheet-percentiles"  name="attr_wpn_attk_value" />
-							  <input type="text"  class="sheet-text_input sheet-percentiles" disabled name="attr_wpn_attk_total" value="@{wpn_attk_value}+@{manipulation_mod}+@{enc_mod}+@{minmod}+@{gen_mod}" />-->
-							  
-
-							  
-											<button  type="roll" style="margin-right:0px;margin-left:0px;" class="sheet-d100_roll" value="@{melee_value}" ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><textarea name="attr_melee_value" style="display:none">&{template:melee-roll2} {{name=@{character_name}}} {{tot=[[@{wpn_damage}+@{wpnmdb}]]}}{{skillvalue=(@{skill})}} {{fumble=[[95+ceil(([[(@{skill}*@{skillReduct})+@{skillMods}]]/20))]]}} {{crit=[[round([[(@{skill}*@{skillReduct})+@{skillMods}]]/20)+1]]}} {{special=[[round(([[(@{skill}*@{skillReduct})+@{skillMods}]])/5)+1]]}}   {{spclDam=[[@{spcldamage}+@{wpnmdb}]]}}   {{crshDam=[[@{wpn_damage}+@{maxwpnmdb}]]}}  {{critCrsh=[[@{critdamage}+@{maxwpnmdb}]]}} {{critSI=[[@{critdamage}+@{wpnmdb}]]}} {{type="[[@{wpn_spl}"]]}}  {{success=[[(@{skill}*@{skillReduct})+@{skillMods}]]}} {{roll=[[1d100]]}} {{skillname=@{weapon_type} attack}} 
-
-											&{template:@{creature_hit_location}Melee}} {{roll=[[@{selected_die_roll}]]}}</textarea>
-											
-																		
-							  <input type="text"  class="sheet-text_input" style="width:51px" name="attr_wpn_damage" />
-							  <input type="checkbox"  name="attr_mdbtoggle" />
-							  <input type="text"  style="display:none" name="attr_spcldamage" />
-							  <input type="text"  style="display:none" name="attr_critdamage" />
-							  <input type="text"  style="display:none" name="attr_maxdamage" />
-
-							  <select name="attr_wpn_spl" style="margin-bottom:0px;width:50px">
-								<option value="0">I</option>
-								<option value="1">S</option>
-								<option value="2">C</option>							
-							  </select>								  
-							  <input type="text"  class="sheet-text_input" style="width:27px;font-size:xx-small" name="attr_wpn_range" />    
-							  <input type="text"  class="sheet-text_input" style="width:30px;font-size:xx-small" name="attr_wpn_rate" />    						  
-							  <input type="text"  class="sheet-text_input sheet-percentiles"   name="attr_wpn_hp" />
-							  <input type="checkbox" name="attr_skillcheck" />
-							  <input type="text" value="0" style="display:none" name="attr_wpnmdb" />	  
-							  <input type="text" value="0" style="display:none" name="attr_maxwpnmdb" />	  
-										
-							  
-						   </div>
-						</fieldset>									
 						<br />
 
 							
@@ -625,8 +500,8 @@
 								<div style=" margin-left:50px;">
 								  <div style="margin-left: 5px;display:inline">
 									<div class="sheet-input_label">Dodge</div>
-									 <input  class="sheet-section-header sheet-percentiles" type="text" name="attr_dodge_disp"/>
-									 <button  class="sheet-d100_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{dodge_total}]}} {{fumble=[[ceil(96+([@{dodge_total}])/20))]]}} {{crit=[[round(([@{dodge_total}])/20)+1]]}} {{special=[[round(([@{dodge_total}])/5)+1]]}}         {{success=[[[@{dodge_total}]]]}} {{roll=[[1d100]]}} {{skillname=Dodge}}" ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><button  class="sheet-d100_roll"  type="roll"  value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{dodge_total}]}} {{fumble=[[ceil(96+([@{dodge_total}]+?{Mods|0})/20))]]}} {{crit=[[round(([@{dodge_total}]+?{Mods|0})/20)+1]]}} {{special=[[round(([@{dodge_total}]+?{Mods|0})/5)+1]]}}{{success=[[[@{dodge_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Dodge}}"><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
+									 <input  class="sheet-section-header sheet-percentiles" readonly type="text" name="attr_dodge"/>
+									 <button  class="sheet-d100_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{dodge})]]}} {{fumble=[[ceil(95+([[(@{dodge})]])/20))]]}} {{crit=[[round(([[(@{dodge})]])/20)+1]]}}  {{special=[[round(([[(@{dodge})]])/5)+1]]}}    {{success=[[(@{dodge})]]}} {{roll=[[1d100]]}} {{skillname=Dodge}}" ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><button  class="sheet-d100_roll"  type="roll"  value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[@{dodge}]]}} {{fumble=[[ceil(95+(@{dodge}+?{Mods|0})/20)]]}} {{crit=[[round((@{dodge}+?{Mods|0})/20)+1]]}}  {{special=[[round((@{dodge}+?{Mods|0})/5)+1]]}}    {{success=[[@{dodge}+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Dodge}}"><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 								  </div>
 								  <div style="margin-left: 5px;display:inline">
 									 <div class="sheet-input_label">Fumble</div>
@@ -667,7 +542,17 @@
 					</div><!-- endofcolumn-->
 
 					<div class='sheet-col' style="width:45%;margin-right:1px">
-						<div class="sheet-header">Cults</div>
+
+						<div class="sheet-header" style="display:inline-block">Cults</div>
+						 <div class="sheet-cdiv2" style="display:inline-block">
+							<input class="sheet-HideConfig2" type="checkbox" checked="checked" name="attr_is_config2"><span class="sheet-is-config2"><span style="font-family: &quot;pictos&quot;">y</span></span>
+							<div class="sheet-config2" style="border-style: dotted ; border-color: gray ; padding: 5px ; background-color: white ; background-image: none">
+							
+								<input type="checkbox" name="attr_showsorcery" checked="checked">Show Sorcery<br>
+
+							</div>
+						</div>	
+								
 						<fieldset class="repeating_cults3">
 							<div class="sheet-info">
 								<div class="sheet-input_label">Cult</div><input type="text" style="width:102px;" class="sheet-text_input" name="attr_cult" />
@@ -699,15 +584,18 @@
 						<div class="sheet-header" style="display:inline-block">Rune Magic</div>
 						<textarea  name="attr_rune_magic" class="sheet-magic_notes"></textarea> 
 						<br />
-						<div class="sheet-header" >Sorcerous Runes and Techniques</div>
-						<div style="margin-left:266px;display:inline-block">
-							<div class="sheet-input_label">Free INT</div>
-							<input  style="width:24px" type="text" value="0" class="sheet-text_input sheet-percentiles" readonly name="attr_curint"/>
-							<!--
-							 <button type="roll"  class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{curpow}*5)]]}} {{fumble=[[ceil(95+([[(@{curpow}*5)]])/20))]]}} {{crit=[[round(([[(@{curpow}*5)]])/20)+1]]}} {{special=[[round(([[(@{curpow}*5)]])/5)+1]]}}         {{success=[[(@{curpow}*5)]]}} {{roll=[[1d100]]}} {{skillname=POW Roll}}" ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><button class="sheet-d100_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{curpow}*?{multiplier|5})]]}} {{fumble=[[ceil(95+([[(@{curpow}*?{multiplier|5})]])/20))]]}} {{crit=[[round(([[(@{curpow}*?{multiplier|5})]])/20)+1]]}} {{special=[[round(([[(@{curpow}*?{multiplier|5})]])/5)+1]]}}         {{success=[[(@{curpow}*?{multiplier|5})]]}} {{roll=[[1d100]]}} {{skillname=POW Roll}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>--> 
-						</div>	
-						<textarea  name="attr_sorcery_magic" class="sheet-magic_notes"></textarea> 
-						<br />
+						<input type="checkbox" class="sheet-showsorcery" name="attr_showsorcery" checked="checked" style="display: none">
+						<div class="sheet-sorcery">
+							<div class="sheet-header" >Sorcerous Runes and Techniques</div>
+							<div style="margin-left:266px;display:inline-block">
+								<div class="sheet-input_label">Free INT</div>
+								<input  style="width:24px" type="text" value="0" class="sheet-text_input sheet-percentiles" readonly name="attr_curint"/>
+								<!--
+								 <button type="roll"  class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{curpow}*5)]]}} {{fumble=[[ceil(95+([[(@{curpow}*5)]])/20))]]}} {{crit=[[round(([[(@{curpow}*5)]])/20)+1]]}} {{special=[[round(([[(@{curpow}*5)]])/5)+1]]}}         {{success=[[(@{curpow}*5)]]}} {{roll=[[1d100]]}} {{skillname=POW Roll}}" ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><button class="sheet-d100_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{curpow}*?{multiplier|5})]]}} {{fumble=[[ceil(95+([[(@{curpow}*?{multiplier|5})]])/20))]]}} {{crit=[[round(([[(@{curpow}*?{multiplier|5})]])/20)+1]]}} {{special=[[round(([[(@{curpow}*?{multiplier|5})]])/5)+1]]}}         {{success=[[(@{curpow}*?{multiplier|5})]]}} {{roll=[[1d100]]}} {{skillname=POW Roll}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>--> 
+							</div>	
+							<textarea  name="attr_sorcery_magic" class="sheet-magic_notes"></textarea> 
+							<br />
+						</div>
 						<div class="sheet-header" >Magic Points & Storage</div>	
 						<div class="sheet-melee_wpns_labels">
 							   <div style="margin-left:3px;">Location</div>
@@ -731,8 +619,172 @@
 					</div>				
 				</div>			
 			<hr class="sheet-hr" />
+						<div class="sheet-header">Weapons</div>
+						<br />
+						<div style="margin-left:194px;margin-bottom:10px;">
+							<div>
+								<div CLASS="sheet-input_label">Modifiers</div>
+								<select name="attr_skillReduct" style="width:100px;display:inline-block" >
+									<option value="1">Full Skill</option>
+									<option value="0.5">Half Skill</option>
+								</select>
+								<input type="text"  style="display:inline-block"  class="sheet-text_input sheet-percentiles" value="0" name="attr_skillMods" />
+							</div>
+						</div>				  
+						   
+						<div class="sheet-melee_wpns_labels">
+							   <div style="margin-left:3px;">Melee Weapon</div>
+							   <div style="margin-left:30px;">Skill Used</div>
+							   <div style="margin-left:54px;">Default</div>
+							   <div style="margin-left:3px;">WSR</div>
+							   <div style="margin-left:15px;">SR</div>
+							   <!--<div style="margin-left:14px;">STR/DEX</div>-->	   
+							   <div style="margin-left:20px;">%</div>
+							   <div style="margin-left:41px;">Damage</div>
+							   <div style="margin-left:8px;">*</div>							   							   
+							   <div style="margin-left:4px;">Type</div>
+							   <div style="margin-left:8px;">Special</div>						   
+							   <div style="margin-left:6px;" >HP</div>		
+						</div>						
+						<fieldset class="repeating_melee2">
+						   <div class="sheet-melee_wpns">
+
+					   
+							  <input type="text" class="sheet-text_input sheet-skillName" name="attr_weapon_type"  />
+							  <input type="text"  class="sheet-text_input sheet-skillName"  name="attr_skillName" />						  	
+							  <input type="checkbox" style="margin-left:10px;margin-right:7px" name="attr_skillDefault" />	
+
+							<input type="text"  style="margin-left:1px" class="sheet-text_input sheet-percentiles" value="0"  name="attr_wpn_sr" />
+							  <input type="text" class="sheet-text_input sheet-percentiles"  disabled name="attr_total_wpn_sr" value="[@{wpn_sr}+@{melee_srm}]" />
+							  
+							  <!--<input type="text" class="sheet-text_input sheet-percentiles"   style="width:22px;margin-left:1px" value="9" name="attr_wpnstr" />
+							  <input type="text" class="sheet-text_input sheet-percentiles"   style="width:22px" value="9" name="attr_wpndex" />--> 
+							  <input type="text"  class="sheet-text_input sheet-percentiles"  readonly style="display:none; width:30px;" value="0" name="attr_minmod" /> 							  
+							  <input type="text"  class="sheet-text_input sheet-percentiles" readonly name="attr_skillTotal" />					  
+							  <!--
+							  <input type="text"  class="sheet-text_input sheet-percentiles"  name="attr_wpn_attk_value" />
+							  <input type="text"  class="sheet-text_input sheet-percentiles" disabled name="attr_wpn_attk_total" value="@{wpn_attk_value}+@{manipulation_mod}+@{enc_mod}+@{minmod}+@{gen_mod}" />-->
+							  
+											<button  type="roll" style="margin-right:0px;margin-left:0px;" class="sheet-d100_roll" value="@{melee_value}" ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
+											
+											
+											<textarea name="attr_melee_value" style="display:none">&{template:melee-roll2} {{name=@{character_name}}} {{tot=[[@{wpn_damage}+@{damagebonus}]]}}{{skillvalue=(@{skillTotal})}} {{fumble=[[95+ceil(([[(@{skillTotal}*@{skillReduct})+@{skillMods}]]/20))]]}} {{crit=[[round([[(@{skillTotal}*@{skillReduct})+@{skillMods}]]/20)+1]]}} {{special=[[round(([[(@{skillTotal}*@{skillReduct})+@{skillMods}]])/5)+1]]}}   {{spclDam=[[@{spcldamage}+@{damagebonus}]]}}   {{crshDam=[[@{wpn_damage}+@{maxDb}]]}}  {{critCrsh=[[@{critdamage}+@{maxDb}]]}} {{critSI=[[@{critdamage}+@{damagebonus}]]}} {{type="[[@{wpn_spl}"]]}}  {{success=[[(@{skillTotal}*@{skillReduct})+@{skillMods}]]}} {{roll=[[1d100]]}} {{skillname=@{weapon_type}}} {{mntTogVal=[[@{mntTogVal}]]}} {{mntTot=[[@{wpn_damage}+@{mountDB}]]}} {{mntSpcl=[[@{spcldamage}+@{mountDB}]]}} {{mntCrit=[[@{critdamage}+@{mountDB}]]}}
+										                                
+											
+											
+
+											&{template:@{creature_hit_location}Melee}} {{roll=[[@{selected_die_roll}]]}}</textarea>
+											
+																		
+							  <input type="text"  class="sheet-text_input" style="width:52px" name="attr_wpn_damage" />
+							  <input type="text"  style="display:none" name="attr_spcldamage" />
+							  <input type="text"  style="display:none" name="attr_critdamage" />
+							  <input type="text"  style="display:none" name="attr_maxdamage" />
+
+							  <input type="checkbox"  name="attr_mntDbToggle" />
+								
+							  <input type="text" style="display:none"  value="0"  name="attr_mntTogVal" />								
+
+							  <input  type="text" name="attr_wpn_type" title="C,CT,H,I,S"   style="width:35px">
+
+							  <select name="attr_wpn_spl" style="margin-bottom:0px;width:43px">
+								<option value="0">I</option>
+								<option value="1">S</option>
+								<option value="2">C</option>							
+							  </select>							   
+							  <input type="text"  class="sheet-text_input sheet-percentiles" value="0" style="width:23px" name="attr_wpn_hp" />
+							  <input type="text"  class="sheet-text_input sheet-percentiles" value="0" style="width:23px" name="attr_wpn_hpmax" />
+							  
+							  <input type="checkbox" name="attr_skillcheck" />	
+							  
+							  
+						   </div>
+
+
+						   
+						</fieldset>		
+						<div>
+							<span class="sheet-input_label">* Use mount's damage bonus</span>
+							<input class="sheet-text_input" value="0"	type="text" style="width:50px" title="Mount Damage Bonus" name="attr_mountDB"/>
+						</div>
+						<!--- end of melee wpns -->
+		
+						<br >
+						<!-- missile wpns -->
+						<br />
+							<div class="sheet-melee_wpns_labels">
+							   <div style="margin-left:3px;">Missile Weapon</div>
+							   <div style="margin-left:124px;">Skill Used</div>							   
+							   <!--<div style="margin-left:47px;">STR/DEX</div> -->
+							   <div style="margin-left:161px;">%</div>
+							   <div style="margin-left:48px;">Dmg.</div>
+							   <div style="margin-left:10px;">DB</div>
+							   <div style="margin-left:3px;">Special</div>						   
+							   <div style="margin-left:8px;">Rng</div>		
+							   <div style="margin-left:4px;">Rate</div>		
+							   <div style="margin-left:12px;" >HP</div>		
+							</div>						
+						
+						<fieldset class="repeating_missle2">
+						   <div class="sheet-melee_wpns">
+							  <input type="text" class="sheet-text_input" name="attr_weapon_type" style="font-size:xx-small" />
+							  <!--	
+							  <input type="text" class="sheet-text_input sheet-percentiles"   style="width:22px;margin-left:1px" value="9" name="attr_wpnstr" />
+							  <input type="text" class="sheet-text_input sheet-percentiles"   style="width:22px" value="9" name="attr_wpndex" />-->
+							  <input type="text"  class="sheet-text_input sheet-percentiles"  readonly style="display:none; width:30px;" value="0" name="attr_minmod" /> 	
+							  <input type="text"  class="sheet-text_input" style="font-size:xx-small"  name="attr_skillName" />						  	
+							  <input type="text"  class="sheet-text_input sheet-percentiles" readonly name="attr_skillTotal" />						  
+							  <!--
+							  <input type="text"  class="sheet-text_input sheet-percentiles"  name="attr_wpn_attk_value" />
+							  <input type="text"  class="sheet-text_input sheet-percentiles" disabled name="attr_wpn_attk_total" value="@{wpn_attk_value}+@{manipulation_mod}+@{enc_mod}+@{minmod}+@{gen_mod}" />-->
+							  
+
+							  
+											<button  type="roll" style="margin-right:0px;margin-left:0px;" class="sheet-d100_roll" value="@{melee_value}" ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><textarea name="attr_melee_value" style="display:none">&{template:melee-roll2} {{name=@{character_name}}} {{tot=[[@{wpn_damage}+@{wpnmdb}]]}}{{skillvalue=(@{skillTotal})}} {{fumble=[[95+ceil(([[(@{skillTotal}*@{skillReduct})+@{skillMods}]]/20))]]}} {{crit=[[round([[(@{skillTotal}*@{skillReduct})+@{skillMods}]]/20)+1]]}} {{special=[[round(([[(@{skillTotal}*@{skillReduct})+@{skillMods}]])/5)+1]]}}   {{spclDam=[[@{spcldamage}+@{wpnmdb}]]}}   {{crshDam=[[@{wpn_damage}+@{maxwpnmdb}]]}}  {{critCrsh=[[@{critdamage}+@{maxwpnmdb}]]}} {{critSI=[[@{critdamage}+@{wpnmdb}]]}} {{type="[[@{wpn_spl}"]]}}  {{success=[[(@{skillTotal}*@{skillReduct})+@{skillMods}]]}} {{roll=[[1d100]]}} {{skillname=@{weapon_type}}} 
+
+											&{template:@{creature_hit_location}Melee}} {{roll=[[@{selected_die_roll}]]}}</textarea>
+											
+																		
+							  <input type="text"  class="sheet-text_input" style="width:51px" name="attr_wpn_damage" />
+							  <input type="checkbox"  name="attr_mdbtoggle" />
+							  <input type="text"  style="display:none" name="attr_spcldamage" />
+							  <input type="text"  style="display:none" name="attr_critdamage" />
+							  <input type="text"  style="display:none" name="attr_maxdamage" />
+
+							  <select name="attr_wpn_spl" style="margin-bottom:0px;width:50px">
+								<option value="0">I</option>
+								<option value="1">S</option>
+								<option value="2">C</option>							
+							  </select>								  
+							  <input type="text"  class="sheet-text_input" style="width:27px;font-size:xx-small" name="attr_wpn_range" />    
+							  <input type="text"  class="sheet-text_input" style="width:30px;font-size:xx-small" name="attr_wpn_rate" />    						  
+							  <input type="text"  class="sheet-text_input sheet-percentiles"   name="attr_wpn_hp" />
+							  <input type="checkbox" name="attr_skillcheck" />
+							  <input type="text" value="0" style="display:none" name="attr_wpnmdb" />	  
+							  <input type="text" value="0" style="display:none" name="attr_maxwpnmdb" />	  
+										
+							  
+						   </div>
+						</fieldset>				
+			
 		</div>
 		<div class="sheet-tab-content sheet-tab2"><!--- Tab 2 start -->
+		<div >
+			
+			<div>
+			<span style="margin-left:171px">Enc Mod</span>
+			<input class="sheet-text_input sheet-char_inputs sheet-percentiles"  value="0" type="text" readonly name="attr_enc_mod2"/>	
+			
+			<span style="margin-left:8px">Dodge Mod</span>
+			<input class="sheet-text_input sheet-char_inputs sheet-percentiles"  value="0"  type="text"  readonly  name="attr_dodge_mod2"/>
+
+			<span style="margin-left:8px">Swim Mod</span>
+			<input class="sheet-text_input sheet-char_inputs sheet-percentiles"  value="0"  type="text"  readonly  name="attr_swim_mod2"/>
+			
+			<span style="margin-left:8px">Skill Mod</span>
+			<input class="sheet-text_input sheet-char_inputs sheet-percentiles"  value="0"  type="text"   name="attr_skill_mod"/>			
+		</div>
+			<br />
 			<div class='sheet-2colrow'>
 				<div style="margin-left:3px;margin-right:3px;width:31%" class='sheet-col'>
 
@@ -747,7 +799,7 @@
 							<input type="text" class="sheet-text_input sheet-skillName" name="attr_skill" />
 							<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_base"/>
 							<input type="text" value="0" class="sheet-text_input sheet-skill_values2"  value="0" style="display:none" name="attr_base2"/>
-							<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_skillValue"/><input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" readonly name="attr_skillTotal" /><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{skillTotal})]]}} {{fumble=[[ceil(95+([[(@{skillTotal})]])/20))]]}} {{crit=[[round(([[(@{skillTotal})]])/20)+1]]}}  {{special=[[round(([[(@{skillTotal})]])/5)+1]]}}    {{success=[[(@{skillTotal})]]}} {{roll=[[1d100]]}} {{skillname=@{skill}}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
+							<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_skillValue"/><input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" readonly name="attr_skillTotal" /><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{skillTotal})]]}} {{fumble=[[ceil(95+([[(@{skillTotal}+@{skill_mod})]])/20))]]}} {{crit=[[round(([[(@{skillTotal}+@{skill_mod})]])/20)+1]]}}  {{special=[[round(([[(@{skillTotal}+@{skill_mod})]])/5)+1]]}}    {{success=[[(@{skillTotal}+@{skill_mod})]]}} {{roll=[[1d100]]}} {{skillname=@{skill}}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 							<input type="checkbox" name="attr_expCheck" />
 
 							
@@ -763,7 +815,7 @@
 							<input type="text" class="sheet-text_input sheet-skillName" name="attr_skill" />
 							<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_base"/>
 							<input type="text" value="0" class="sheet-text_input sheet-skill_values2"  value="0" style="display:none" name="attr_base2"/>
-							<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_skillValue"/><input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" readonly name="attr_skillTotal" /><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{skillTotal})]]}} {{fumble=[[ceil(95+([[(@{skillTotal})]])/20))]]}} {{crit=[[round(([[(@{skillTotal})]])/20)+1]]}}  {{special=[[round(([[(@{skillTotal})]])/5)+1]]}}    {{success=[[(@{skillTotal})]]}} {{roll=[[1d100]]}} {{skillname=@{skill}}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
+							<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_skillValue"/><input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" readonly name="attr_skillTotal" /><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{skillTotal})]]}} {{fumble=[[ceil(95+([[(@{skillTotal}+@{skill_mod})]])/20))]]}} {{crit=[[round(([[(@{skillTotal}+@{skill_mod})]])/20)+1]]}}  {{special=[[round(([[(@{skillTotal}+@{skill_mod})]])/5)+1]]}}    {{success=[[(@{skillTotal}+@{skill_mod})]]}} {{roll=[[1d100]]}} {{skillname=@{skill}}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 							<input type="checkbox" name="attr_expCheck" />
 						</fieldset>
 						<br />					
@@ -777,7 +829,7 @@
 							<input type="text" class="sheet-text_input sheet-skillName" name="attr_skill" />
 							<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_base"/>
 							<input type="text" value="0" class="sheet-text_input sheet-skill_values2"  value="0" style="display:none" name="attr_base2"/>
-							<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_skillValue"/><input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" readonly name="attr_skillTotal" /><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{skillTotal})]]}} {{fumble=[[ceil(95+([[(@{skillTotal})]])/20))]]}} {{crit=[[round(([[(@{skillTotal})]])/20)+1]]}}  {{special=[[round(([[(@{skillTotal})]])/5)+1]]}}    {{success=[[(@{skillTotal})]]}} {{roll=[[1d100]]}} {{skillname=@{skill}}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
+							<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_skillValue"/><input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" readonly name="attr_skillTotal" /><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{skillTotal})]]}} {{fumble=[[ceil(95+([[(@{skillTotal}+@{skill_mod})]])/20))]]}} {{crit=[[round(([[(@{skillTotal}+@{skill_mod})]])/20)+1]]}}  {{special=[[round(([[(@{skillTotal}+@{skill_mod})]])/5)+1]]}}    {{success=[[(@{skillTotal}+@{skill_mod})]]}} {{roll=[[1d100]]}} {{skillname=@{skill}}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 							<input type="checkbox" name="attr_expCheck" />
 						</fieldset>
 						<br />							
@@ -801,7 +853,7 @@
 									<input type="text" class="sheet-text_input sheet-skillName" name="attr_skill" />
 									<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_base"/>
 									<input type="text" value="0" class="sheet-text_input sheet-skill_values2"  value="0" style="display:none" name="attr_base2"/>
-									<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_skillValue"/><input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" readonly name="attr_skillTotal" /><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{skillTotal})]]}} {{fumble=[[ceil(95+([[(@{skillTotal})]])/20))]]}} {{crit=[[round(([[(@{skillTotal})]])/20)+1]]}}  {{special=[[round(([[(@{skillTotal})]])/5)+1]]}}    {{success=[[(@{skillTotal})]]}} {{roll=[[1d100]]}} {{skillname=@{skill}}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
+									<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_skillValue"/><input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" readonly name="attr_skillTotal" /><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{skillTotal})]]}} {{fumble=[[ceil(95+([[(@{skillTotal}+@{skill_mod})]])/20))]]}} {{crit=[[round(([[(@{skillTotal}+@{skill_mod})]])/20)+1]]}}  {{special=[[round(([[(@{skillTotal}+@{skill_mod})]])/5)+1]]}}    {{success=[[(@{skillTotal}+@{skill_mod})]]}} {{roll=[[1d100]]}} {{skillname=@{skill}}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 									<input type="checkbox" name="attr_expCheck" />							
 								</fieldset>
 								<br />
@@ -815,7 +867,7 @@
 									<input type="text"  class="sheet-text_input sheet-skillName" name="attr_skill" />
 									<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_base"/>
 									<input type="text" value="0" class="sheet-text_input sheet-skill_values2"  value="0" style="display:none" name="attr_base2"/>
-									<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_skillValue"/><input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" readonly name="attr_skillTotal" /><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{skillTotal})]]}} {{fumble=[[ceil(95+([[(@{skillTotal})]])/20))]]}} {{crit=[[round(([[(@{skillTotal})]])/20)+1]]}}  {{special=[[round(([[(@{skillTotal})]])/5)+1]]}}    {{success=[[(@{skillTotal})]]}} {{roll=[[1d100]]}} {{skillname@{skill}}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
+									<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_skillValue"/><input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" readonly name="attr_skillTotal" /><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{skillTotal})]]}} {{fumble=[[ceil(95+([[(@{skillTotal}+@{skill_mod})]])/20))]]}} {{crit=[[round(([[(@{skillTotal}+@{skill_mod})]])/20)+1]]}}  {{special=[[round(([[(@{skillTotal}+@{skill_mod})]])/5)+1]]}}    {{success=[[(@{skillTotal}+@{skill_mod})]]}} {{roll=[[1d100]]}} {{skillname=@{skill}}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 									<input type="checkbox" name="attr_expCheck" />							
 								</fieldset>
 								<br />	
@@ -829,7 +881,7 @@
 									<input type="text" class="sheet-text_input sheet-skillName" name="attr_skill" />
 									<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_base"/>
 									<input type="text" value="0" class="sheet-text_input sheet-skill_values2"  value="0" style="display:none" name="attr_base2"/>
-									<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_skillValue"/><input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" readonly name="attr_skillTotal" /><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{skillTotal})]]}} {{fumble=[[ceil(95+([[(@{skillTotal})]])/20))]]}} {{crit=[[round(([[(@{skillTotal})]])/20)+1]]}}  {{special=[[round(([[(@{skillTotal})]])/5)+1]]}}    {{success=[[(@{skillTotal})]]}} {{roll=[[1d100]]}} {{skillname=@{skill}}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
+									<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_skillValue"/><input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" readonly name="attr_skillTotal" /><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{skillTotal})]]}} {{fumble=[[ceil(95+([[(@{skillTotal}+@{skill_mod})]])/20))]]}} {{crit=[[round(([[(@{skillTotal}+@{skill_mod})]])/20)+1]]}}  {{special=[[round(([[(@{skillTotal}+@{skill_mod})]])/5)+1]]}}    {{success=[[(@{skillTotal}+@{skill_mod})]]}} {{roll=[[1d100]]}} {{skillname=@{skill}}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 									<input type="checkbox" name="attr_expCheck" />							
 								</fieldset>
 								<br />
@@ -843,7 +895,7 @@
 									<input type="text" class="sheet-text_input sheet-skillName" name="attr_skill" />
 									<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_base"/>
 									<input type="text" value="0" class="sheet-text_input sheet-skill_values2"  value="0" style="display:none" name="attr_base2"/>
-									<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_skillValue"/><input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" readonly name="attr_skillTotal" /><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{skillTotal})]]}} {{fumble=[[ceil(95+([[(@{skillTotal})]])/20))]]}} {{crit=[[round(([[(@{skillTotal})]])/20)+1]]}}  {{special=[[round(([[(@{skillTotal})]])/5)+1]]}}    {{success=[[(@{skillTotal})]]}} {{roll=[[1d100]]}} {{skillname=@{skill}}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
+									<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_skillValue"/><input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" readonly name="attr_skillTotal" /><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{skillTotal})]]}} {{fumble=[[ceil(95+([[(@{skillTotal}+@{skill_mod})]])/20))]]}} {{crit=[[round(([[(@{skillTotal}+@{skill_mod})]])/20)+1]]}}  {{special=[[round(([[(@{skillTotal}+@{skill_mod})]])/5)+1]]}}    {{success=[[(@{skillTotal}+@{skill_mod})]]}} {{roll=[[1d100]]}} {{skillname=@{skill}}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 									<input type="checkbox" name="attr_expCheck" />
 								</fieldset>
 								<br />							
@@ -860,7 +912,7 @@
 										<input type="text" class="sheet-text_input sheet-skillName" name="attr_skill" />
 										<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_base"/>
 										<input type="text" value="0" class="sheet-text_input sheet-skill_values2"  value="0" style="display:none" name="attr_base2"/>
-										<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_skillValue"/><input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" readonly name="attr_skillTotal" /><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{skillTotal})]]}} {{fumble=[[ceil(95+([[(@{skillTotal})]])/20))]]}} {{crit=[[round(([[(@{skillTotal})]])/20)+1]]}}  {{special=[[round(([[(@{skillTotal})]])/5)+1]]}}    {{success=[[(@{skillTotal})]]}} {{roll=[[1d100]]}} {{skillname=@{skill}}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
+										<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_skillValue"/><input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" readonly name="attr_skillTotal" /><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{skillTotal})]]}} {{fumble=[[ceil(95+([[(@{skillTotal}+@{skill_mod})]])/20))]]}} {{crit=[[round(([[(@{skillTotal}+@{skill_mod})]])/20)+1]]}}  {{special=[[round(([[(@{skillTotal}+@{skill_mod})]])/5)+1]]}}    {{success=[[(@{skillTotal}+@{skill_mod})]]}} {{roll=[[1d100]]}} {{skillname=@{skill}}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 										<input type="checkbox" name="attr_expCheck" />							
 									</fieldset>
 									<br />
@@ -874,7 +926,7 @@
 										<input type="text" class="sheet-text_input sheet-skillName" name="attr_skill" />
 										<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_base"/>
 										<input type="text" value="0" class="sheet-text_input sheet-skill_values2"  value="0" style="display:none" name="attr_base2"/>
-										<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_skillValue"/><input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" readonly name="attr_skillTotal" /><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{skillTotal})]]}} {{fumble=[[ceil(95+([[(@{skillTotal})]])/20))]]}} {{crit=[[round(([[(@{skillTotal})]])/20)+1]]}}  {{special=[[round(([[(@{skillTotal})]])/5)+1]]}}    {{success=[[(@{skillTotal})]]}} {{roll=[[1d100]]}} {{skillname=@{skill}}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
+										<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_skillValue"/><input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" readonly name="attr_skillTotal" /><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{skillTotal})]]}} {{fumble=[[ceil(95+([[(@{skillTotal}+@{skill_mod})]])/20))]]}} {{crit=[[round(([[(@{skillTotal}+@{skill_mod})]])/20)+1]]}}  {{special=[[round(([[(@{skillTotal})]])/5)+1]]}}    {{success=[[(@{skillTotal}+@{skill_mod})]]}} {{roll=[[1d100]]}} {{skillname=@{skill}}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 										<input type="checkbox" name="attr_expCheck" />
 									</fieldset>
 									<br />
@@ -888,7 +940,7 @@
 										<input type="text" class="sheet-text_input sheet-skillName" name="attr_skill" />
 										<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_base"/>
 										<input type="text" value="0" class="sheet-text_input sheet-skill_values2"  value="0" style="display:none" name="attr_base2"/>
-										<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_skillValue"/><input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" readonly name="attr_skillTotal" /><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{skillTotal})]]}} {{fumble=[[ceil(95+([[(@{skillTotal})]])/20))]]}} {{crit=[[round(([[(@{skillTotal})]])/20)+1]]}}  {{special=[[round(([[(@{skillTotal})]])/5)+1]]}}    {{success=[[(@{skillTotal})]]}} {{roll=[[1d100]]}} {{skillname=@{skill}}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
+										<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_skillValue"/><input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" readonly name="attr_skillTotal" /><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{skillTotal})]]}} {{fumble=[[ceil(95+([[(@{skillTotal}+@{skill_mod})]])/20))]]}} {{crit=[[round(([[(@{skillTotal})]])/20)+1]]}}  {{special=[[round(([[(@{skillTotal}+@{skill_mod})]])/5)+1]]}}    {{success=[[(@{skillTotal}+@{skill_mod})]]}} {{roll=[[1d100]]}} {{skillname=@{skill}}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 										<input type="checkbox" name="attr_expCheck" />
 
 									</fieldset>
@@ -905,7 +957,7 @@
 										<input type="text"  class="sheet-text_input sheet-skillName" name="attr_skill" />
 										<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_base"/>
 										<input type="text" value="0" class="sheet-text_input sheet-skill_values2"  value="0" style="display:none" name="attr_base2"/>
-										<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_skillValue"/><input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" readonly name="attr_skillTotal" /><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{skillTotal})]]}} {{fumble=[[ceil(95+([[(@{skillTotal})]])/20))]]}} {{crit=[[round(([[(@{skillTotal})]])/20)+1]]}}  {{special=[[round(([[(@{skillTotal})]])/5)+1]]}}    {{success=[[(@{skillTotal})]]}} {{roll=[[1d100]]}} {{skillname=@{skill}}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
+										<input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" name="attr_skillValue"/><input type="text" value="0" class="sheet-text_input sheet-skill_values2" value="0" readonly name="attr_skillTotal" /><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{skillTotal})]]}} {{fumble=[[ceil(95+([[(@{skillTotal}+@{skill_mod})]])/20))]]}} {{crit=[[round(([[(@{skillTotal}+@{skill_mod})]])/20)+1]]}}  {{special=[[round(([[(@{skillTotal})]])/5)+1]]}}    {{success=[[(@{skillTotal}+@{skill_mod})]]}} {{roll=[[1d100]]}} {{skillname=@{skill}}}"  ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 										<input type="checkbox" name="attr_expCheck" />
 									</fieldset>
 									<br />
@@ -921,34 +973,485 @@
 					<div class="sheet-skill_category">Equipment</div>				
 					<div >
 		
-						<p style="font-weight:bold; display:inline-block">*</p>
+						<p style="font-weight:bold; display:inline-block">Carried</p>
 						<p style="font-weight:bold; width:73%; display:inline-block;margin-left:13px">Item</p>
 						<p style="font-weight:bold;text-align:center;width: 10% ;display:inline-block">Wt.</p>
 						
 						<fieldset class="repeating_equipment2" style="margin-top:-20px;">
-							<input  type="checkbox" value="1" name="attr_carried"/>
-							<input class="sheet-text_input sheet-eqpText" style="width: 75% ;" type="text" name="attr_equipment_type"/>
+							<input  type="checkbox" value="1" style="margin-left:17px" name="attr_carried"/>
+							<input class="sheet-text_input sheet-eqpText" style="margin-left:27px;width: 75% ;" type="text" name="attr_equipment_type"/>
 							<input class="sheet-text_input sheet-char_inputs sheet-percentiles" type="text" name="attr_equipment_weight"/>
 						</fieldset>	
 						<br />
-						<div>
-							<span>Max Enc</span>
-							<input class="sheet-text_input sheet-char_inputs sheet-percentiles"  type="text" name="attr_carry_max"/>
-							<span style="margin-left:8px">Total Enc</span>								
-							<input class="sheet-text_input sheet-char_inputs sheet-percentiles"  type="text" name="attr_carry_total"/>
+						<span>Max Enc</span>
+						<input class="sheet-text_input sheet-char_inputs sheet-percentiles"  type="text" name="attr_carry_max2"/>
+						<span style="margin-left:8px">Total Enc</span>								
+						<input class="sheet-text_input sheet-char_inputs sheet-percentiles"  type="text" name="attr_carry_total2"/>
+							
+							
 						</div>
-						<span>*Carried  or Worn</span>
+						
 
 					</div>					
 					
 				</div>
 			</div><!-- end of first 2 col	-->
+			<hr class="sheet-hr" />
+			
+			<!--- animals ------------------------------->
+				<div style="font-size:x-small;background-color: white; 5px;border-radius: 6px;" >
+					<label style="margin-left:8px" class="sheet-header">Animals/Allies</label>
+					<div class='sheet-2colrow'>
+						<div style="margin-left:4px" class="sheet-col">
+							<div style="margin-bottom:5px;">
+								<input class="sheet-value_display" type="text" value="name and type " style="width:244px;" name="attr_animal1_name" />
+							</div>
+							<div>
+								<p class="sheet-spirit_stat">STR</p> <input class="sheet-value_display" value="0" name="attr_animal1a_str" type="number"/> 
+								<p class="sheet-spirit_stat">CON</p><input class="sheet-value_display" value="0" name="attr_animal1a_con" type="number" />
+								<p class="sheet-spirit_stat">SIZ</p><input class="sheet-value_display" value="0" name="attr_animal1a_siz" type="number"/>
+							</div>
+							<div>
+								<p class="sheet-spirit_stat">INT</p> <input class="sheet-value_display" value="0" name="attr_animal1a_int" type="number"/> 
+								<p class="sheet-spirit_stat">POW</p><input class="sheet-value_display" value="0" name="attr_animal1a_pow" type="number" />
+								<p class="sheet-spirit_stat">DEX</p><input class="sheet-value_display" value="0" name="attr_animal1a_dex" type="number"/>
+			
+							</div>
+							<br />
+							<table>
+									<tr>
+										<td>HP</td>
+										<td>
+											<input type="number" class="sheet-value_display" name="attr_animal1a_hp_max" value="0" />
+											/
+											<input type="number"  class="sheet-value_display" value="" name="attr_animal1a_hp_cur" />
+										</td>	
+
+										<td>Move</td>
+										<td>
+												<input type="number"  class="sheet-value_display"  name="attr_animal1a_move" value="0" />
+										</td>
+										
+									</tr>
+									<tr>
+									</tr>
+									<tr>
+										<td>MP</td>
+										<td>
+											<input type="number" class="sheet-value_display"  name="attr_animal1a_mp_max" value="0" />
+											/
+											<input type="number"  class="sheet-value_display" value="" name="attr_animal1a_mp_cur" />
+										</td>										<td>DSR</td>
+										<td>
+										<input type="number"  class="sheet-value_display"  name="attr_animal1a_dsr" value="0" />
+										</td>
+									</tr>
+									<tr>
+										<td>DB</td>
+										<td><input type="text"  class="sheet-value_display"  name="attr_animal1a_db" style="width:105px;" value="0" /></td>
+										<td>MSR</td>
+										<td><input type="number"  class="sheet-value_display"  name="attr_animal1a_msr" value="0" />
+										</td>
+
+									</tr>
+							</table>
+							</br />
+							
+							<div style="margin-top:5px;" class="sheet-melee_wpns_labels">
+								<br />
+							   <label style="width:98px">Weapon</label>
+							   <label style="width:34px">SR</label>   
+							    <label style="width:74px">Attk</label>   
+							   <label style="width:71px">Damage</label>   
+							</div>	
+							
+							<fieldset class="repeating_animal1wpns" >
+								<input   class="sheet-value_display"  type="text" name="attr_wpn_name" style="text-align:left;width:100px;" value="weapon" />
+								<input   class="sheet-value_display" type="number" name="attr_wpn_sr" value="0" />
+								<input  class="sheet-value_display" type="number" name="attr_wpn_attk" value="0" />
+								<input  class="sheet-value_display"  type="text" style="width:80px" name="attr_wpn_damage" value="0" />
+								<button type="roll"  class="sheet-d100_roll" value="&{template:melee-roll} {{name=@{animal1_name}}} {{tot=[[@{wpn_damage}]]}}  {{skillvalue=[[@{wpn_attk}]]}} {{fumble=[[ceil(95+([[@{wpn_attk}]])/20))]]}} {{crit=[[ceil(([[@{wpn_attk}]])/20)+1]]}} {{special=[[ceil(([[@{wpn_attk}]])/5)+1]]}}         {{success=[[@{wpn_attk}]]}} {{roll=[[1d100]]}} {{skillname=@{wpn_name}}}" ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><button class="sheet-d100_roll" type="roll" style="margin:0px;" value="&{template:melee-roll} {{name=@{animal1_name}}} {{tot=[[@{wpn_damage}]]}}  {{skillvalue=[[@{wpn_attk}+?{mods|0}]]}} {{fumble=[[ceil(95+([[@{wpn_attk}+?{mods|0}]])/20))]]}} {{crit=[[ceil(([[@{wpn_attk}+?{mods|0}]])/20)+1]]}} {{special=[[ceil(([[@{wpn_attk}+?{mods|0}]])/5)+1]]}}         {{success=[[@{wpn_attk}+?{mods|0}]]}} {{roll=[[1d100]]}} {{skillname=@{wpn_name}}}" ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>								
+								
+							</fieldset>
+							<br />
+							
+							<div style="margin-top:5px;" class="sheet-melee_wpns_labels">
+								<br />
+							   <label style="width:237px">Skill</label>
+							   <label style="width:74px">&#37;</label>   
+							</div>	
+							
+							<fieldset class="repeating_animal1skills" >
+								<input   class="sheet-value_display"  type="text" name="attr_skill_name" style="text-align:left;width:232px;" value="skill" />
+								<input  class="sheet-value_display" type="number" name="attr_skill_value" value="0" />
+								<button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{animal1_name}}}  {{skillvalue=[[@{skill_value}]]}} {{fumble=[[ceil(95+([[@{skill_value}]])/20))]]}} {{crit=[[ceil(([[@{skill_value}]])/20)+1]]}} {{special=[[ceil(([[@{skill_value}]])/5)+1]]}}         {{success=[[@{skill_value}]]}} {{roll=[[1d100]]}} {{skillname=@{skill_name}}}" ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><button  class="sheet-d100_roll"  type="roll" style="margin:0px;" value="&{template:skillRoll} {{name=@{animal1_name}}}  {{skillvalue=[[@{skill_value}]]}} {{success=[[@{skill_value}+?{mods|0}]]}}  {{fumble=[[ceil(95+([[@{skill_value}+?{mods|0}]])/20))]]}} {{crit=[[ceil(([[@{skill_value}+?{mods|0}]])/20)+1]]}} {{special=[[ceil(([[@{skill_value}+?{mods|0}]])/5)+1]]}}         {{roll=[[1d100]]}} {{skillname=@{skill_name}}}" ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>									
+
+
+								
+							</fieldset>
+							
+							<p>Hit Locations</p>
+							<textarea style="font-family:courier;margin:0px;" name="attr_animal1_hitloc" >
+D20	Result         AP/HP
+1-2	Right hind-leg	0/0
+3-4 	Left hind-leg	0/0
+5-7 	Hindquarters	0/0
+8-10 	Forequarters 	0/0
+11-13 	Right fore-leg	0/0
+14-16 	Left fore-leg	0/0
+17-20 	Head        	0/0
+							</textarea>
+							
+							<br />							
+							<p>Notes</p>
+							<textarea style="font-family:courier;margin:0px;" name="attr_animal2_notes" ></textarea>
+						</div> <!--  Animal 1 -->
+						<!--- Animal 2 -->	
+						<div class="sheet-col"> 
+							<div style="margin-bottom:5px;">
+								<input class="sheet-value_display" type="text" value="name and type " style="width:244px;" name="attr_animal2_name" />
+							</div>
+							<div>
+								<p class="sheet-spirit_stat">STR</p> <input class="sheet-value_display" value="0" name="attr_animal2a_str" type="number"/> 
+								<p class="sheet-spirit_stat">CON</p><input class="sheet-value_display" value="0" name="attr_animal2a_con" type="number" />
+								<p class="sheet-spirit_stat">SIZ</p><input class="sheet-value_display" value="0" name="attr_animal2a_siz" type="number"/>
+							</div>
+							<div>
+								<p class="sheet-spirit_stat">INT</p> <input class="sheet-value_display" value="0" name="attr_animal2a_int" type="number"/> 
+								<p class="sheet-spirit_stat">POW</p><input class="sheet-value_display" value="0" name="attr_animal2a_pow" type="number" />
+								<p class="sheet-spirit_stat">DEX</p><input class="sheet-value_display" value="0" name="attr_animal2a_dex" type="number"/>
+			
+							</div>
+							<br />
+							<table>
+								
+									
+									<tr>
+										<td>HP</td>
+										<td>
+											<input type="number" class="sheet-value_display" readonly name="attr_animal2a_hp_max" value="0" />
+											/
+											<input type="number"  class="sheet-value_display" value="" name="attr_animal2a_hp_cur" />
+										</td>	
+											<td>Move</td>
+											<td>
+												<input type="number"  class="sheet-value_display"  name="attr_animal2a_move" value="0" />
+											</td>
+										
+									</tr>
+									<tr>
+									</tr>
+									<tr>
+										<td>MP</td>
+										<td>
+											<input type="number" class="sheet-value_display"  name="attr_animal2a_mp_max" value="0" />
+											/
+											<input type="number"  class="sheet-value_display" value="" name="attr_animal2a_mp_cur" />
+										</td>
+										<td>DSR</td>
+										<td>
+										<input type="number"  class="sheet-value_display"  name="attr_animal2a_dsr" value="0" />
+										</td>
+									</tr>
+									<tr>
+										<td>DB</td>
+										<td><input type="text"  class="sheet-value_display"  name="attr_animal2a_db" style="width:105px;" value="0" /></td>
+										<td>MSR</td>
+										<td><input type="number"  class="sheet-value_display"  name="attr_animal2a_msr" value="0" />
+										</td>
+
+									</tr>
+							</table>
+							</br />
+							
+							<div style="margin-top:5px;" class="sheet-melee_wpns_labels">
+								<br />
+							   <label style="width:98px">Weapon</label>
+							   <label style="width:34px">SR</label>   
+							   <label style="width:74px">Attk</label>   
+							   <label style="width:71px">Damage</label>   
+							</div>	
+							
+							<fieldset class="repeating_animal2wpns" >
+								<input   class="sheet-value_display"  type="text" name="attr_wpn_name" style="text-align:left;width:100px;" value="weapon" />
+								<input   class="sheet-value_display" type="number" name="attr_wpn_sr" value="0" />
+								<input  class="sheet-value_display" type="number" name="attr_wpn_attk" value="0" />
+								<input  class="sheet-value_display"  type="text" style="width:80px" name="attr_wpn_damage" value="0" />
+								<button type="roll" class="sheet-d100_roll" value="&{template:melee-roll} {{name=@{animal1_name}}} {{tot=[[@{wpn_damage}]]}}  {{skillvalue=[[@{wpn_attk}]]}} {{fumble=[[ceil(95+([[@{wpn_attk}]])/20))]]}} {{crit=[[ceil(([[@{wpn_attk}]])/20)+1]]}} {{special=[[ceil(([[@{wpn_attk}]])/5)+1]]}}         {{success=[[@{wpn_attk}]]}} {{roll=[[1d100]]}} {{skillname=@{wpn_name}}}" ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><button  class="sheet-d100_roll"  type="roll" style="margin:0px;" value="&{template:melee-roll} {{name=@{animal1_name}}} {{tot=[[@{wpn_damage}]]}}  {{skillvalue=[[@{wpn_attk}]]}} {{success=[[@{wpn_attk}+?{mods|0}]]}} {{fumble=[[ceil(95+([[@{wpn_attk}+?{mods|0}]])/20))]]}} {{crit=[[ceil(([[@{wpn_attk}+?{mods|0}]])/20)+1]]}} {{special=[[ceil(([[@{wpn_attk}+?{mods|0}]])/5)+1]]}}          {{roll=[[1d100]]}} {{skillname=@{wpn_name}}}" ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>									
+								
+								
+							</fieldset>
+							<br />
+							
+							<div style="margin-top:5px;" class="sheet-melee_wpns_labels">
+								<br />
+							   <label style="width:237px">Skill</label>
+							   <label style="width:74px">&#37;</label>   
+							</div>	
+							
+							<fieldset class="repeating_animal2skills" >
+								<input   class="sheet-value_display"  type="text" name="attr_skill_name" style="text-align:left;width:232px;" value="skill" />
+								<input  class="sheet-value_display" type="number" name="attr_skill_value" value="0" />
+								<button type="roll" class="sheet-d100_roll"  value="&{template:skillRoll} {{name=@{animal2_name}}} {{skillvalue=[[@{skill_value}]]}} {{fumble=[[ceil(95+([[@{skill_value}]])/20))]]}} {{crit=[[ceil(([[@{skill_value}]])/20)+1]]}} {{special=[[ceil(([[@{skill_value}]])/5)+1]]}}         {{success=[[@{skill_value}]]}} {{roll=[[1d100]]}} {{skillname=@{skill_name}}}" ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><button  class="sheet-d100_roll" type="roll" style="margin:0px;" value="&{template:skillRoll} {{name=@{animal2_name}}} {{success=[[@{skill_value}+?{mods|0}]]}} {{skillvalue=[[@{skill_value}]]}} {{fumble=[[ceil(95+([[@{skill_value}+?{mods|0}]])/20))]]}} {{crit=[[ceil(([[@{skill_value}+?{mods|0}]])/20)+1]]}} {{special=[[ceil(([[@{skill_value}+?{mods|0}]])/5)+1]]}} {{roll=[[1d100]]}} {{skillname=@{skill_name}}}" ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>									
+								
+							</fieldset>
+							
+							<p>Hit Locations</p>
+							<textarea style="font-family:courier;margin:0px;" name="attr_animal1_hit2oc" >
+D20	Result         AP/HP
+1-2	Right hind-leg	0/0
+3-4 	Left hind-leg	0/0
+5-7 	Hindquarters	0/0
+8-10 	Forequarters 	0/0
+11-13 	Right fore-leg	0/0
+14-16 	Left fore-leg	0/0
+17-20 	Head        	0/0
+					
+							</textarea>
+							<br />
+							<p>Notes</p>
+							<textarea style="font-family:courier;margin:0px;" name="attr_animal2_notes" ></textarea>	
+						</div><!-- Animal 2 -->
+					</div>
+				</div>			
+			<!--- end animals -------------------------------!>
 		</div><!---- End of Tab -->
 		
 		<script type="text/worker">
 		//QS Workers
 		
+//animal 2 hit points
+	on("change:animal2_con change:animal2_siz ", function() {
+	   getAttrs(["animal2_con","animal2_siz"], function(values) {
+				var x = parseInt(values.animal2_con);
+				var y = parseInt(values.animal2_siz);
+				var z = Math.round((x+y)/2,0);
+				
+				setAttrs({animal2_hp_max:z});	
+
+	   });
+	});
+	
+	//Animal 2 fatigue points
+		on("change:animal2_con change:animal2_str ", function() {
+	   getAttrs(["animal2_con","animal2_str"], function(values) {
+				var x = parseInt(values.animal2_str);
+				var y = parseInt(values.animal2_con);
+				var z = x+y;
+				
+				setAttrs({animal2_fp_max:z});	
+
+	   });
+	});
+	
+		on("change:enc_totalf", function() {
+	   getAttrs(["enc_totalf"], function(values) {
+				var fx = parseFloat(values.enc_totalf);
+				fx = Math.round(fx,0);
+				setAttrs({enc_total:fx});	
+
+	   });
+	});
+
+
+	
+	
+	//animal 1 hit points
+	on("change:animal1_con change:animal1_siz ", function() {
+	   getAttrs(["animal1_con","animal1_siz"], function(values) {
+				var x = parseInt(values.animal1_con);
+				var y = parseInt(values.animal1_siz);
+				var z = Math.round((x+y)/2,0);
+				
+				setAttrs({animal1_hp_max:z});	
+
+	   });
+	});
+	
+	//Animal 1 fatigue points
+		on("change:animal1_con change:animal1_str ", function() {
+	   getAttrs(["animal1_con","animal1_str"], function(values) {
+				var x = parseInt(values.animal1_str);
+				var y = parseInt(values.animal1_con);
+				var z = x+y;
+				
+				setAttrs({animal1_fp_max:z});	
+
+	   });
+	});
+	
+		on("change:enc_totalf", function() {
+	   getAttrs(["enc_totalf"], function(values) {
+				var fx = parseFloat(values.enc_totalf);
+				fx = Math.round(fx,0);
+				setAttrs({enc_total:fx});	
+
+	   });
+	});
+			
 		
+	//SetAnimal 1 Dex SRM and melee srm
+		on("change:animal1_dex change:animal1_siz", function() {
+			getAttrs(["animal1_dex","animal1_siz"], function(pvalue) {
+				console.log("************ Start Animal 1 DEX and  SRM Calculation ************");
+				
+				var charDex = parseInt(pvalue.animal1_dex);
+				var charSiz = parseInt(pvalue.animal1_siz);			
+				
+				
+				var dsrm = 0;
+				var ssrm = 0;		
+	
+				var msrm = 0;
+				
+				if (charSiz < 7){
+					ssrm = 3;
+				} else if (charSiz < 15){
+					ssrm = 2;				
+				} else if (charSiz < 22){
+					ssrm = 1;				
+				} else {
+					ssrm = 0;				
+				}				
+
+				
+				
+				
+				if (charDex < 6){
+					dsrm = 5;
+				} else if (charDex < 9){
+					dsrm = 4;			
+				} else if (charDex < 13){
+					dsrm = 3;								
+				} else if (charDex < 16){
+					dsrm = 2;				
+				} else if (charDex < 19){
+					dsrm = 1;								
+				} else {
+					dsrm = 0;				
+				}				
+				
+				msrm = ssrm+dsrm;
+				console.log("msrm");
+				console.log(msrm);
+				
+				setAttrs({ animal1_dsr: dsrm , animal1_msr: msrm});
+				                               
+			   
+				console.log("************ End Animal 1 DEX and melee SRM Calculation ************");
+			});
+		});			
+		
+		
+	//SetAnimal 2 Dex SRM and melee srm
+		on("change:animal2_dex change:animal2_siz", function() {
+			getAttrs(["animal2_dex","animal2_siz"], function(pvalue) {
+				console.log("************ Start Animal 2 DEX and  SRM Calculation ************");
+				
+				var charDex = parseInt(pvalue.animal2_dex);
+				var charSiz = parseInt(pvalue.animal2_siz);			
+				
+				
+				var dsrm = 0;
+				var ssrm = 0;		
+	
+				var msrm = 0;
+				
+				if (charSiz < 7){
+					ssrm = 3;
+				} else if (charSiz < 15){
+					ssrm = 2;				
+				} else if (charSiz < 22){
+					ssrm = 1;				
+				} else {
+					ssrm = 0;				
+				}				
+
+				
+				
+				
+				if (charDex < 6){
+					dsrm = 5;
+				} else if (charDex < 9){
+					dsrm = 4;			
+				} else if (charDex < 13){
+					dsrm = 3;								
+				} else if (charDex < 16){
+					dsrm = 2;				
+				} else if (charDex < 19){
+					dsrm = 1;								
+				} else {
+					dsrm = 0;				
+				}				
+				msrm = ssrm+dsrm;
+				console.log("msrm");
+				console.log(msrm);
+				
+				setAttrs({ animal2_dsr: dsrm , animal2_msr: msrm});
+				                               
+			   
+				console.log("************ End Animal 2 DEX and melee SRM Calculation ************");
+			});
+		});					
+		
+		
+		//Set Animal 1 Damage Bonus
+		on("change:animal1_str change:animal1_siz", function() {
+			getAttrs(["animal1_str", "animal1_siz"], function(pvalue) {
+				console.log("************ Start Damage Bonus ************");
+				console.log("curstr value: " + pvalue.animal1_str);
+				console.log("cursiz value: " + pvalue.animal1_siz);
+
+				var curStrength = parseInt(pvalue.animal1_str);
+				var curSize = parseInt(pvalue.animal1_siz);
+
+				var StplusSi = curStrength + curSize;
+				console.log("Str+Size value: " + StplusSi);
+				var DBonus = "-1d4";
+				var mDBonus = "-1d2";
+				var DBonusC = 0;
+							
+				//Determine Bonus
+				if (StplusSi < 18) {
+					console.log("-- Str+Siz is less than 18 --");
+					DBonus = "-1d4";
+					mDBonus = "-1d2";					
+					console.log("DBonus value: " + DBonus);
+					setAttrs({animal1_db: DBonus});
+				}
+				else if (StplusSi < 25) {
+					console.log("-- Str+Siz is less than 25 --");
+					DBonus = "0";
+					mDBonus = "0";
+					console.log("DBonus value: " + DBonus);
+					setAttrs({animal1_db: DBonus});
+				}
+				else if (StplusSi < 33) {
+					console.log("-- Str+Siz is less than 31 --");
+					DBonus = "1d4";
+					mDBonus = "1d2";					
+					console.log("DBonus value: " + DBonus);
+					setAttrs({animal1_db: DBonus});
+				}
+				else if (StplusSi < 41) {
+					console.log("-- Str+Siz is less than 31 --");
+					DBonus = "1d6";
+					mDBonus = "1d3";					
+					console.log("DBonus value: " + DBonus);
+					setAttrs({animal1_db: DBonus});
+				}			
+				else { //StplusSi is greater than 
+					DBonusC = 2+Math.floor(parseFloat((StplusSi - 40) / 16));
+					console.log("DBonusC value: " + DBonusC);
+
+					DBonus = DBonusC + "d6";
+					mDBonus = DBonusC + "d3";					
+					console.log("DBonus value: " + DBonus);
+					setAttrs({animal1_db: DBonus});
+				}            
+				console.log("************ Animal 1 End Damage Bonus ************");
+			});
+		});
 		
 		
 		
@@ -2664,9 +3167,9 @@
 
 		/* ---- END: TheAaronSheet.js ---- */	
 			on('change:repeating_equipment2 remove:repeating_equipment2',function(){
-				//TAS.repeatingSimpleSum('equipment','equipment_weight','carry_total');
+				//TAS.repeatingSimpleSum('equipment','equipment_weight','carry_total2');
 				TAS.repeating("equipment2")
-					.attr("carry_total")
+					.attr("carry_total2")
 					.field("equipment_weight","carried")
 					.reduce(function(m,r){
 							
@@ -2679,15 +3182,129 @@
 								
 					
 					},0,function(t,r,a){
-						a.S["carry_total"]=t;
+						a.S["carry_total2"]=t;
 					})
 					.execute();
 			});					
 
 		//////QS sheet workers end///////////////////////////
+		/// end of qs workers
 		/// qs workers end ////
 		/// new workers ////
 		
+		
+		
+		//Set Current enc mod
+		on("change:carry_total2 change:carry_max2", function() {
+			getAttrs(["carry_total2","carry_max2"], function(pvalue) {
+				console.log("************ Start Current enc mod************");
+
+				var new_mod = 0;
+				var carry_total = Math.floor(parseInt(pvalue.carry_total2));
+				
+				var carry_max  = Math.ceil(parseInt(pvalue.carry_max2));
+				
+				var swim_mod = (Math.ceil(carry_max/2) - carry_total)*5;
+				
+console.log("111111111 swim_mod "+swim_mod);
+				
+				var dodge_mod = 0-carry_total;
+				if (carry_total > carry_max){
+					dodge_mod = 0-carry_max;
+				}
+					
+				if (carry_total > carry_max){
+					new_mod = (carry_max-carry_total)*5;
+					swim_mod = swim_mod - new_mod;
+					console.log("new_mod" + new_mod);
+				}
+console.log("111111111 swim_mod2 "+swim_mod);							
+				setAttrs({enc_mod2:new_mod,dodge_mod2:dodge_mod,swim_mod2:swim_mod});
+			   
+				console.log("************ End Current enc mod Calculation ************");
+			});
+		});	
+		
+
+			on("remove:repeating_agilitySkills", function(eventinfo){
+				getAttrs(["agility_mod","curdex"], function(pvalue) {		
+					
+
+
+							var skill = Object.values(eventinfo.removedInfo)[0];
+							skill = skill.toLowerCase();
+							skill = skill.trim();			
+							if (skill === "dodge"){
+									var mod = parseInt(pvalue.agility_mod);
+									console.log("!!!!!!! agility_mod "+mod);
+									var base = (parseInt(pvalue.curdex))*2
+									console.log("!!!!!!! base "+base);
+									
+									setAttrs({dodge:mod+base});							
+							}					
+				});	
+			});
+
+
+		
+		
+		//Set Animal 2 Damage Bonus
+		on("change:animal2_str change:animal2_siz", function() {
+			getAttrs(["animal2_str", "animal2_siz"], function(pvalue) {
+				console.log("************ Start Damage Bonus ************");
+				console.log("curstr value: " + pvalue.animal2_str);
+				console.log("cursiz value: " + pvalue.animal2_siz);
+
+				var curStrength = parseInt(pvalue.animal2_str);
+				var curSize = parseInt(pvalue.animal2_siz);
+
+				var StplusSi = curStrength + curSize;
+				console.log("Str+Size value: " + StplusSi);
+				var DBonus = "-1d4";
+				var mDBonus = "-1d2";
+				var DBonusC = 0;
+							
+				//Determine Bonus
+				if (StplusSi < 18) {
+					console.log("-- Str+Siz is less than 18 --");
+					DBonus = "-1d4";
+					mDBonus = "-1d2";					
+					console.log("DBonus value: " + DBonus);
+					setAttrs({animal2_db: DBonus});
+				}
+				else if (StplusSi < 25) {
+					console.log("-- Str+Siz is less than 25 --");
+					DBonus = "0";
+					mDBonus = "0";
+					console.log("DBonus value: " + DBonus);
+					setAttrs({animal2_db: DBonus});
+				}
+				else if (StplusSi < 33) {
+					console.log("-- Str+Siz is less than 31 --");
+					DBonus = "1d4";
+					mDBonus = "1d2";					
+					console.log("DBonus value: " + DBonus);
+					setAttrs({animal2_db: DBonus});
+				}
+				else if (StplusSi < 41) {
+					console.log("-- Str+Siz is less than 31 --");
+					DBonus = "1d6";
+					mDBonus = "1d3";					
+					console.log("DBonus value: " + DBonus);
+					setAttrs({animal2_db: DBonus});
+				}			
+				else { //StplusSi is greater than 
+					DBonusC = 2+Math.floor(parseFloat((StplusSi - 40) / 16));
+					console.log("DBonusC value: " + DBonusC);
+
+					DBonus = DBonusC + "d6";
+					mDBonus = DBonusC + "d3";					
+					console.log("DBonus value: " + DBonus);
+					setAttrs({animal2_db: DBonus});
+				}            
+				console.log("************ Animal 2 End Damage Bonus ************");
+			});
+		})		
 
 			on("change:curstr change:curcon", function() {
 				getAttrs(["curstr","curcon"], function(pvalue) {		
@@ -2701,10 +3318,137 @@
 					}
 					
 					
-					setAttrs({carry_max:enc});			   
+					setAttrs({carry_max2:enc});			   
 				});
 			});		
 		
+						
+		
+			on("change:repeating_melee2:skillName", function(eventInfo) {
+				getAttrs(["repeating_melee2_skillName"], function(pvalue) {		
+						console.log("!!!!!! stuff  "+JSON.stringify(eventInfo.sourceAttribute));
+						let sourceA = eventInfo.sourceAttribute
+						let  repeatRow = sourceA.match(/[^_]*_[^_]*_[^_]*/g);
+						var wpnSkill = pvalue.repeating_melee2_skillName;
+						console.log("changed weapon skill to "+wpnSkill);
+						getSkillValues(wpnSkill,"repeating_meleeskills",repeatRow);
+						getSkillValues(wpnSkill,"repeating_shieldskills",repeatRow);
+						getSkillValues(wpnSkill,"repeating_naturalwpnskills",repeatRow);
+						
+						
+				});
+			});	
+			
+			
+			on("change:repeating_missle2:skillName", function(eventInfo) {
+				getAttrs(["repeating_missle2_skillName"], function(pvalue) {		
+						console.log("!!!!!! stuff  "+JSON.stringify(eventInfo.sourceAttribute));
+						let sourceA = eventInfo.sourceAttribute
+						let  repeatRow = sourceA.match(/[^_]*_[^_]*_[^_]*/g);
+						var wpnSkill = pvalue.repeating_missle2_skillName;
+						console.log("changed weapon skill to "+wpnSkill);
+						var skillVal=getSkillValues(wpnSkill,"repeating_missileskills",repeatRow);
+				});
+			});				
+				
+			on("change:repeating_meleeskills:skillTotal", function(eventInfo) {
+				getAttrs(["repeating_meleeskills_skill","repeating_meleeskills_skillTotal"], function(pvalue) {		
+						console.log("!!!!!! stuff  "+JSON.stringify(eventInfo.sourceAttribute));
+						let sourceA = eventInfo.sourceAttribute
+						let  repeatRow = sourceA.match(/[^_]*_[^_]*_[^_]*/g);
+						var wpnSkill = pvalue.repeating_meleeskills_skill;
+						var skillTotal = pvalue.repeating_meleeskills_skillTotal;
+						console.log("changed weapon skill to "+wpnSkill);
+						var skillVal=getSkillValues2(wpnSkill,"repeating_melee2",repeatRow,skillTotal);
+				});
+			});				
+
+
+			on("change:repeating_shieldSkills:skillTotal", function(eventInfo) {
+				getAttrs(["repeating_shieldSkills_skill","repeating_shieldSkills_skillTotal"], function(pvalue) {		
+						console.log("!!!!!! stuff  "+JSON.stringify(eventInfo.sourceAttribute));
+						let sourceA = eventInfo.sourceAttribute
+						let  repeatRow = sourceA.match(/[^_]*_[^_]*_[^_]*/g);
+						var wpnSkill = pvalue.repeating_shieldSkills_skill;
+						var skillTotal = pvalue.repeating_shieldSkills_skillTotal;
+						console.log("changed weapon skill to "+wpnSkill);
+						var skillVal=getSkillValues2(wpnSkill,"repeating_melee2",repeatRow,skillTotal);
+				});
+			})
+
+
+
+			on("change:repeating_naturalWpnSkills:skillTotal", function(eventInfo) {
+				getAttrs(["repeating_naturalWpnSkills_skill","repeating_naturalWpnSkills_skillTotal"], function(pvalue) {		
+						console.log("!!!!!! stuff  "+JSON.stringify(eventInfo.sourceAttribute));
+						let sourceA = eventInfo.sourceAttribute
+						let  repeatRow = sourceA.match(/[^_]*_[^_]*_[^_]*/g);
+						var wpnSkill = pvalue.repeating_naturalWpnSkills_skill;
+						var skillTotal = pvalue.repeating_naturalWpnSkills_skillTotal;
+						console.log("changed weapon skill to "+wpnSkill);
+						var skillVal=getSkillValues2(wpnSkill,"repeating_melee2",repeatRow,skillTotal);
+				});
+			})			
+			
+			function getSkillValues2(wpnSkill,section,section2,skillTotal){
+				 getSectionIDs(section, function(idArray) {
+					if (idArray.length > 0) {
+			
+						_.each(idArray, function(currentID, i) {
+							getAttrs([section+"_" + currentID + "_skillName",section+"_" + currentID + "_skillTotal"], function(values) {
+																															
+								console.log("!!!!!! stuff3  "+JSON.stringify(values));
+
+								let skillname = values[section+"_" + idArray[i] + "_skillName"];
+								console.log("!!!!!! wpnSkill "+wpnSkill+" skillname "+skillname);
+
+								if (skillname == wpnSkill){	
+									console.log("!!!!!!!!!!!! found2 "+wpnSkill);
+									let attrsToSet = {[section+"_" + idArray[i] +'_skillTotal']: skillTotal};								
+									console.log("attrs to set "+JSON.stringify(attrsToSet));
+
+									setAttrs(attrsToSet);
+								}								
+
+									
+							});
+						});
+					}
+					
+				});	
+			}	
+			
+			
+			
+		function getSkillValues(wpnSkill,section,section2){
+				 getSectionIDs(section, function(idArray) {
+					if (idArray.length > 0) {
+			
+						_.each(idArray, function(currentID, i) {
+							getAttrs([section+"_" + currentID + "_skill",section+"_" + currentID + "_skillTotal"], function(values) {
+																															
+								console.log("!!!!!! stuff2  "+JSON.stringify(values));
+
+								/*let wStr = values[section+"_" + idArray[i] + "_skill"];*/
+								/*console.log("!!!!!! Look for skill "+wStr);*/
+								let skillname = values[section+"_" + idArray[i] + "_skill"];
+								var skillTotal =0 ;
+
+								if (skillname == wpnSkill){	
+									console.log("!!!!!!!!!!!! found "+wpnSkill);
+									skillTotal = values[section+"_" + idArray[i] + "_skillTotal"];
+									console.log("!!!!!! Skilltotal "+skillTotal);
+									let attrsToSet = {[section2 + '_skillTotal']: skillTotal};								
+									setAttrs(attrsToSet);
+								}								
+
+									
+							});
+						});
+					}
+					
+				});						
+		}
 		
 		
 			on("change:repeating_agilitySkills:skillValue", function() {
@@ -2821,9 +3565,9 @@
 
 /*addMeleeWpn(section,wpnType,wsr,skill,damage,type,special)*/
 
-								addMeleeWpn("repeating_melee2","Fist","3","1D3","H","2");
-								addMeleeWpn("repeating_melee2","Grapple","3","1D6","H","2");
-								addMeleeWpn("repeating_melee2","Kick","3","1D6","H","2");
+								addMeleeWpn("repeating_melee2","Fist","Fist","3","1D3","1D3","3","H","2");
+								addMeleeWpn("repeating_melee2","Grapple","Grapple","3","1D6","1d6","6","H","2");
+								addMeleeWpn("repeating_melee2","Kick","Kick","3","1D6","1d6","6","H","2");
 
 								
 								setAttrs({setupDone2:"1"});
@@ -2845,12 +3589,15 @@
 					setAttrs(setObj);	
 			}
 			
-			function addMeleeWpn(section,wpnType,wsr,damage,type,special){
+			function addMeleeWpn(section,wpnType,skill,wsr,damage,spclDamage,critDamage,type,special){
 					var id=getId();
 					var setObj = {};
 					setObj[section+"_"+id+'_weapon_type']=wpnType;
+					setObj[section+"_"+id+'_skillName']=wpnType;					
 					setObj[section+"_"+id+'_wpn_sr']=wsr;
 					setObj[section+"_"+id+'_wpn_damage']=damage;
+					setObj[section+"_"+id+'_spcldamage']=spclDamage;
+					setObj[section+"_"+id+'_critdamage']=critDamage;
 					setObj[section+"_"+id+'_wpn_type']=type;
 					setObj[section+"_"+id+'_wpn_spl']=special;					
 					
@@ -2884,15 +3631,22 @@
 				
 				
 			
-			function resetSkills(section,category_mod){
+			function resetSkills(section,category_mod,enc){
 				console.log("reset skills "+section+" "+category_mod);
 				 getSectionIDs(section, function(idArray) {
 					if (idArray.length > 0) {
 			
 						_.each(idArray, function(currentID, i) {
-							getAttrs([section+"_" + currentID + "_base",section+"_" + currentID + "_skillValue",category_mod,"curdex"], function(values){
-								
+							getAttrs([section+"_" + currentID + "_base",section+"_" + currentID + "_skillValue",category_mod,"dodge_mod2","swim_mod2","enc_mod2","curdex",section+"_" + currentID + "_skill"], function(values){
+							console.log("!!!! reset "+section+" row");
+	
 							var base = values[section+"_" + idArray[i] + "_base"];
+							var skill = values[section+"_" + idArray[i] + "_skill"];
+							if (parseInt(enc)==1){
+								var enc_mod = parseInt(values.enc_mod2);
+							} else {
+								enc_mod = 0;
+							}							
 							var curdex = parseInt(values.curdex);
 							base=base.toUpperCase();
 							if (base.includes("DEX")){
@@ -2917,7 +3671,12 @@
 							
 							var tot = 0;
 							if ((base+skillValue)>0){
-								tot=base+skillValue+mod;	
+								tot=base+skillValue+mod+enc_mod;
+								if (skill.toUpperCase()=="DODGE"){
+									tot = tot+parseInt(values.dodge_mod2)
+								}else if (skill.toUpperCase()=="SWIM"){
+									tot = tot+parseInt(values.swim_mod2)
+								}
 							}
 							 setAttrs({[section+"_"+currentID+"_base2"]:base});	
 							 setAttrs({[section+"_"+currentID+"_skillTotal"]:tot});
@@ -2971,23 +3730,48 @@
 
 		
 			
-			on("change:repeating_agilitySkills:base2 change:repeating_agilitySkills:skillValue", function() {
-				getAttrs(["repeating_agilitySkills_base2","repeating_agilitySkills_skillValue","agility_mod"], function(pvalue) {
+			on("change:repeating_agilitySkills:base2 change:repeating_agilitySkills:skillValue change:repeating_agilitySkills:skill", function() {
+				getAttrs(["repeating_agilitySkills_base2","repeating_agilitySkills_skillValue","agility_mod","repeating_agilitySkills_skill","dodge_mod2","swim_mod2","enc_mod2"], function(pvalue) {
 					var base2 = parseInt(pvalue.repeating_agilitySkills_base2);
+					var enc_mod2 = parseInt(pvalue.enc_mod2);
+					var skill = pvalue.repeating_agilitySkills_skill;
 					var skillValue= parseInt(pvalue.repeating_agilitySkills_skillValue);
 					var tot = 0;
 						if (base2+skillValue > 0){
-							tot=base2+skillValue+parseInt(pvalue.agility_mod);
+						
+							tot=base2+skillValue+parseInt(pvalue.agility_mod)+enc_mod2;
+							if (skill.toUpperCase()=="DODGE"){
+								tot = tot+parseInt(pvalue.dodge_mod2)
+							}else if (skill.toUpperCase()=="SWIM"){
+								tot = tot+parseInt(pvalue.swim_mod2)
+							}								
 						}
 					setAttrs({repeating_agilitySkills_skillTotal:tot});
 					
 				});
 			});				
 
+
+			on("change:repeating_agilitySkills:skillTotal", function() {
+				getAttrs(["repeating_agilitySkills_skillTotal","repeating_agilitySkills_skill","curDex"], function(pvalue) {
+				console.log("!!!!!!!!!!!!! Check for dodge !!!!!!!!!");
+					var skill=pvalue.repeating_agilitySkills_skill;
+					skill = skill.toUpperCase();
+				                     
+					console.log("!!!!!!!!!!!!!"+skill);
+					
+					if (skill=="DODGE"){
+						console.log("!!!!!!!!found skill name");
+						var skillTotal = parseInt(pvalue.repeating_agilitySkills_skillTotal);
+						setAttrs({dodge:skillTotal});						
+					}
+				});
+			});
+
 			
 			
 			on("change:agility_mod", function() {
-				 resetSkills("repeating_agilitySkills","agility_mod");
+				 resetSkills("repeating_agilitySkills","agility_mod","1");
 			});	
 
 			
@@ -3067,7 +3851,7 @@
 			
 			
 			on("change:communication_mod", function() {
-				 resetSkills("repeating_communicationSkills","communication_mod");
+				 resetSkills("repeating_communicationSkills","communication_mod","0");
 			});	
 			///////////////////////////////////////////////////////////////////////////////////////
 			////////////////////////////////////////////////////////////////////////
@@ -3132,7 +3916,7 @@
 			});			
 			
 			on("change:knowledge_mod", function() {
-				 resetSkills("repeating_knowledgeSkills","knowledge_mod");
+				 resetSkills("repeating_knowledgeSkills","knowledge_mod","0");
 			});	
 			///////////////////////////////////////////////////////////////////////////////////////			
 			////////////////////////////////////////////////////////////////////////
@@ -3191,7 +3975,7 @@
 			});				
 			
 			on("change:magic_mod", function() {
-				 resetSkills("repeating_magicSkills","magic_mod");
+				 resetSkills("repeating_magicSkills","magic_mod","0");
 			});	
 			///////////////////////////////////////////////////////////////////////////////////////				
 			////////////////////////////////////////////////////////////////////////
@@ -3234,7 +4018,7 @@
 			
 			
 			on("change:repeating_manipulationSkills:base2 change:repeating_manipulationSkills:skillValue", function() {
-				getAttrs(["repeating_manipulationSkills_base2","repeating_manipulationSkills_skillValue","manipulation_mod"], function(pvalue) {		
+				getAttrs(["repeating_manipulationSkills_base2","repeating_manipulationSkills_skillValue","manipulation_mod","enc_mod2"], function(pvalue) {		
 				
 					console.log("!!!!!!!base2 "+pvalue.repeating_manipulationSkills_base2);
 					console.log("!!!!!!skill value "+pvalue.repeating_manipulationSkills_skillValue);
@@ -3243,19 +4027,30 @@
 					var base2 = parseInt(pvalue.repeating_manipulationSkills_base2);
 					var skillValue = parseInt(pvalue.repeating_manipulationSkills_skillValue);
 					
-					var tot = base2+skillValue+parseInt(pvalue.manipulation_mod);
+					var tot = base2+skillValue+parseInt(pvalue.manipulation_mod)+parseInt(pvalue.enc_mod2);
 				
 					setAttrs({repeating_manipulationSkills_skillTotal:tot});			   
 				});
 			});				
 			
 			on("change:manipulation_mod", function() {
-				resetSkills("repeating_manipulationSkills","manipulation_mod");
-				resetSkills("repeating_meleeSkills","manipulation_mod");
-				resetSkills("repeating_missileSkills","manipulation_mod");
-				resetSkills("repeating_shieldSkills","manipulation_mod");
-				resetSkills("repeating_naturalWpnsSkills","manipulation_mod");								
+				resetSkills("repeating_manipulationSkills","manipulation_mod","1");
+				resetSkills("repeating_meleeSkills","manipulation_mod","1");
+				resetSkills("repeating_missileSkills","manipulation_mod","1");
+				resetSkills("repeating_shieldSkills","manipulation_mod","1");
+				resetSkills("repeating_naturalWpnSkills","manipulation_mod","1");								
 			});	
+			
+			
+			on("change:enc_mod2", function() {
+				resetSkills("repeating_agilitySkills","agility_mod","1");
+				resetSkills("repeating_manipulationSkills","manipulation_mod","1");
+				resetSkills("repeating_meleeSkills","manipulation_mod","1");
+				resetSkills("repeating_missileSkills","manipulation_mod","1");
+				resetSkills("repeating_shieldSkills","manipulation_mod","1");
+				resetSkills("repeating_naturalWpnSkills","manipulation_mod","1");								
+			});
+			
 			///////////////////////////////////////////////////////////////////////////////////////	
 			////////////////////////////////////////////////////////////////////////
 			on("change:repeating_perceptionSkills:base", function() {
@@ -3317,7 +4112,7 @@
 			});				
 			
 			on("change:perception_mod", function() {
-				 resetSkills("repeating_perceptionSkills","perception_mod");
+				 resetSkills("repeating_perceptionSkills","perception_mod","0");
 			});	
 			///////////////////////////////////////////////////////////////////////////////////////	
 			////////////////////////////////////////////////////////////////////////
@@ -3360,7 +4155,7 @@
 			
 			
 			on("change:repeating_stealthSkills:base2 change:repeating_stealthSkills:skillValue", function() {
-				getAttrs(["repeating_stealthSkills_base2","repeating_stealthSkills_skillValue","stealth_mod"], function(pvalue) {		
+				getAttrs(["repeating_stealthSkills_base2","repeating_stealthSkills_skillValue","stealth_mod","enc_mod2"], function(pvalue) {		
 					console.log ("stealth skills");
 					console.log("!!!!!!!base2 "+pvalue.repeating_stealthSkills_base2);
 					console.log("!!!!!!skill value "+pvalue.repeating_stealthSkills_skillValue);
@@ -3371,7 +4166,7 @@
 					
 					var tot = 0;
 					if (base2+skillValue>0){
-						var tot = base2+skillValue+parseInt(pvalue.stealth_mod);
+						var tot = base2+skillValue+parseInt(pvalue.stealth_mod)+parseInt(pvalue.enc_mod2);
 					}
 				
 					setAttrs({repeating_stealthSkills_skillTotal:tot});			   
@@ -3379,7 +4174,7 @@
 			});				
 			
 			on("change:stealth_mod", function() {
-				 resetSkills("repeating_stealthSkills","stealth_mod");
+				 resetSkills("repeating_stealthSkills","stealth_mod","1");
 			});	
 			///////////////////////////////////////////////////////////////////////////////////////				
 			////////////////////////////////////////////////////////////////////////
@@ -3953,6 +4748,28 @@
 		/*attr_missle_db*/
 		
 		
+
+
+		on("change:repeating_melee2:mntDbToggle", function() {
+		   getAttrs(["repeating_melee2_mntDbToggle"], function(values) {
+					console.log("Start set mounted damage bonus");
+										
+					var mdb =  values.repeating_melee2_mntDbToggle;
+					var val = 0;
+					if (mdb=="on"){
+						
+						val= 1;		
+						
+					}
+					
+					console.log("!!!!1 WHAT IS FUCKING VAL "+val);
+					setAttrs({repeating_melee2_mntDb:val});	
+
+
+
+
+		   });
+		});
 		
 		
 		on("change:repeating_missle2:mdbtoggle", function() {
@@ -4200,6 +5017,11 @@
 		</script>
 		<!-- new Roll templates -->
 		<rolltemplate class="sheet-rolltemplate-melee-roll2">
+		<!--awaqsdasd {{mntTogVal}}</br/>
+		Mount damage {{mntTot}}</br/>
+		mount spcl {{mntSpcl}}</br/>
+		mount crit {{mntCrit}}</br/>-->
+		
 		<table class="skillRoll" style="border 1px black">
 			<tr><th colspan="2">{{name}}</th></tr>
 			
@@ -4321,7 +5143,6 @@
 	<rolltemplate class="sheet-rolltemplate-RQG-Fumble">
 		<table style="background-color: #ffffff;" class="sheet-rolltemplate-skillRoll">
 		<th>Fumble </th>
-		<tr><td><b>Table:</b>{{table}}</td></tr>
 		<tr>
 		{{#rollBetween() roll 1 5}}<td>Lose next parry</td>{{/rollBetween() roll 1 5}}
 		{{#rollBetween() roll 6 10}}<td>Lose next attack</td>{{/rollBetween() roll 6 10}}
@@ -4374,6 +5195,83 @@
 		<!--end new rolltemplates -->
 		
 		<!--old templates -->
+		
+	<rolltemplate class="sheet-rolltemplate-melee-roll">
+    <table class="skillRoll" style="border 1px black">
+        <tr><th colspan="2">{{name}}</th></tr>
+		
+		<tr><th colspan="2">Weapon Roll</th></tr>
+		 <!--<tr><td>{{crit}}/{{special}}/{{fumble}}</td></tr>-->
+
+			<tr>
+				<td class="template_label">{{skillname}} {{skillvalue}}% </td> 
+				<td class="template_value"> ({{success}}%)</td>
+			</tr>
+			
+		<!--<tr>
+			Fumble {{fumble}}
+		</tr>
+		<tr>
+			crit {{crit}}
+		</tr>
+		<tr>
+			special {{special}}
+		</tr>
+		<tr>
+			success {{success}}
+		</tr>-->
+		
+        <tr>
+            <td class="template_label"><b>Rolled:</b></td>
+            <td class="template_value">&nbsp;{{roll}}</td>
+        </tr>
+		<tr>
+		 <td class="template_label"><b>Result:</b></td>
+		 
+		{{#rollBetween() roll fumble 100}} 
+				<td class="template_value">Fumble</td>
+		{{/rollBetween() roll fumble 100}} 
+		
+		{{#^rollBetween() roll fumble 100}}
+		
+			{{#rollGreater() success 99}}
+				{{#rollLess() roll crit}}<td class="template_value">Critical!!!!!!</td>{{/rollLess() roll crit}}
+				{{#^rollLess() roll crit}}
+					{{#rollLess() roll special}}<td class="template_value">Special!!!</td>{{/rollLess() roll special}}
+					{{#^rollLess() roll special}}<td class="template_value">Success</td>{{/^rollLess() roll special}}
+				{{/^rollLess() roll crit}}
+
+			{{/rollGreater() success 99}}
+			
+			{{#^rollGreater() success 99}}
+				{{#rollLess() roll crit}}<td class="template_value">Critical!!!!!!</td>{{/rollLess() roll crit}}
+				{{#^rollLess() roll crit}}
+					{{#rollLess() roll special}}<td class="template_value">Special!!!</td>{{/rollLess() roll special}}
+					{{#^rollLess() roll special}}
+						{{#rollBetween() roll special success}}<td class="template_value">Success</td>{{/rollBetween() roll special success}}
+						{{#^rollBetween() roll special success}}
+							{{#rollLess() roll fumble}}
+								<td class="template_value">Failure</td>
+							{{/rollLess() roll fumble}}
+							{{#^rollLess() roll fumble}}
+								<td class="template_value">fumble</td>
+							{{/^rollLess() roll fumble}}							
+						{{/^rollBetween() roll special success}}											
+					{{/^rollLess() roll special}}
+				{{/^rollLess() roll crit}}
+			{{/^rollGreater() success 99}}
+		{{/^rollBetween() roll fumble 100}}
+		
+		
+		{{#rollLess() roll success}}
+			<tr>
+				<td class="template_label"><b>Damage:</b></td>
+				<td style="text-align: right"; class="template_value">{{tot}}<td>
+			</tr>
+		{{/rollLess() roll success}}
+    </table>
+</rolltemplate>		
+		
 		<rolltemplate class="sheet-rolltemplate-HL-Melee">
 		<table class="skillRoll" style="border 1px black">
 			<tr><th colspan="2">Human Hit location roll</th></tr>

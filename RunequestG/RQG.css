@@ -183,14 +183,23 @@ div.repcontrol.editmode button.repcontrol_edit::before
 	 
 }
 
-/* Configuration Window*/
+
 
 .sheet-skillName{
 	width:115px;
 	font-size:x-small;
 }	
 
+.charsheet div.sheet-sorcery {
+    display: none;    
+}
 
+.charsheet input.sheet-showsorcery:checked ~ div.sheet-sorcery {
+    display: block;
+}
+
+
+/* Configuration Window*/
 .charsheet .sheet-cdiv {
     width:798px;
     /*border: 1px dotted;*/
@@ -251,6 +260,64 @@ div.repcontrol.editmode button.repcontrol_edit::before
 }
 
 /*End Configuration Window*/
+/* Configuration Window 2*/
+.charsheet .sheet-cdiv2 {
+    width:315px;
+    /*border: 1px dotted;*/
+    /*padding-right: 15px;*/
+    /*padding-left: 15px;*/
+}
+
+.sheet-HideConfig2:checked ~ *.sheet-config2 {
+	display:none;
+}
+
+.charsheet span.sheet-is-config2::after { /*Close Config: grayish background with black text*/
+	content: "^";
+}
+
+.charsheet .sheet-HideConfig2:checked + span.sheet-is-config2::after { /*Show Configuration: Black background with grayish text*/
+	content: "v";
+}
+
+.charsheet span.sheet-is-config2 {
+    text-align: center;
+    display: inline-block;    
+    width: 5%;
+    height: 16px;
+    font-size: 9px;
+    /*font-family: "Pictos";*/
+    /*background: #65763c;*/
+    background: black; /*#93537c;*/
+	color: white; /*white;*/
+	font-weight: bold;
+	border-radius: 4px;
+	margin-left: -5%;
+}
+
+.charsheet input.sheet-HideConfig2 {
+     width: 5%;
+    height: 16px;
+    cursor: pointer;	
+    margin-left: auto;
+    margin-top: auto;
+	/*position: absolute;
+	right: 20%;*/
+	opacity: 0;
+	z-index: 9999;
+}
+
+.charsheet .sheet-HideConfig2:checked + span.sheet-is-config2 {
+    background: black;
+    border-radius: 4px;
+	color: white;
+}
+
+
+
+/*End Configuration Window 2*/
+
+
 
 .sheet-rune_input{
 	width:35px;
@@ -789,6 +856,7 @@ button[type=roll].sheet-d100_roll {
 .sheet-magic_notes{
 	width:95%;
 	min-height:100px;
+	height:100px;
 }
 
 
@@ -819,6 +887,54 @@ button[type=roll].sheet-d100_roll {
         }
 
 /*Old css */
+
+
+.sheet-rolltemplate-melee-roll .inlinerollresult  {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+}
+
+ 
+.sheet-rolltemplate-melee-roll th {
+	text-align: center;
+	color: #ffffff;
+    background-color: #000000;
+}
+.sheet-rolltemplate-melee-roll table {
+    width: 230px;
+    padding: 2px;
+	border: 1px solid;
+    background-color: #ffffff;
+}
+
+.sheet-rolltemplate-melee-roll .template_value{
+	text-align: right;
+}
+
+
+
+.sheet-melee_wpns_labels label{
+	display:inline-block;
+	font-size:1em;
+	border-radius:0px;	
+}
+
+
+.sheet-value_display{
+	
+	box-shadow: none;
+	border: 0px; 
+	border-bottom: 1px solid black;	
+	text-align:center;
+	border-radius:0px;
+	
+}
+
+.sheet-spirit_stat{
+	display:inline-block;
+	width:33px;
+}
 
 .sheet-rolltemplate-skillRoll th {
 	text-align: center;
