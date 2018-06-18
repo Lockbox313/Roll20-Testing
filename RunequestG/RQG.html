@@ -624,10 +624,11 @@
 						<div style="margin-left:194px;margin-bottom:10px;">
 							<div>
 								<div CLASS="sheet-input_label">Modifiers</div>
-								<select name="attr_skillReduct" style="width:100px;display:inline-block" >
+								
+								<!--<select name="attr_skillReduct" style="width:100px;display:inline-block" >
 									<option value="1">Full Skill</option>
 									<option value="0.5">Half Skill</option>
-								</select>
+								</select>-->
 								<input type="text"  style="display:inline-block"  class="sheet-text_input sheet-percentiles" value="0" name="attr_skillMods" />
 							</div>
 						</div>				  
@@ -653,7 +654,8 @@
 							  <input type="text" class="sheet-text_input sheet-skillName" name="attr_weapon_type"  />
 							  <input type="text"  class="sheet-text_input sheet-skillName"  name="attr_skillName" />						  	
 							  <input type="checkbox" style="margin-left:10px;margin-right:7px" name="attr_skillDefault" />	
-
+							 <input type="text"  style="display:none"  value="1" name="attr_skillReduct" />						  								  
+	
 							<input type="text"  style="margin-left:1px" class="sheet-text_input sheet-percentiles" value="0"  name="attr_wpn_sr" />
 							  <input type="text" class="sheet-text_input sheet-percentiles"  disabled name="attr_total_wpn_sr" value="[@{wpn_sr}+@{melee_srm}]" />
 							  
@@ -668,7 +670,7 @@
 											<button  type="roll" style="margin-right:0px;margin-left:0px;" class="sheet-d100_roll" value="@{melee_value}" ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 											
 											
-											<textarea name="attr_melee_value" style="display:none">&{template:melee-roll2} {{name=@{character_name}}} {{tot=[[@{wpn_damage}+@{damagebonus}]]}}{{skillvalue=(@{skillTotal})}} {{fumble=[[95+ceil(([[(@{skillTotal}*@{skillReduct})+@{skillMods}]]/20))]]}} {{crit=[[round([[(@{skillTotal}*@{skillReduct})+@{skillMods}]]/20)+1]]}} {{special=[[round(([[(@{skillTotal}*@{skillReduct})+@{skillMods}]])/5)+1]]}}   {{spclDam=[[@{spcldamage}+@{damagebonus}]]}}   {{crshDam=[[@{wpn_damage}+@{maxDb}]]}}  {{critCrsh=[[@{critdamage}+@{maxDb}]]}} {{critSI=[[@{critdamage}+@{damagebonus}]]}} {{type="[[@{wpn_spl}"]]}}  {{success=[[(@{skillTotal}*@{skillReduct})+@{skillMods}]]}} {{roll=[[1d100]]}} {{skillname=@{weapon_type}}} {{mntTogVal=[[@{mntTogVal}]]}} {{mntTot=[[@{wpn_damage}+@{mountDB}]]}} {{mntSpcl=[[@{spcldamage}+@{mountDB}]]}} {{mntCrit=[[@{critdamage}+@{mountDB}]]}}
+											<textarea name="attr_melee_value" style="display:none">&{template:melee-roll2} {{name=@{character_name}}} {{tot=[[@{wpn_damage}+@{damagebonus}]]}}{{skillvalue=(@{skillTotal})}} {{fumble=[[95+ceil(([[ceil((@{skillTotal}*@{skillReduct}))+@{skillMods}]]/20))]]}} {{crit=[[round([[ceil((@{skillTotal}*@{skillReduct}))+@{skillMods}]]/20)+1]]}} {{special=[[round(([[ceil((@{skillTotal}*@{skillReduct}))+@{skillMods}]])/5)+1]]}}   {{spclDam=[[@{spcldamage}+@{damagebonus}]]}}   {{crshDam=[[@{wpn_damage}+@{maxDb}]]}}  {{critCrsh=[[@{critdamage}+@{maxDb}]]}} {{critSI=[[@{critdamage}+@{damagebonus}]]}} {{type="[[@{wpn_spl}"]]}}  {{success=[[ceil(ceil((@{skillTotal}*@{skillReduct})))+@{skillMods}]]}} {{roll=[[1d100]]}} {{skillname=@{weapon_type}}} {{mntTogVal=[[@{mntTogVal}]]}} {{mntTot=[[@{wpn_damage}+@{mountDB}]]}} {{mntSpcl=[[@{spcldamage}+@{mountDB}]]}} {{mntCrit=[[@{critdamage}+@{mountDB}]]}}
 										                                
 											
 											
@@ -714,9 +716,10 @@
 						<br />
 							<div class="sheet-melee_wpns_labels">
 							   <div style="margin-left:3px;">Missile Weapon</div>
-							   <div style="margin-left:124px;">Skill Used</div>							   
+							   <div style="margin-left:24px;">Skill Used</div>	
+							   <div style="margin-left:54px;">Default</div>							   
 							   <!--<div style="margin-left:47px;">STR/DEX</div> -->
-							   <div style="margin-left:161px;">%</div>
+							   <div style="margin-left:3px;">%</div>
 							   <div style="margin-left:48px;">Dmg.</div>
 							   <div style="margin-left:10px;">DB</div>
 							   <div style="margin-left:3px;">Special</div>						   
@@ -727,12 +730,14 @@
 						
 						<fieldset class="repeating_missle2">
 						   <div class="sheet-melee_wpns">
-							  <input type="text" class="sheet-text_input" name="attr_weapon_type" style="font-size:xx-small" />
+							  <input type="text" class="sheet-text_input sheet-skillName" name="attr_weapon_type" style="font-size:xx-small" />
 							  <!--	
 							  <input type="text" class="sheet-text_input sheet-percentiles"   style="width:22px;margin-left:1px" value="9" name="attr_wpnstr" />
 							  <input type="text" class="sheet-text_input sheet-percentiles"   style="width:22px" value="9" name="attr_wpndex" />-->
 							  <input type="text"  class="sheet-text_input sheet-percentiles"  readonly style="display:none; width:30px;" value="0" name="attr_minmod" /> 	
-							  <input type="text"  class="sheet-text_input" style="font-size:xx-small"  name="attr_skillName" />						  	
+							  <input type="text"  class="sheet-text_input sheet-skillName" style="font-size:xx-small"  name="attr_skillName" />
+							  <input type="checkbox" style="margin-left:10px;margin-right:7px" name="attr_skillDefault" />	
+							 <input type="text"  style="display:none"  value="1" name="attr_skillReduct" />							  
 							  <input type="text"  class="sheet-text_input sheet-percentiles" readonly name="attr_skillTotal" />						  
 							  <!--
 							  <input type="text"  class="sheet-text_input sheet-percentiles"  name="attr_wpn_attk_value" />
@@ -740,7 +745,7 @@
 							  
 
 							  
-											<button  type="roll" style="margin-right:0px;margin-left:0px;" class="sheet-d100_roll" value="@{melee_value}" ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><textarea name="attr_melee_value" style="display:none">&{template:melee-roll2} {{name=@{character_name}}} {{tot=[[@{wpn_damage}+@{wpnmdb}]]}}{{skillvalue=(@{skillTotal})}} {{fumble=[[95+ceil(([[(@{skillTotal}*@{skillReduct})+@{skillMods}]]/20))]]}} {{crit=[[round([[(@{skillTotal}*@{skillReduct})+@{skillMods}]]/20)+1]]}} {{special=[[round(([[(@{skillTotal}*@{skillReduct})+@{skillMods}]])/5)+1]]}}   {{spclDam=[[@{spcldamage}+@{wpnmdb}]]}}   {{crshDam=[[@{wpn_damage}+@{maxwpnmdb}]]}}  {{critCrsh=[[@{critdamage}+@{maxwpnmdb}]]}} {{critSI=[[@{critdamage}+@{wpnmdb}]]}} {{type="[[@{wpn_spl}"]]}}  {{success=[[(@{skillTotal}*@{skillReduct})+@{skillMods}]]}} {{roll=[[1d100]]}} {{skillname=@{weapon_type}}} 
+											<button  type="roll" style="margin-right:0px;margin-left:0px;" class="sheet-d100_roll" value="@{melee_value}" ><img style="margin-top:3px;width:14px;height:auto" src="https://raw.githubusercontent.com/Lockbox313/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><textarea name="attr_melee_value" style="display:none">&{template:melee-roll2} {{name=@{character_name}}} {{tot=[[@{wpn_damage}+@{wpnmdb}]]}}{{skillvalue=(@{skillTotal})}} {{fumble=[[95+ceil(([[ceil((@{skillTotal}*@{skillReduct}))+@{skillMods}]]/20))]]}} {{crit=[[round([[ceil((@{skillTotal}*@{skillReduct}))+@{skillMods}]]/20)+1]]}} {{special=[[round(([[ceil((@{skillTotal}*@{skillReduct}))+@{skillMods}]])/5)+1]]}}   {{spclDam=[[@{spcldamage}+@{wpnmdb}]]}}   {{crshDam=[[@{wpn_damage}+@{maxwpnmdb}]]}}  {{critCrsh=[[@{critdamage}+@{maxwpnmdb}]]}} {{critSI=[[@{critdamage}+@{wpnmdb}]]}} {{type="[[@{wpn_spl}"]]}}  {{success=[[ceil((@{skillTotal}*@{skillReduct}))+@{skillMods}]]}} {{roll=[[1d100]]}} {{skillname=@{weapon_type}}} 
 
 											&{template:@{creature_hit_location}Melee}} {{roll=[[@{selected_die_roll}]]}}</textarea>
 											
@@ -4747,6 +4752,49 @@ console.log("111111111 swim_mod2 "+swim_mod);
 		
 		/*attr_missle_db*/
 		
+
+		on("change:repeating_melee2:skillDefault", function() {
+		   getAttrs(["repeating_melee2_skillDefault"], function(values) {
+					console.log("Start skill default");
+										
+	
+					var val = 1;
+					if (values.repeating_melee2_skillDefault=="on"){
+						
+						val= 0.5;		
+						
+					}
+					
+					console.log("!!!!1 WHAT IS FUCKING VAL "+val);
+					setAttrs({repeating_melee2_skillReduct:val});	
+
+
+
+
+		   });
+		});
+
+		
+		on("change:repeating_missle2:skillDefault", function() {
+		   getAttrs(["repeating_missle2_skillDefault"], function(values) {
+					console.log("Start skill default");
+										
+	
+					var val = 1;
+					if (values.repeating_missle2_skillDefault=="on"){
+						
+						val= 0.5;		
+						
+					}
+					
+					console.log("!!!!1 WHAT IS FUCKING VAL "+val);
+					setAttrs({repeating_missle2_skillReduct:val});	
+
+
+
+
+		   });
+		});
 		
 
 
