@@ -1,0 +1,1649 @@
+	div.sheet-tab-content { display: none; }
+
+	input.sheet-tab1:checked ~ div.sheet-tab1,
+	input.sheet-tab2:checked ~ div.sheet-tab2
+	/*
+	,input.sheet-tab3:checked ~ div.sheet-tab3,
+	input.sheet-tab4:checked ~ div.sheet-tab4,
+	input.sheet-tab5:checked ~ div.sheet-tab5,
+	input.sheet-tab6:checked ~ div.sheet-tab6
+	*/
+	{
+		display: block;
+	}
+
+
+	.sheet-sectionBkgrd{
+		background-color:#bfc7d2;
+	}
+
+	div.sheet-tab-content
+	{
+		font-family: 'Verdana';
+		border: 1px solid #a8a8a8;
+		border-top-color: #000;
+		margin: 2px 0 0 5px;
+		padding: 5px;
+		/*background-color:#0a0a0b;*/
+		background-image: url("https://raw.githubusercontent.com/Lockbox313/Roll20-Testing/master/Alien/Graphics/bkgrnd.jpg");
+		background-repeat: repeat-y;
+	}
+
+
+	.sheet-ranged_combat{
+		position:absolute;top:224px;left:132px;
+	}
+
+	.sheet-ranged_combat_input{
+		position:absolute;top:198px;left:35px;
+	}
+
+	.sheet-mobility{
+		position:absolute;top:277px;left:109px;
+	}	
+
+	.sheet-mobility_input{
+		position:absolute;top:287px;left:50px;
+	}
+
+	.sheet-piloting{
+		position:absolute;top:330px;left:196px;
+	}
+
+	.sheet-piloting_input{
+		position:absolute;top:343px;left:115px;
+	}	
+
+	.sheet-agility{
+		position:absolute;top:277px;left:230px;
+	}
+
+	.sheet-closeCombat_input{
+		position:absolute;top:27px;left:394px;
+	}
+
+	.sheet-closeCombat{
+		position:absolute;top:77px;left:342px;
+	}
+
+
+	.sheet-hvyMachinery_button{
+		position:absolute;
+		top:121px;
+		left:243px;
+		text-align:right
+	}	
+
+
+	.sheet-hvyMachinery_input {
+		position:absolute;
+		top:105px;
+		left:202px;	
+	}
+
+
+	.sheet-stamina_button{
+		position:absolute;
+		top:136px;
+		left:467px;
+	}
+
+	.sheet-observation_button{
+		position:absolute;
+		top:198px;
+		left:753px;
+	}
+
+	.sheet-observation_input{
+		position:absolute;
+		top:198px;
+		left:753px;
+	}	
+	
+	.sheet-strength_button {
+		position:absolute;
+		top:111px;
+		left:370px;
+	}
+
+	.sheet-observation_button{
+		position:absolute;
+		top:225px;
+		left:536px;
+	}
+
+
+	.sheet-survival_button{
+		position:absolute;
+		top:276px;left:628px;
+		text-align:right
+	}
+
+	.sheet-survival_input{
+		position:absolute;
+		top:286px;
+		left:737px;
+	}
+
+	.sheet-comtech_button{
+		position:absolute;
+		top:330px;
+		left:543px;
+	}
+
+	
+	
+	
+	button[type=roll].sheet-attack_roll::before { 
+		font-family: "dicefontd10";
+		content: ""!important;
+		background-image: none;
+		font-size: 7px;
+		margin: 0px 0px 0px 0px;
+		border-bottom-width: 1px;
+		border-top-width: 2px;
+	}
+
+
+	button[type=roll].sheet-attack_roll {
+		/*background-image: none;
+		background-color: #f2f5d3;*/
+		margin:0px;
+		padding-bottom:0px;
+		border-bottom-width: 2px;
+		border-top-width: 2px;
+	}
+
+	.sheet-attack_image{
+		margin-top:-3px;
+		width:14px;
+		height:auto
+	}
+ 
+
+	.sheet-comtech_input{
+		position:absolute;
+		top:341px;
+		left:671px;
+	}
+
+	.sheet-wits_button{
+		position:absolute;top:276px;left:540px;
+	}
+
+
+	.sheet-medical_aid_button{
+		position:absolute;top:423px;left:471px;
+	}
+
+
+	.sheet-mdclAid_input{
+		position:absolute;top:433px;left:620px;
+	}
+
+	.sheet-manipulation_button{
+		position:absolute;
+		top:478px;
+		left:339px;
+		text-align:right
+	}
+
+	.sheet-manipulation_input{
+		position:absolute;top:513px;left:393px;
+	}
+
+	.sheet-stamina_input {
+		position:absolute;
+		top:105px;
+		left:585px;
+	}
+
+
+	.sheet-command_button{
+		position:absolute;
+		top:428px;
+		left:250px;
+	}
+
+	.sheet-command_input{
+		position:absolute;top:434px;left:165px;
+	}
+
+	.sheet-empathy_button{
+		position:absolute;top:448px;left:378px;
+	}
+
+	.sheet-attribute_header{
+		position:absolute;top:278px;left:369px;
+	}
+
+	.sheet-Skill_text{
+		font-family:Candal;
+		color:#044b44;
+		text-align:center;
+		width:30px;
+		font-size:large;
+		background:transparent;
+		border:none;
+		
+	}
+	
+	.sheet-talents_padding{
+		padding:10px;
+	}
+
+	.sheet-details_textarea{
+		width:99%;
+		font-size:xx-small;
+		background: transparent;
+		border:0 0 1px 0;
+		border-bottom-color:#044b44;		
+		min-height:8em;
+		max-height:10em;		
+		
+	}
+	
+	.sheet-talents_input{
+		width:50%;
+		font-size:large;
+		border-bottom-color:#044b44;
+	}
+	
+	.sheet-details_text{
+		font-family:Candal;
+		color:#044b44;
+		width:30px;
+		font-size:large;
+		background:transparent;
+		border:0 0 1px 0;
+		border-bottom-color:#044b44;
+	}	
+	
+	
+	.sheet-weapons_label{
+		position:absolute;
+		top:26px;
+		left:87px;"
+	}
+	
+	
+	.sheet-weapons_wrapper{
+		position:relative;
+		width:100%; 
+	}
+	.sheet-stress_button{
+		position:absolute;top:47px;left:17px;
+	}
+
+	.sheet-stress_input{
+			position:absolute;    top: 32px;left: 127px
+	}
+
+	
+	.sheet-armor_button{
+		position:absolute;top:47px;left:237px;
+	}
+
+	.sheet-armor_input{
+		position:absolute;
+		top: 32px;
+		left: 352px;
+	}	
+	
+
+	.sheet-health{
+		position:absolute;top:151px;left:17px;
+	}
+
+	
+	.sheet-story_points{
+		position:absolute;top:47px;left:108px;
+	}	
+
+	.sheet-storyPts_input{
+		position:absolute;top: 34px; left: 244px;
+
+	}
+	
+	
+	.sheet-exp_points{
+		position:absolute;top:47px;left:112px;
+	}
+
+
+	.sheet-expPts_input{
+		position:absolute;top: 34px; left: 244px;
+	}
+	
+	
+	.sheet-health_input{
+		position:absolute;top: 137px; left: 127px;
+
+	}
+
+	.sheet-health_max{
+		position:absolute;top: 137px;left: 207px
+	}
+
+	.sheet-radiation{
+		position:absolute;top:252px;left:17px;
+	}
+
+	.sheet-radiation_input{
+		position:absolute;top: 238px;left: 208px;
+		
+	}
+
+	.sheet-radiation_permInput{
+		position:absolute;top: 238px;left: 127px
+		
+	}
+
+
+	.sheet-starving{
+		position:absolute;top:393px;left:17px;
+	}
+
+	.sheet-starving_input{
+		position:absolute;top: 392px;left: 328px;
+	}
+	
+	
+	
+	.sheet-dehydrated{
+		position:absolute;top:429px;left:17px;
+	}
+	
+	
+	.sheet-dehydrated_input{
+		position:absolute;top: 429px;left: 328px;
+	}	
+
+	.sheet-exhausted{
+		position:absolute;top:463px;left:17px;
+	}
+
+	
+	.sheet-exhausted_input{
+		position:absolute;top: 466px;left: 328px;
+	}	
+	
+	
+	.sheet-freezing{
+		position:absolute;top:499px;left:17px
+	}
+
+	.sheet-freezing_input{
+		position:absolute;top: 503px;left: 328px;
+	}	
+	
+	.sheet-air{
+		position:absolute;top: 624px;left: 14px;
+		
+	}
+
+	.sheet-air_input{
+		position:absolute;top: 610px;left: 128px;
+	}
+
+
+	.sheet-food{
+		position:absolute;top:624px;left:205px
+	}
+
+	.sheet-food_input{
+		position:absolute;top: 610px;left: 315px;
+	}
+
+
+	.sheet-power{
+		position:absolute;top:708px;left:14px
+	}
+
+	.sheet-power_input{
+		position:absolute;top: 694px;left: 129px;
+	}
+	
+
+	.sheet-water{
+		position:absolute;top:708px;left:205px
+	}
+
+	.sheet-water_input{
+		position:absolute;top: 694px;left: 315px;
+	}
+		
+	
+	
+	.sheet-empathy_input{
+		position:absolute;top:369px;left:384px;
+	}
+
+	.sheet-agility_input{
+		position:absolute;top:262px;left:299px;
+	}
+
+	.sheet-wits_input{
+		position:absolute;top:264px;left:472px;
+	}
+
+	.sheet-strength_input{
+		position:absolute;top:152px;left:383px;
+	}
+
+	.sheet-Attrib_text{
+		font-family:Candal;
+		color:#044b44;
+		text-align:center;
+		width:49px;
+		font-size:xx-large;
+		background:transparent;
+		outline:none;
+		border:none;
+	}
+
+
+	.sheet-signaureItems{
+		position: absolute;
+		top: 24px;
+		left: 13px;
+		background:transparent;
+		max-width: 91%;
+		max-height: 44px		
+	}
+
+	
+	.sheet-inputApperance{
+		background:transparent;
+		font-family:candal;
+		border-bottom:1px solid #044b44;
+	}	
+	
+	.sheet-gearWrapper{
+		padding-left: 14px;
+		padding-top: 8px;
+	}
+	
+	
+	.sheet-weaponName{
+		width:156px;
+		text-align:center;
+	}
+
+	.sheet-weaponType{
+		width:90px;
+		text-align:center;
+	}
+	
+	.sheet-weaponBonus{
+		width:35px;
+		text-align:center;
+	}	
+
+	.sheet-weaponMod{
+		width:35px;
+		text-align:center;
+	}	
+	
+	
+	.sheet-weaponDamage{
+		width:35px;
+		text-align:center;
+	}	
+	
+	.sheet-weaponRange{
+		width:100px;
+	}	
+	
+	.sheet-weaponNotes{
+		width:200px;
+		font-size:xx-small;
+	}
+
+	.sheet-typeHeader{
+		display:inline-block;
+		width:84px;
+		font-size:x-small;
+		font-weight:bold;
+		text-align:center;		
+	}
+		
+	
+	.sheet-weaponHeader{
+		display:inline-block;
+		width:158px;
+		font-size:x-small;
+		font-weight:bold;
+		text-align:center;		
+	}
+	
+	.sheet-bonusHeader{
+		display:inline-block;
+		width:42px;
+		font-size:x-small;
+		font-weight:bold;
+		text-align:center;		
+	}	
+	
+	.sheet-modHeader{
+		display:inline-block;
+		width:33px;
+		font-size:x-small;
+		font-weight:bold;
+		text-align:center;		
+	}	
+	
+	.sheet-damageHeader{
+		display:inline-block;
+		width:37px;
+		font-size:x-small;
+		font-weight:bold;
+		text-align:center;		
+	}	
+	
+	.sheet-rangeHeader{
+		display:inline-block;
+		width:81px;
+		font-size:x-small;
+		font-weight:bold;
+		text-align:center;		
+	}	
+
+	.sheet-notesHeader{
+		display:inline-block;
+		width:195px;
+		font-size:x-small;
+		font-weight:bold;
+		text-align:center;		
+	}
+	
+	
+	.sheet-itemName{
+
+		width:294px;
+	}
+	.sheet-itemEnc{
+		width:35px;
+	}	
+	
+	.sheet-carried {
+		display:inline-block;
+		margin-left: 6px;
+		width: 36px;
+		text-align: center;		
+	}
+	
+	.sheet-carriedHeader{
+		display:inline-block;
+		font-size:x-small;
+		font-weight:bold;	
+	}
+	
+	.sheet-itemHeader{
+		display:inline-block;
+		width:293px;
+		font-size:x-small;
+		font-weight:bold;
+		text-align:center;
+	}
+	
+	.sheet-encHeader{
+		display:inline-block;
+		width:35px;
+		font-size:x-small;
+		font-weight:bold;	
+		text-align:center;
+	}
+
+
+	.sheet-enc_value{
+		background:transparent;
+		font-family:candal;
+		border-bottom:1px solid #044b44;
+		width:35px;
+		text-align: center;
+	}	
+	
+	
+	.sheet-enc_max{
+		margin-right: 37px;	
+	}
+	.sheet-enc_wrapper{
+		margin-top:10px;
+		margin-bottom:10px;		
+	}
+	
+	.sheet-text_input{
+		border: none;
+		box-shadow: none;
+		border-bottom: 1px solid black;
+		border-radius: 0;
+		display:inline-block;
+		outline:none;
+
+	}	
+
+	.sheet-header{
+		color:#b87a38;
+		font-size:large;
+		margin-bottom: 10px
+	}
+
+
+	.sheet-skill_category{
+		color:#b87a38;
+		/*font-size:large;*/
+		margin-bottom: 10px;
+		display:inline-block;
+	}
+
+	.sheet-char-label{
+		Font-size:xx-large;
+		font-weight:bold;
+		display:inline-block;
+		padding:1px 2px 1px 1px;
+		text-align:center;
+		font-size:large;
+		width:43px;		
+	}
+
+
+	.sheet-char_values{
+		display:inline-block;
+		font-size:1.0em;
+		width:34px;
+		box-shadow: none;
+		border: 0px; 
+		border-radius:0px;
+		border-bottom: 1px solid black;	
+		text-align:center;
+		
+	}
+
+	.sheet-attribute_label{
+		font-size:0.75em;
+		width:61px;
+		display:inline-block
+		
+	}
+
+
+	div.repcontainer[data-groupname=repeating_practicalSkills] .repitem:nth-child(even) {
+		background-color: #ba6f3f;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+
+	div.repcontainer[data-groupname=repeating_practicalSkills] .repitem:nth-child(odd) {
+		background-color: white;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+
+
+	.sheet-wrapper1 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas: ". .";
+	}
+
+
+	.sheet-wrapper1-col1 {
+	  grid-column: 1;
+	  grid-row: 1;
+	  /*width:100%;*/
+	}
+	.sheet-wrapper1-col2 { 
+		grid-column: 2;
+		grid-row: 1;
+		/*width:100%;*/
+	 
+	}
+	
+	.sheet-talentsOuter{
+		width:100%
+	}
+	
+	.sheet-talentsInner{
+		width:80%;
+		margin:auto;
+	}
+
+	
+	.sheet-talentsTop{
+		width:100%;
+		height:auto;
+		margin-bottom:-5px;
+	}
+
+	.sheet-rolltemplate-attack .inlinerollresult{
+		background-color: transparent;
+		border:none;
+	}
+	
+
+	.sheet-rolltemplate-attack .inlineroll {
+		
+    
+	}
+	
+	
+	
+	
+	.sheet-rolltemplate-attack .sheet-template_label{
+		 margin-bottom:5px;
+		 text-align:right;
+		 width:40%;
+		 display:inline-block
+	}
+	
+	
+	.sheet-rolltemplate-attack .sheet-template_result{
+		text-align:center;
+		width:50%;
+		display:inline-block;
+	}
+	
+	.sheet-rolltemplate-attack .sheet-template_name{
+		padding: 15px 0 5px 0;
+		text-align:center;
+		font-size:large;
+		width:100%;
+		display:inline-block;
+		color:#044b44;
+	}
+	
+	
+	.sheet-rolltemplate-attack .sheet-template_wrapper{
+		font-family: Candal;
+		font-size: 12px;
+		background-size: 100% auto;
+		padding-bottom: 10PX; 
+		background-repeat:no-repeat;
+		background-image: url('https://raw.githubusercontent.com/Lockbox313/Roll20-Testing/master/Alien/Graphics/templateBkgrd3.png');
+	}	
+
+	
+	
+	.sheet-rolltemplate-attribute .inlinerollresult{
+		background-color: transparent;
+		border:none;
+	}
+	
+
+	.sheet-rolltemplate-attribute .inlineroll {
+		
+    
+	}
+	
+	
+	
+	.sheet-rolltemplate-attribute .sheet-template_label{
+		 margin-bottom:5px;
+		 text-align:right;
+		 width:40%;
+		 display:inline-block
+	}
+	
+	
+	.sheet-rolltemplate-attribute .sheet-template_result{
+		text-align:center;
+		width:50%;
+		display:inline-block;
+	}
+	
+	.sheet-rolltemplate-attribute .sheet-template_name{
+		padding: 15px 0 5px 0;
+		text-align:center;
+		font-size:large;
+		width:100%;
+		display:inline-block;
+		color:#044b44;
+	}
+	
+	
+	.sheet-rolltemplate-attribute .sheet-template_wrapper{
+		font-family: Candal;
+		font-size: 12px;
+		background-size: 100% auto;
+		padding-bottom: 10PX; 
+		background-repeat:no-repeat;
+		background-image: url('https://raw.githubusercontent.com/Lockbox313/Roll20-Testing/master/Alien/Graphics/templateBkgrd3.png');
+	}	
+	
+	
+	
+	.sheet-rolltemplate-radiation .inlinerollresult{
+		background-color: transparent;
+		border:none;
+	}
+	
+
+	.sheet-rolltemplate-radiation .inlineroll {
+		
+    
+	}
+	
+	
+	
+	.sheet-rolltemplate-radiation .sheet-template_label{
+		 margin-bottom:5px;
+		 text-align:right;
+		 width:40%;
+		 display:inline-block
+	}
+	
+	
+	.sheet-rolltemplate-radiation .sheet-template_result{
+		text-align:center;
+		width:50%;
+		display:inline-block;
+	}
+	
+	.sheet-rolltemplate-radiation .sheet-template_name{
+		padding: 15px 0 5px 0;
+		text-align:center;
+		font-size:large;
+		width:100%;
+		display:inline-block;
+		color:#044b44;
+	}
+	
+
+	.sheet-rolltemplate-radiation .inlinerollresult.importantroll{
+		border:none;
+	}
+	
+	.sheet-rolltemplate-radiation .inlinerollresult.fullcrit{
+		border:none;
+	}
+	
+	.sheet-rolltemplate-radiation .inlinerollresult.fullfail {
+		border:none;
+	}
+	
+	.sheet-rolltemplate-radiation .sheet-template_wrapper{
+		font-family: Candal;
+		font-size: 12px;
+		background-size: 100% auto;
+		padding-bottom: 10PX; 
+		background-repeat:no-repeat;
+		background-image: url('https://raw.githubusercontent.com/Lockbox313/Roll20-Testing/master/Alien/Graphics/templateBkgrd3.png');
+	}	
+		
+		.sheet-rolltemplate-panic .inlinerollresult{
+		background-color: transparent;
+		border:none;
+	}
+	
+
+	.sheet-rolltemplate-panic .inlineroll {
+		
+    
+	}
+	
+	
+	
+	.sheet-rolltemplate-panic .sheet-template_label{
+		 margin-bottom:5px;
+		 text-align:right;
+		 width:40%;
+		 display:inline-block
+	}
+
+	.sheet-rolltemplate-panic .sheet-template_text{
+		 margin-bottom:5px;
+		 margin-left:9px;
+		 text-align:center;
+		 width:89%;
+		 display:inline-block;
+		 font-size:xx-small;
+	}	
+	
+	.sheet-rolltemplate-panic .sheet-template_result{
+		text-align:center;
+		width:50%;
+		display:inline-block;
+	}
+	
+	.sheet-rolltemplate-panic .sheet-template_name{
+		padding: 15px 0 5px 0;
+		text-align:center;
+		font-size:large;
+		width:100%;
+		display:inline-block;
+		color:#044b44;
+	}
+	
+
+	.sheet-rolltemplate-panic .inlinerollresult.importantroll{
+		border:none;
+	}
+	
+	.sheet-rolltemplate-panic .inlinerollresult.fullcrit{
+		border:none;
+	}
+	
+	.sheet-rolltemplate-panic .inlinerollresult.fullfail {
+		border:none;
+	}
+	
+	.sheet-rolltemplate-panic .sheet-template_wrapper{
+		font-family: Candal;
+		font-size: 12px;
+		background-size: 100% auto;
+		padding-bottom: 10PX; 
+		background-repeat:no-repeat;
+		background-image: url('https://raw.githubusercontent.com/Lockbox313/Roll20-Testing/master/Alien/Graphics/templateBkgrd3.png');
+	}	
+	
+	
+	
+		.sheet-rolltemplate-armor .inlinerollresult{
+		background-color: transparent;
+		border:none;
+	}
+	
+
+	.sheet-rolltemplate-armor .inlineroll {
+		
+    
+	}
+	
+	
+	
+	.sheet-rolltemplate-armor .sheet-template_label{
+		 margin-bottom:5px;
+		 text-align:right;
+		 width:40%;
+		 display:inline-block
+	}
+
+	.sheet-rolltemplate-armor .sheet-template_text{
+		 margin-bottom:5px;
+		 margin-left:9px;
+		 text-align:center;
+		 width:89%;
+		 display:inline-block;
+		 font-size:xx-small;
+	}	
+	
+	.sheet-rolltemplate-armor .sheet-template_result{
+		text-align:center;
+		width:50%;
+		display:inline-block;
+	}
+	
+	.sheet-rolltemplate-armor .sheet-template_name{
+		padding: 15px 0 5px 0;
+		text-align:center;
+		font-size:large;
+		width:100%;
+		display:inline-block;
+		color:#044b44;
+	}
+	
+
+	.sheet-rolltemplate-armor .inlinerollresult.importantroll{
+		border:none;
+	}
+	
+	.sheet-rolltemplate-armor .inlinerollresult.fullcrit{
+		border:none;
+	}
+	
+	.sheet-rolltemplate-armor .inlinerollresult.fullfail {
+		border:none;
+	}
+	
+	.sheet-rolltemplate-armor .sheet-template_wrapper{
+		font-family: Candal;
+		font-size: 12px;
+		background-size: 100% auto;
+		padding-bottom: 10PX; 
+		background-repeat:no-repeat;
+		background-image: url('https://raw.githubusercontent.com/Lockbox313/Roll20-Testing/master/Alien/Graphics/templateBkgrd3.png');
+	}	
+	
+	
+	
+	
+	div.sheet-tab-content { display: none; }
+
+	input.sheet-tab1:checked ~ div.sheet-tab1,
+	input.sheet-tab2:checked ~ div.sheet-tab2
+	/*
+	,input.sheet-tab3:checked ~ div.sheet-tab3,
+	input.sheet-tab4:checked ~ div.sheet-tab4,
+	input.sheet-tab5:checked ~ div.sheet-tab5,
+	input.sheet-tab6:checked ~ div.sheet-tab6
+	*/
+	{
+		display: block;
+	}
+
+	input.sheet-tab
+	{
+		width: 100px;
+		height: 20px;
+		position: relative;
+		top: 0px;
+		left: 5px;
+		margin: -1.5px;
+		margin-bottom: 5px;
+		cursor: pointer;
+		z-index: 1;
+		opacity: 0;
+	}
+
+	input.sheet-tab + span::before
+	{
+		content:attr(title);
+	   color:#044b44
+
+		border: solid 1px #a8a8a8;
+		border-bottom-color: black;
+		text-align: center;
+		display: inline-block;
+		
+		background: #fff;
+		background: -moz-linear-gradient(to top, #98aca0	, #fff, #98aca0	);
+		background: -webkit-linear-gradient(to top, #98aca0	8, #fff, #98aca0	);
+		background: -ms-linear-gradient(to top, #98aca0	, #fff, #98aca0	);
+		background: -o-linear-gradient(to top, #98aca0	, #fff, #98aca0	);
+		background: linear-gradient(to top, #98aca0	, #fff, #98aca0	);
+		
+		width: 100px;
+		height: 20px;
+		font-size: 18px;
+		
+		position: absolute;
+		top: 70px;
+		left: 30px;
+	}
+
+	input.sheet-tab:checked + span::before
+	{
+		color:#a7cac3;
+		background: #707e75;
+		background: -moz-linear-gradient(to top, #98aca0	, #707e75, #98aca0	);
+		background: -webkit-linear-gradient(to top, #98aca0	, #707e75, #98aca0	);
+		background: -ms-linear-gradient(to top, #fcfcfc, #707e75, #fcfcfc);
+		background: -o-linear-gradient(to top, #98aca0	, #707e75, #98aca0	);
+		background: linear-gradient(to top, 98aca0	, #707e75, #98aca0	);
+		border-bottom-color: #fff;
+	}
+
+	input.sheet-tab:not(:first-child) + span::before
+	{
+		border-left: none;
+	}
+
+
+	input.sheet-tab2 + span::before
+	{
+		left: 133px;
+
+		background: #fff;
+		background: -moz-linear-gradient(to top, #98aca0	, #fff, #98aca0	);
+		background: -webkit-linear-gradient(to top, #98aca0	8, #fff, #98aca0	);
+		background: -ms-linear-gradient(to top, #98aca0	, #fff, #98aca0	);
+		background: -o-linear-gradient(to top, #98aca0	, #fff, #98aca0	);
+		background: linear-gradient(to top, #98aca0	, #fff, #98aca0	);
+	}
+
+	/*
+	input.sheet-tab3 + span::before
+	{
+
+		left: 234px;
+	}
+
+
+	input.sheet-tab4 + span::before
+	{
+
+		left: 336px;
+	}
+	input.sheet-tab5 + span::before
+	{
+
+		left: 438px;
+	}
+
+	input.sheet-tab6 + span::before
+	{
+
+		left: 540px;
+	}
+
+	*/
+
+	div.sheet-tab-content
+	{
+		font-family: 'Verdana';
+		border: 1px solid #a8a8a8;
+		border-top-color: #000;
+		margin: 2px 0 0 5px;
+		padding: 5px;
+	}
+
+
+	div.repcontainer[data-groupname=repeating_practicalSkills] .repitem:nth-child(even) {
+		background-color: #ba6f3f;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+
+	div.repcontainer[data-groupname=repeating_practicalSkills] .repitem:nth-child(odd) {
+		background-color: white;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	.sheet-button_text{
+		font-family:Candal;
+		text-align:right;
+	}
+
+	.sheet-header{
+		font-family:Candal;
+		text-align:right;
+		font-size:13px;	
+		color:#a7cac3;
+	}
+
+
+	.sheet-header2{
+		font-family: Candal;
+		font-size: 16.9px;
+		color: #044b44;	
+	}
+
+	.sheet-header2{
+		font-family: Candal;
+		font-size: 16.9px;
+		color: #044b44;	
+	}
+
+	.sheet-header3{
+		font-family:Candal;
+		text-align:left;
+		font-size:13px;	
+		color:#a7cac3;
+		margin-bottom:0px;
+	}
+
+
+
+	button[type=roll].sheet-Attrib_roll::before { 
+		background-image: none;
+		content: "";
+		margin:0px;
+		padding:0px;
+		border:0px!important;
+		background:transparent;
+	}
+
+
+	button[type=roll].sheet-Attrib_roll{
+		/*background-image: none;
+		background-color: #f2f5d3;*/
+		margin:0px;
+		padding:0px;
+		border:0px!important;
+		background:transparent;
+		color:#a7cac3;
+		font-size:13px;
+		border:none;
+	}
+
+
+
+
+	button[type=roll].sheet-Skill_roll::before { 
+		background-image: none;
+		font-size: 13px;
+		content: "";
+		margin:0px;
+		padding:0px;
+		border:0px!important;
+		background:transparent;
+	}
+
+
+	button[type=roll].sheet-Skill_roll{
+		/*background-image: none;
+		background-color: #f2f5d3;*/
+		margin:0px;
+		padding:0px;
+		border:0px!important;
+		background:transparent;
+		color:#044b44;
+		text-shadow:none;
+	}
+
+
+	.sheet-wrapper_postioning{
+		position:relative;
+		text-align:center;"
+	}
+
+	.sheet-appearance{
+		background:transparent;
+		position:absolute;
+		top: 124px;
+		left: 16px;
+		max-width: 91%;
+		max-height: 44px
+	}
+
+	.sheet-agenda{
+		background:transparent;
+		position:absolute;
+		top: 25px;
+		left: 16px;
+		max-width: 91%;
+		max-height: 50px
+	}
+
+
+	.sheet-name{
+		background:transparent;
+		position:absolute;
+		top:27px;
+		left:60px;
+		width:72%;
+		text-align:center;
+	}
+
+
+	.sheet-buddy{
+		background:transparent;
+		position:absolute;
+		top:135px;
+		left:70px;
+		width:79%;
+		text-align:center;
+	}
+
+	.sheet-rival{
+		background:transparent;
+		position:absolute;
+		top:177px;
+		left:63px;
+		width:82%;
+		text-align:center;
+	}
+
+	.sheet-career{
+		background:transparent;
+		position:absolute;
+		top: 77px;
+		left: 100px;
+		width: 51%;
+		text-align:center;
+	}
+
+
+	.sheet-text_input{
+		border: none;
+		box-shadow: none;
+		border-bottom: 1px solid black;
+		border-radius: 0;
+		display:inline-block;
+		outline:none;
+		line-height:12px;
+
+	}	
+
+
+
+	.sheet-detailsItem{
+			display:inline-block;
+	}
+
+
+	.sheet-details2{
+		width:98px;
+		text-align:center;
+	}
+
+
+	.sheet-details3{
+		width:269px;
+		text-align:center;
+	}
+
+	.sheet-details-label{
+		font-size:x-small;
+		font-weight:bold;
+		margin-bottom:0px;
+	}
+
+
+	.sheet-skillHeader{
+		display:inline-block;
+	}
+
+	.sheet-skillName{
+		display:inline-block;
+	}
+	.sheet-skillRating{
+		display:inline-block;
+	}
+	.sheet-skillLevel{
+		display:inline-block;
+	}
+
+
+
+	.sheet-skill_category{
+		color:#b87a38;
+		/*font-size:large;*/
+		margin-bottom: 10px;
+		display:inline-block;
+	}
+
+	.sheet-char-label{
+		Font-size:xx-large;
+		font-weight:bold;
+		display:inline-block;
+		padding:1px 2px 1px 1px;
+		text-align:center;
+		font-size:large;
+		width:43px;		
+	}
+
+
+	.sheet-char_values{
+		display:inline-block;
+		font-size:1.0em;
+		width:34px;
+		box-shadow: none;
+		border: 0px; 
+		border-radius:0px;
+		border-bottom: 1px solid black;	
+		text-align:center;
+		
+	}
+
+	.sheet-attribute_label{
+		font-size:0.75em;
+		width:61px;
+		display:inline-block
+		
+	}
+
+
+	.sheet-divider1{
+		background-color: #000000;
+		border: 0 none;
+		color: #00000;
+		height: 10px;
+	}
+
+	
+	
+	
+.sheet-check-label label{
+	display:inline;
+	padding-right:0px;
+}
+
+.sheet-fixbox{
+    margin-bottom: 0px;
+    margin-top: 4px;
+}
+.sheet-check-health-level input[type="radio"], 
+.sheet-check-label input[type="checkbox"],
+.sheet-check-label input[type="radio"] {
+    opacity:0;
+    width: 21px;
+    height: 21px;
+    position: relative;
+    top: -2px;
+    left: 10px;
+    margin: -10px;
+    cursor: pointer;
+    z-index: 1;
+    display: inline;
+    background:lightgrey;
+}
+.sheet-check-health-level input[type="radio"] + span:before,
+.sheet-check-label input[type="checkbox"] + span:before,
+.sheet-check-label input[type="radio"] + span:before{
+    margin-right: 4px; margin-top:-1px;
+    line-height: 16px;
+    text-align: center;
+    display: inline-block;
+    /*ertical-align:top;*/
+    box-shadow: 0 0 2px #ccc;
+    background-color: transparent;
+    background-position:top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 3px,3px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    color: #333333;
+    font-size: 22px;
+
+}
+.sheet-check-health-level input[type="radio"]:checked + span:before,
+.sheet-check-label input[type="checkbox"]:checked + span:before,
+.sheet-check-label input[type="radio"] + span:before {
+    content: "✓";
+}
+.sheet-check-label input[type="radio"]:checked ~ input[type="radio"] + span:before {
+    content: "";
+}	
+	
+
+	.repcontainer[data-groupname="repeating_melee2"]{
+														 
+		width:100%!important;
+	}
+
+
+	.repcontainer[data-groupname="repeating_missle2"]{
+														 
+		width:100%!important;
+	}
+
+
+	.repcontainer[data-groupname="repeating_mounts"]{
+														 
+		width:100%!important;
+	}
+
+
+
+
+	.repcontainer{
+		width:100%;
+	}
+
+	.itemcontrol {
+		margin-left: 0px;
+	}
+
+
+	.repcontrol{
+		margin-right: 7px;
+		margin-top:5px;
+	}
+
+	div.repcontrol button
+	{
+		width: 13px;
+		color: transparent;
+		padding: 0px;
+		padding-left: 2px;
+		text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+		 
+	}
+
+	div.repcontrol button.repcontrol_add::before,
+	div.repcontrol button.repcontrol_edit::before
+	{
+		font-family: Pictos;
+		position: relative;
+		color: #000;
+		width:12px;
+		height:12px;
+	}
+
+	/* +Add */
+	div.repcontrol button.repcontrol_add::before
+	{
+		
+		content: "&"; /* & in Pictos is a + sign, while + is a plus inside a circle */    
+		left: -0px;
+		top: -0px;
+	}
+
+	/* Modify */
+	div.repcontrol button.repcontrol_edit::before
+	{
+		text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+		content: "x"; /* x in Pictos is a crossed hammer and wrench */
+		left: -0px;
+		top: -0px;
+	}
+	/* Done */
+	div.repcontrol.editmode button.repcontrol_edit::before
+	{
+		content: "3"; /* 3 in Pictos is a check mark */
+		 
+	}
+
+
+
+	/* Configuration Window*/
+	.charsheet .sheet-cdiv {
+		width:798px;
+		/*border: 1px dotted;*/
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+	.sheet-HideConfig:checked ~ *.sheet-config {
+		display:none;
+	}
+
+	.charsheet span.sheet-is-config::after { /*Close Config: grayish background with black text*/
+		content: "^";
+	}
+
+	.charsheet .sheet-HideConfig:checked + span.sheet-is-config::after { /*Show Configuration: Black background with grayish text*/
+		content: "v";
+	}
+
+	.charsheet span.sheet-is-config {
+		text-align: center;
+		display: inline-block;    
+		width: 5%;
+		height: 16px;
+		font-size: 9px;
+		/*font-family: "Pictos";*/
+		/*background: #65763c;*/
+		background: black; /*#93537c;*/
+		color: white; /*white;*/
+		font-weight: bold;
+		border-radius: 4px;
+		margin-left: -5%;
+	}
+
+	.charsheet input.sheet-HideConfig {
+		 width: 5%;
+		height: 16px;
+		cursor: pointer;	
+		margin-left: auto;
+		margin-top: auto;
+		/*position: absolute;
+		right: 20%;*/
+		opacity: 0;
+		z-index: 9999;
+	}
+
+	.charsheet .sheet-HideConfig:checked + span.sheet-is-config {
+		background: black;
+		border-radius: 4px;
+		color: white;
+	}
+
+	.charsheet label.sheet-configitem {
+		margin-left: 10px; 
+		width: 50px; 
+		font-size: .9em; 
+		font-weight: normal
+	}
+
+	/*End Configuration Window*/
+
+	/* Configuration Window*/
+	.charsheet .sheet-cdiv {
+		width:798px;
+		/*border: 1px dotted;*/
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+	.sheet-HideConfig:checked ~ *.sheet-config {
+		display:none;
+	}
+
+	.charsheet span.sheet-is-config::after { /*Close Config: grayish background with black text*/
+		content: "^";
+	}
+
+	.charsheet .sheet-HideConfig:checked + span.sheet-is-config::after { /*Show Configuration: Black background with grayish text*/
+		content: "v";
+	}
+
+	.charsheet span.sheet-is-config {
+		text-align: center;
+		display: inline-block;    
+		width: 5%;
+		height: 16px;
+		font-size: 9px;
+		/*font-family: "Pictos";*/
+		/*background: #65763c;*/
+		background: black; /*#93537c;*/
+		color: white; /*white;*/
+		font-weight: bold;
+		border-radius: 4px;
+		margin-left: -5%;
+	}
+
+	.charsheet input.sheet-HideConfig {
+		 width: 5%;
+		height: 16px;
+		cursor: pointer;	
+		margin-left: auto;
+		margin-top: auto;
+		/*position: absolute;
+		right: 20%;*/
+		opacity: 0;
+		z-index: 9999;
+	}
+
+	.charsheet .sheet-HideConfig:checked + span.sheet-is-config {
+		background: black;
+		border-radius: 4px;
+		color: white;
+	}
+
+	.charsheet label.sheet-configitem {
+		margin-left: 10px; 
+		width: 50px; 
+		font-size: .9em; 
+		font-weight: normal
+	}
+
+	/*End Configuration Window*/

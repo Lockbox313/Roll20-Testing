@@ -1,0 +1,1086 @@
+		<input type="radio" name="attr_tab1" class="sheet-tab sheet-tab1" value="1" title="Bio" checked="checked"><span title="Bio"></span>
+		<input type="radio" name="attr_tab1" class="sheet-tab sheet-tab2" value="2" title="Main" /><span title="Main"></span>
+		<div class="sheet-tab-content sheet-tab1"><!--- Tab 1 start -->
+			 <div class="sheet-cdiv">
+				<input class="sheet-HideConfig" type="checkbox" checked="checked" name="attr_is_config"><span class="sheet-is-config"><span style="font-family: &quot;pictos&quot;">y</span></span>
+				<div class="config" style="border-style: dotted ; border-color: gray ; padding: 5px ; background-color: white ; background-image: none">
+
+				</div>
+			</div>	
+			
+
+			<div class="wrapper1">
+				<div  class="wrapper1-col1 wrapper_postioning"><!--- Name/Career/Appearance -->	
+					<img style="z-order:0;width:100%;height:auto;" src="https://raw.githubusercontent.com/Lockbox313/Roll20-Testing/master/Alien/Graphics/details.png">
+					<div>	
+						<input   type="text" class="input_text name" name="attr_character_name">
+					</div>
+					<div>	
+						<input  class="input_text career" name="attr_career">
+					</div>
+					<div>	
+						<textarea  class="appearance" type="text"  name="attr_appearance"></textarea>
+					</div>				
+				</div><!--- End Name/Career/Appearance -->	
+				<div  class="wrapper1-col2 wrapper_postioning"><!--- Realtionship/Agenda -->			
+					<div style="position:relative" class="wrapper1-col2"><!-- Agenda / Relationships-->
+						<img style="z-order:0;width:100%;height:auto;" src="https://github.com/Lockbox313/Roll20-Testing/blob/master/Alien/Graphics/agnda-rltn.png?raw=true">
+						<div>	
+							<textarea  class="agenda" type="text"  name="attr_agenda"></textarea>
+						</div>
+					<div>	
+						<input   type="text" class="input_text buddy" name="attr_buddy">
+					</div>
+					<div>	
+						<input type="text" class="input_text rival" name="attr_rival">
+					</div>					
+						
+					</div>
+				</div><!--Realtionship/Agenda-->
+
+				
+			</div>
+			
+			<div class="wrapper1">
+				<div  class="wrapper1-col1 wrapper_postioning">
+					<div>
+						<img src="https://raw.githubusercontent.com/Lockbox313/Roll20-Testing/master/Alien/Graphics/single.png" >
+					</div>
+					<div class="story_points" ><p class="header2">STORY POINTS</p></div>
+					<input   value="0" type = "text" class ="input_text Attrib_text stress_input storyPts_input" name="attr_story_pts" />
+				</div>
+				<div class="wrapper1-col2 wrapper_postioning">
+					<div>
+						<img src="https://raw.githubusercontent.com/Lockbox313/Roll20-Testing/master/Alien/Graphics/single.png" >
+					</div>
+					<div class="exp_points" ><p class="header2">EXP. POINTS</p></div>
+					<input   value="0" type = "text" class ="input_text Attrib_text stress_input expPts_input" name="attr_exp_pts" />
+					
+				</div>			
+				
+			</div>
+			
+			<div class="talentsOuter">
+				<br>
+				<div class="talentsInner" >
+					<div><p class="header3">TALENTS</p></div>
+					<img class="talentsTop"  src="https://raw.githubusercontent.com/Lockbox313/Roll20-Testing/master/Alien/Graphics/talentsTop.png">	
+					
+					<div style="background-image: url('https://raw.githubusercontent.com/Lockbox313/Roll20-Testing/master/Alien/Graphics/brushed-metal.jpg');background-repeat: repeat;">
+						
+						<div  class="talents_padding">
+							
+							<fieldset class="repeating_talents">
+								<input class="details_text talents_input" style="width:50%" name="attr_talent" type="text" />
+								<textarea class="details_textarea" name="attr_talentsDetails"></textarea>
+							</fieldset>
+							<br>
+						</div>
+					</div>					
+				</div>				
+			</div>		
+			<br>
+			
+
+		</div>
+		<div class="sheet-tab-content sheet-tab2"><!--- Tab 2 start -->
+			<div class="wrapper_postioning" ><!-- Skills & attributes ---->
+				<img style="z-order:0;width:100%;height:auto;" src="https://github.com/Lockbox313/Roll20-Testing/blob/master/Alien/Graphics/attrib_skills2.jpg?raw=true">
+				
+				<button type="roll"   value="&{template:attribute} {{name=@{character_name}}} {{attribute=Ranged Combat}} {{type=[[1]]}}  {{Base Dice=[[(@{rngdCombat}+@{agility}+?{mod|0})d6>6cf<0cs>7]]}} {{Stress Dice=[[@{stress}d6>6cf<1]]}}"  class="Skill_roll button_text ranged_combat">RANGED COMBAT</button>
+				<input type = "text" value="0" class ="input_text Skill_text ranged_combat_input" name="attr_rngdCombat" />
+				
+				<button  type="roll" value="&{template:attribute} {{name=@{character_name}}} {{attribute=Mobility}} {{type=[[1]]}}  {{Base Dice=[[(@{mobility}+@{agility}+?{mod|0})d6>6cf<0cs>7]]}} {{Stress Dice=[[@{stress}d6>6cf<1]]}}"   class="Skill_roll button_text mobility">MOBILITY</button>
+				<input type="text"  value="0"  class ="input_text Skill_text mobility_input" name="attr_mobility" />
+				
+				<button  type="roll" value="&{template:attribute} {{name=@{character_name}}} {{attribute=Piloting}} {{type=[[1]]}}  {{Base Dice=[[(@{piloting}+@{agility}+?{mod|0})d6>6cf<0cs>7]]}} {{Stress Dice=[[@{stress}d6>6cf<1]]}}"  class="Skill_roll button_text piloting">PILOTING</button>
+				<input  type = "text"  value="0"  class ="input_text Skill_text piloting_input" name="attr_piloting" />
+				
+				<button  type="roll" class="Attrib_roll button_text agility" value="&{template:attribute} {{name=@{character_name}}} {{attribute=Agility}} {{type=[[0]]}}  {{Base Dice=[[((@{agility}*2)+?{mod|-2})d6>6cf<0cs>7]]}} {{Stress Dice=[[@{stress}d6>6cf<1]]}}">AGILITY</button>
+				
+				
+				<input  type = "text"  value="0"  class ="input_text Skill_text closeCombat_input" name="attr_closeCombat" />
+				<button type="roll" class="Skill_roll button_text closeCombat" value="&{template:attribute} {{name=@{character_name}}} {{attribute=Close Combat}} {{type=[[1]]}}  {{Base Dice=[[(@{closeCombat}+@{strength}+?{mod|0})d6>6cf<0cs>7]]}} {{Stress Dice=[[@{stress}d6>6cf<1]]}}"  >CLOSE COMBAT</button>
+				
+				<input  type = "text"  value="0" class ="input_text Skill_text hvyMachinery_input" name="attr_hvyMachinery" />
+				<button type="roll" class="Skill_roll button_text hvyMachinery_button" value="&{template:attribute} {{name=@{character_name}}} {{attribute=Heavy Machinery}} {{type=[[1]]}}  {{Base Dice=[[(@{hvyMachinery}+@{strength}+?{mod|0})d6>6cf<0cs>7]]}} {{Stress Dice=[[@{stress}d6>6cf<1]]}}">HEAVY<br>MACHINERY</button>
+				
+				
+				<button type="roll" class="Skill_roll button_text stamina_button" value="&{template:attribute} {{name=@{character_name}}} {{attribute=Stamina}} {{type=[[1]]}}  {{Base Dice=[[(@{stamina}+@{strength}+?{mod|0})d6>6cf<0cs>7]]}} {{Stress Dice=[[@{stress}d6>6cf<1]]}}"    >STAMINA</button>	
+				<input type = "text"  value="0"  class ="input_text Skill_text stamina_input" name="attr_stamina" />
+				
+				<button  type="roll" class="Attrib_roll button_text strength_button" value="&{template:attribute} {{name=@{character_name}}} {{attribute=Strength}}  {{type=[[0]]}} {{Base Dice=[[((@{strength}*2)+?{mod|-2})d6>6cf<0cs>7]]}} {{Stress Dice=[[@{stress}d6>6cf<1]]}}">STRENGTH</button>			
+				
+				<!-- style="position:absolute;top:225px;left:536px;" -->	
+				<button type="roll"  value="&{template:attribute} {{name=@{character_name}}} {{attribute=Observation}} {{type=[[1]]}}  {{Base Dice=[[(@{observation}+@{wits}+?{mod|0})d6>6cf<0cs>7]]}} {{Stress Dice=[[@{stress}d6>6cf<1]]}}"    class="Skill_roll button_text observation_button">OBSERVATION</button>
+				<!-- style="position:absolute;top:198px;left:753px;"  -->
+				<input  value="0"  type = "text" class ="input_text Skill_text observation_input" name="attr_observation" />
+
+				<button  type="roll" class="Skill_roll button_text survival_button" value="&{template:attribute} {{name=@{character_name}}} {{attribute=Survival}} {{type=[[1]]}}  {{Base Dice=[[(@{survival}+@{wits}+?{mod|0})d6>6cf<0cs>7]]}} {{Stress Dice=[[@{stress}d6>6cf<1]]}}"  >SURVIVAL</button>
+				<input    value="0" type = "text" class ="input_text Skill_text survival_input" name="attr_survival" />
+
+				<button type="roll" class="Skill_roll button_text comtech_button" value="&{template:attribute} {{name=@{character_name}}} {{attribute=Comtech}} {{type=[[1]]}}  {{Base Dice=[[(@{comtech}+@{wits}+?{mod|0})d6>6cf<0cs>7]]}} {{Stress Dice=[[@{stress}d6>6cf<1]]}}"   >COMTECH</button>	
+				<input   value="0" type = "text" value="0" class ="input_text Skill_text comtech_input" name="attr_comtech" />
+
+				<button type="roll" class="Attrib_roll button_text wits_button" value="&{template:attribute} {{name=@{character_name}}} {{attribute=Wits}} {{type=[[0]]}}  {{Base Dice=[[((@{wits}*2)+?{mod|-2})d6>6cf<0cs>7]]}} {{Stress Dice=[[@{stress}d6>6cf<1]]}}" >WITS</button>			
+				
+				
+				<button type="roll" class="Skill_roll button_text medical_aid_button" value="&{template:attribute} {{name=@{character_name}}} {{attribute=Medical Aid}} {{type=[[1]]}}  {{Base Dice=[[(@{mdclAid}+@{empathy}+?{mod|0})d6>6cf<0cs>7]]}} {{Stress Dice=[[@{stress}d6>6cf<1]]}}">MEDICAL AID</button>
+				<input   value="0"   type = "text" class ="input_text Skill_text mdclAid_input" name="attr_mdclAid" />
+
+				<button  type="roll" class="Skill_roll button_text manipulation_button" value="&{template:attribute} {{name=@{character_name}}} {{attribute=Manipulation}} {{type=[[1]]}}  {{Base Dice=[[(@{manipulation}+@{empathy}+?{mod|0})d6>6cf<0cs>7]]}} {{Stress Dice=[[@{stress}d6>6cf<1]]}}"  >MANIPULATION</button>
+				<input   value="0"  type = "text" class ="input_text Skill_text manipulation_input" name="attr_manipulation" />
+				
+				<button type="roll" class="Skill_roll button_text command_button" value="&{template:attribute} {{name=@{character_name}}} {{attribute=Command}} {{type=[[1]]}}  {{Base Dice=[[(@{command}+@{empathy}+?{mod|0})d6>6cf<0cs>7]]}} {{Stress Dice=[[@{stress}d6>6cf<1]]}}">COMMAND</button>
+				<input   value="0"  type = "text" class ="input_text Skill_text command_input" name="attr_command" />
+				
+				<button  type="roll" class="Attrib_roll button_text empathy_button" value="&{template:attribute} {{name=@{character_name}}} {{attribute=Empathy}} {{type=[[0]]}}  {{Base Dice=[[((@{empathy}*2)+?{mod|-2})d6>6cf<0cs>7]]}} {{Stress Dice=[[@{stress}d6>6cf<1]]}}">EMPATHY</button>
+				
+
+				<div  class="attribute_header" ><p class="header">ATTRIBUTES</p></div>
+				<input   value="0" type = "text" class ="input_text Attrib_text strength_input" name="attr_strength" />
+				<input   value="0" type = "text" class ="input_text Attrib_text empathy_input" name="attr_empathy" />
+				<input   value="0" type = "text" class ="input_text Attrib_text agility_input" name="attr_agility" />
+				<input   value="0" type = "text" class ="input_text Attrib_text wits_input" name="attr_wits" />
+				
+			</div>
+			
+			<div>
+			
+				<div  class="weapons_wrapper">
+					<div class="weapons_label" ><p class="header3">WEAPONS</p></div>
+					
+					<div style=" width: 87%;margin: 0 auto;">
+						<img style="width:100%;height:auto;" src="https://github.com/Lockbox313/Roll20-Testing/blob/master/Alien/Graphics/weaponsTop1.png?raw=true">	
+						
+						<div style="background-image: url('https://raw.githubusercontent.com/Lockbox313/Roll20-Testing/master/Alien/Graphics/brushed-metal.jpg');background-repeat: repeat;">
+							
+							<div class="gearWrapper">
+								<span class="weaponHeader">Weapon</span>
+								<span class="typeHeader">Type</span>
+								<span class="bonusHeader">Bonus</span>
+								<span class="modHeader">Mod.</span>
+								<span class="damageHeader">Dam.</span>
+								<span class="rangeHeader">Range</span>
+								<span class="notesHeader">Notes</span>							
+								<fieldset class="repeating_weapons">
+											
+										<input  class="weaponName input_text inputApperance"  name="attr_weaponName" type="text" />
+										<select class="weaponType inputApperance" name="attr_skillUse">
+											<option value="@{closeCombat}+@{strength}">Close</option>
+											<option value="@{rngdCombat}+@{agility}">Ranged</option>										
+										</select>
+										<input  class="weaponBonus input_text inputApperance" value="0" name="attr_weaponBonus" type="text" />
+										<input  class="weaponMod input_text inputApperance" value="0" name="attr_weaponMod" type="text" /> 				
+										<input  class="weaponDamage input_text inputApperance"  value="0"  name="attr_weaponDamage" type="text" />
+										<select class="typeHeader weaponRange inputApperance" name="attr_weaponRange">
+											<option>Engaged</option>
+											<option>Short</option>
+											<option>Medium</option>
+											<option>Long</option>
+											<option>Extreme</option>										
+										</select>
+										<input  class="weaponNotes input_text inputApperance"  name="attr_weaponNotes" type="text" />
+										<button type="roll" class="attack_roll" value="&{template:attack} {{name=@{character_name}}} {{Weapon=@{weaponName}}}{{Base Dice=[[(@{skillUse}+@{weaponBonus}+@{weaponMod})d6>6cf<0cs>7]]}} {{Stress Dice=[[@{stress}d6>6cf<1]]}} {{Damage=@{weaponDamage}}} {{Notes=@{weaponNotes}}}" ><img class="sheet-attack_image" src="https://raw.githubusercontent.com/Lockbox313/Roll20-Testing/master/Alien/Graphics/crosshair1.png"></button>									
+										
+								</fieldset>
+
+								<br>
+							</div>
+						</div>
+					</div>	
+				</div>			
+			</div>
+			<br>
+			
+			<div class="wrapper1">
+				<div  class="wrapper1-col1 wrapper_postioning"><!--- col 1 -->	
+				
+					<img style="z-order:0;width:100%;height:auto;" src="https://github.com/Lockbox313/Roll20-Testing/blob/master/Alien/Graphics/col1b.png?raw=true">	
+
+
+					<button type="roll" class="Skill_roll button_text stress_button" value="&{template:panic}{{Name=@{character_name}}} {{name=@{character_name}}} {{panic=[[(1d6)+@{stress}]]}}" title="panic check">STRESS</button>
+					<input   value="0" type = "text" class ="input_text Attrib_text stress_input" name="attr_stress" />
+
+					<button type="roll" class="Skill_roll button_text armor_button" value="&{template:armor} {{name=@{character_name}}} {{armor=[[(@{armor})d6>6]]}} " title="panic check">ARMOR</button>
+					<input   value="0" type = "text" class ="input_text Attrib_text armor_input" name="attr_armor" />				
+					
+					
+					<div class="health" ><p class="header2">HEALTH</p></div>
+					<input   value="0" type = "text" class ="input_text Attrib_text stress_input health_input" name="attr_health" title="Current Health" />
+					<input   value="0" type = "text" class ="input_text Attrib_text stress_input health_max" name="attr_health_max"  title="Max. Health"/>				
+					
+					<button type="roll" class="Skill_roll button_text radiation"  value="&{template:radiation}  {{name=@{character_name}}}{{radiation=[[(@{radiation}+@{permRadiation})d6>6]]}}  " >RADIATION</button>
+					<input   value="0" type = "text" class ="input_text Attrib_text stress_input radiation_input" name="attr_radiation" title="Tempory Radiation"/>
+					<input   value="0" type = "text" class ="input_text Attrib_text stress_input radiation_permInput" name="attr_permRadiation" title="Permanent Radiation" />
+					
+					
+
+					<div  class="starving" ><p class="header2">STARVING</p></div>
+					<div   class="sheet-check-label starving_input"><label><input type = "checkbox" class ="input_text Attrib_text " name="attr_starving" title="Starving"/><span></span> </label></div>				
+					
+					<div  class="dehydrated" ><p class="header2">DEHYDRATED</p></div>
+					<div class="sheet-check-label dehydrated_input"><label><input type = "checkbox" class ="input_text Attrib_text " name="attr_dehydrated" title="dehydrated"/><span></span> </label></div>	
+					
+					<div class="exhausted" ><p class="header2">EXHAUSTED</p></div>
+					<div class="sheet-check-label exhausted_input"><label><input type = "checkbox" class ="input_text Attrib_text " name="attr_exhausted" title="Exhausted"/><span></span> </label></div>					
+					
+					<div  class="freezing"><p class="header2">FREEZING</p></div>
+					<div class="sheet-check-label freezing_input"><label><input type = "checkbox" class ="input_text Attrib_text " name="attr_freezing" title="Freezing"/><span></span> </label></div>					
+					
+					<div  class="air"><p class="header2">AIR</p></div>
+					<input type = "text"   value="0" class ="input_text Attrib_text air_input" name="attr_air" title="Air"/>
+					
+					<div style="position:absolute;top:624px;left:205px" ><p class="header2">FOOD</p></div>
+					<input type = "text"   value="0" class ="input_text Attrib_text  food_input" name="attr_food" title="Food"/>
+					
+					<div class="power"><p class="header2">POWER</p></div>
+					<input type = "text"   value="0" class ="input_text Attrib_text power_input" name="attr_power" title="Power"/>				
+					
+					<div class="water" ><p class="header2">WATER</p></div>					
+					<input type = "text"   value="0" class ="input_text Attrib_text water_input" name="attr_water" title="Water"/>				
+					
+					
+				</div><!--- End col 1 -->	
+				<div  class="wrapper1-col2 "><!--- col 2 -->			
+					<div style="position:relative;width:219px;float:right;">
+						<div style="position:absolute; top:-4px;left:11px;"><p class="header3">TINY ITEMS</p></div>
+						
+						<div style="margin-bottom:-5px;">
+							<img style="width:100%;height:auto;" src="https://github.com/Lockbox313/Roll20-Testing/blob/master/Alien/Graphics/tinyitemsTop.png?raw=true">	
+						</div>
+						
+						<div style="background-image: url('https://raw.githubusercontent.com/Lockbox313/Roll20-Testing/master/Alien/Graphics/tinyBkgrd.jpg');background-repeat: repeat;">
+							<fieldset class="repeating_tinyItems">
+									<input style="background:transparent;font-family:candal" name="attr_test" type="text" />
+							</fieldset>
+						</div>
+					</div>
+					
+					<div style="clear:both;">
+						<br>
+						<div style="position:relative" >
+							<div style="position:absolute; top:-4px;left:11px;"><p class="header3">SIGNATURE ITEMS</p></div>
+							<img style="width:100%;height:auto;" src="https://github.com/Lockbox313/Roll20-Testing/blob/master/Alien/Graphics/sgntrItem.png?raw=true">
+							<!--    position: absolute;top: 24px;left: 13px;-->
+
+							<textarea  class="signaureItems" type="text" value="qsqwdqwe" name="attr_signaureItems"></textarea>				
+						</div>				
+					</div>
+					
+					<div style="clear:both;">
+						<br>
+						<div style="position:relative" >
+							<div style="position:absolute; top:5px;left:20px;"><p class="header3">GEAR</p></div>
+							<img style="width:100%;height:auto;" src="https://github.com/Lockbox313/Roll20-Testing/blob/master/Alien/Graphics/tinyitemsTop.png?raw=true">	
+							
+							<div style="background-image: url('https://raw.githubusercontent.com/Lockbox313/Roll20-Testing/master/Alien/Graphics/tinyBkgrd.jpg');background-repeat: repeat;">
+								
+								<div class="gearWrapper">
+									<span class="carriedHeader">Carried?</span><span class="itemHeader">Item</span><span class="encHeader">Enc.</span>
+									<fieldset class="repeating_gear">
+											<div class="carried"><input  type = "checkbox" name="attr_carried" value="1" title="Carried?"/></div>	
+											<input  class="itemName input_text inputApperance" name="attr_itemName" type="text" />
+											<input  class="itemEnc input_text inputApperance" name="attr_itemEnc" type="text" />
+									</fieldset>
+									<div class="enc_wrapper"><span>Current Enc.</span><input type="text" value="0" name="attr_enc_cur" class="enc_value enc_max" /><span>Max. Enc.</span><input type="text" value="0" name="attr_enc_max" class="enc_value" /></div>
+									<br>
+								</div>
+							</div>					
+						</div>				
+					</div>				
+					
+				</div><!--end col 2-->
+			</div>		
+		</div>
+		<script type="text/worker">
+				//Calculate max encumberance
+					   
+			on("change:strength", function () {
+				getAttrs(["strength"], function (values) {
+					console.log("hello there");
+						let enc_max = parseInt(values.strength)*2;											
+						setAttrs({enc_max:enc_max});
+						
+				}); //end getAttrs
+			}); //end		
+			
+			/* ---- BEGIN: TheAaronSheet.js ---- */
+			// Github:   https://github.com/shdwjk/TheAaronSheet/blob/master/TheAaronSheet.js
+			// By:       The Aaron, Arcane Scriptomancer
+			// Contact:  https://app.roll20.net/users/104025/the-aaron
+
+			var TAS = TAS || (function(){
+				'use strict';
+
+				var version = '0.2.4',
+					lastUpdate = 1457098091,
+
+					loggingSettings = {
+						debug: {
+							key:     'debug',
+							title:   'DEBUG',
+							color: {
+								bgLabel: '#7732A2',
+								label:   '#F2EF40',
+								bgText:  '#FFFEB7',
+								text:    '#7732A2'
+							}
+						},
+						error: {
+							key:     'error',
+							title:   'Error',
+							color: {
+								bgLabel: '#C11713',
+								label:   'white',
+								bgText:  '#C11713',
+								text:    'white'
+							}
+						},
+						warn: {
+							key:     'warn',
+							title:   'Warning',
+							color: {
+								bgLabel: '#F29140',
+								label:   'white',
+								bgText:  '#FFD8B7',
+								text:    'black'
+							}
+						},
+						info: {
+							key:     'info',
+							title:   'Info',
+							color: {
+								bgLabel: '#413FA9',
+								label:   'white',
+								bgText:  '#B3B2EB',
+								text:    'black'
+							}
+						},
+						notice: {
+							key:     'notice',
+							title:   'Notice',
+							color: {
+								bgLabel: '#33C133',
+								label:   'white',
+								bgText:  '#ADF1AD',
+								text:    'black'
+							}
+						},
+						log: {
+							key:     'log',
+							title:   'Log',
+							color: {
+								bgLabel: '#f2f240',
+								label:   'black',
+								bgText:  '#ffff90',
+								text:    'black'
+							}
+						},
+						callstack: {
+							key:     'TAS',
+							title:   'function',
+							color: {
+								bgLabel: '#413FA9',
+								label:   'white',
+								bgText:  '#B3B2EB',
+								text:    'black'
+							}
+						},
+						callstack_async: {
+							key:     'TAS',
+							title:   'ASYNC CALL',
+							color: {
+								bgLabel: '#413FA9',
+								label:   'white',
+								bgText:  '#413FA9',
+								text:    'white'
+							}
+						},
+						TAS: {
+							key:     'TAS',
+							title:   'TAS',
+							color: {
+								bgLabel: 'grey',
+								label:   'black;background:linear-gradient(#304352,#d7d2cc,#d7d2cc,#d7d2cc,#304352)',
+								bgText:  'grey',
+								text:    'black;background:linear-gradient(#304352,#d7d2cc,#d7d2cc,#d7d2cc,#304352)'
+							}
+						}
+					},
+
+
+					config = {
+						debugMode: false,
+						logging: {
+							log: true,
+							notice: true,
+							info: true,
+							warn: true,
+							error: true,
+							debug: false
+						}
+					},
+
+					callstackRegistry = [],
+					queuedUpdates = {}, //< Used for delaying saves till the last momment.
+
+				complexType = function(o){
+					switch(typeof o){
+						case 'string':
+							return 'string';
+						case 'boolean':
+							return 'boolean';
+						case 'number':
+							return (_.isNaN(o) ? 'NaN' : (o.toString().match(/\./) ? 'decimal' : 'integer'));
+						case 'function':
+							return 'function: '+(o.name ? o.name+'()' : '(anonymous)');
+						case 'object':
+							return (_.isArray(o) ? 'array' : (_.isArguments(o) ? 'arguments' : ( _.isNull(o) ? 'null' : 'object')));
+						default:
+							return typeof o;
+					}
+				},
+
+				dataLogger = function(primaryLogger,secondaryLogger,data){
+					_.each(data,function(m){
+						var type = complexType(m);
+						switch(type){
+							case 'string':
+								primaryLogger(m);
+								break;
+							case 'undefined':
+							case 'null':
+							case 'NaN':
+								primaryLogger('['+type+']');
+								break;
+							case 'number':
+							case 'not a number':
+							case 'integer':
+							case 'decimal':
+							case 'boolean':
+								primaryLogger('['+type+']: '+m);
+								break;
+							default:
+								primaryLogger('['+type+']:=========================================');
+								secondaryLogger(m);
+								primaryLogger('=========================================================');
+								break;
+						}
+					});
+				},
+
+
+				colorLog = function(options){
+					var coloredLoggerFunction,
+						key = options.key,
+						label = options.title || 'TAS',
+						lBGColor = (options.color && options.color.bgLabel) || 'blue',
+						lTxtColor = (options.color && options.color.label) || 'white',
+						mBGColor = (options.color && options.color.bgText) || 'blue',
+						mTxtColor = (options.color && options.color.text) || 'white';
+
+					coloredLoggerFunction = function(message){
+						console.log(
+							'%c '+label+': %c '+message + ' ',
+							'background-color: '+lBGColor+';color: '+lTxtColor+'; font-weight:bold;',
+							'background-color: '+mBGColor+';color: '+mTxtColor+';'
+						); 
+					};
+					return function(){
+						if('TAS'===key || config.logging[key]){
+						   dataLogger(coloredLoggerFunction,function(m){console.log(m);},_.toArray(arguments)); 
+						}
+					};
+				},
+
+				logDebug  = colorLog(loggingSettings.debug),
+				logError  = colorLog(loggingSettings.error),
+				logWarn   = colorLog(loggingSettings.warn),
+				logInfo   = colorLog(loggingSettings.info),
+				logNotice = colorLog(loggingSettings.notice),
+				logLog    = colorLog(loggingSettings.log),
+				log       = colorLog(loggingSettings.TAS),
+				logCS     = colorLog(loggingSettings.callstack),
+				logCSA    = colorLog(loggingSettings.callstack_async),
+
+				registerCallstack = function(callstack,label){
+					var idx=_.findIndex(callstackRegistry,function(o){
+						return (_.difference(o.stack,callstack).length === _.difference(callstack,o.stack).length) &&
+							_.difference(o.stack,callstack).length === 0 &&
+							o.label === label;
+					});
+					if(-1 === idx){
+						idx=callstackRegistry.length;
+						callstackRegistry.push({
+							stack: callstack,
+							label: label
+						});
+					}
+					return idx;
+				},
+
+				setConfigOption = function(options){
+					var newconf =_.defaults(options,config);
+					newconf.logging=_.defaults(
+						(options && options.logging)||{},
+						config.logging
+					);
+					config=newconf;
+				},
+				
+				debugMode = function(){
+					config.logging.debug=true;
+					config.debugMode = true;
+				},
+
+				getCallstack = function(){
+					var e = new Error('dummy'),
+						stack = _.map(_.rest(e.stack.replace(/^[^\(]+?[\n$]/gm, '')
+						.replace(/^\s+at\s+/gm, '')
+						.replace(/^Object.<anonymous>\s*\(/gm, '{anonymous}()@')
+						.split('\n')),function(l){
+							return l.replace(/\s+.*$/,'');
+						});
+					return stack;
+				},
+				logCallstackSub = function(cs){
+					var matches, csa;
+					_.find(cs,function(line){
+						matches = line.match(/TAS_CALLSTACK_(\d+)/);
+						if(matches){
+						   csa=callstackRegistry[matches[1]];
+						   logCSA( '===================='+(csa.label ? '> '+csa.label+' <' : '')+'====================');
+						   logCallstackSub(csa.stack);
+						   return true;
+						} 
+						logCS(line);
+						return false;
+					});
+				},
+				logCallstack = function(){
+					var cs;
+					if(config.debugMode){
+						cs = getCallstack();
+						cs.shift();
+						log('==============================> CALLSTACK <==============================');
+						logCallstackSub(cs);
+						log('=========================================================================');
+					}
+				},
+
+
+				wrapCallback = function (label, callback, context){
+					var callstack;
+					if('function' === typeof label){
+						context=callback;
+						callback=label;
+						label=undefined;
+					}
+					if(!config.debugMode){
+						return (function(cb,ctx){
+							return function(){
+								cb.apply(ctx||{},arguments);
+							};
+						}(callback,context));
+					}
+					
+					callstack = getCallstack();
+					callstack.shift();
+					
+					return (function(cb,ctx,cs,lbl){
+						var ctxref=registerCallstack(cs,lbl);
+
+						/*jshint -W054 */
+						return new Function('cb','ctx','TASlog',
+							"return function TAS_CALLSTACK_"+ctxref+"(){"+
+								"TASlog('Entering: '+(cb.name||'(anonymous function)'));"+
+								"cb.apply(ctx||{},arguments);"+
+								"TASlog('Exiting: '+(cb.name||'(anonymous function)'));"+
+							"};")(cb,ctx,log);
+						/*jshint +W054 */
+					}(callback,context,callstack,label));
+				},
+
+
+				prepareUpdate = function( attribute, value ){
+					queuedUpdates[attribute]=value;
+				},
+
+				applyQueuedUpdates = function() {
+				  setAttrs(queuedUpdates);
+				  queuedUpdates = {};
+				},
+
+				namesFromArgs = function(args,base){
+					return _.chain(args)
+						.reduce(function(memo,attr){
+							if('string' === typeof attr) {
+								memo.push(attr);
+							} else if(_.isArray(args) || _.isArguments(args)){
+								memo = namesFromArgs(attr,memo);
+							}
+							return memo;
+						},(_.isArray(base) && base) || [])
+						.uniq()
+						.value();
+				},
+
+				addId = function(obj,value){
+					Object.defineProperty(obj,'id',{
+						value: value,
+						writeable: false,
+						enumerable: false
+					});
+				},
+
+				addProp = function(obj,prop,value,fullname){
+					(function(){
+						var pname=(_.contains(['S','F','I','D'],prop) ? '_'+prop : prop),
+							full_pname = fullname || prop,
+							pvalue=value;
+
+						_.each(['S','I','F'],function(p){
+							if( !_.has(obj,p)){
+								Object.defineProperty(obj, p, {
+									value: {},
+									enumerable: false,
+									readonly: true
+								});
+							}
+						});
+						if( !_.has(obj,'D')){
+							Object.defineProperty(obj, 'D', {
+								value: _.reduce(_.range(10),function(m,d){
+										Object.defineProperty(m, d, {
+											value: {},
+											enumerable: true,
+											readonly: true
+										});
+										return m;
+									},{}),
+								enumerable: false,
+								readonly: true
+							});
+						}
+
+
+						// Raw value
+						Object.defineProperty(obj, pname, {
+							enumerable: true,
+							set: function(v){
+								if(v!==pvalue) {
+									pvalue=v;
+									prepareUpdate(full_pname,v);
+								}
+							},
+							get: function(){
+								return pvalue;
+							}
+						});
+						
+						// string value
+						Object.defineProperty(obj.S, pname, {
+							enumerable: true,
+							set: function(v){
+								var val=v.toString();
+								if(val !== pvalue) {
+									pvalue=val;
+									prepareUpdate(full_pname,val);
+								}
+							},
+							get: function(){
+								return pvalue.toString();
+							}
+						});
+
+						// int value
+						Object.defineProperty(obj.I, pname, {
+							enumerable: true,
+							set: function(v){
+								var val=parseInt(v,10) || 0;
+								if(val !== pvalue){
+									pvalue=val;
+									prepareUpdate(full_pname,val);
+								}
+							},
+							get: function(){
+								return parseInt(pvalue,10) || 0;
+							}
+						});
+
+						// float value
+						Object.defineProperty(obj.F, pname, {
+							enumerable: true,
+							set: function(v){
+								var val=parseFloat(v) || 0;
+								if(val !== pvalue) {
+									pvalue=val;
+									prepareUpdate(full_pname,val);
+								}
+							},
+							get: function(){
+								return parseFloat(pvalue) || 0;
+							}
+						});
+						_.each(_.range(10),function(d){
+							Object.defineProperty(obj.D[d], pname, {
+								enumerable: true,
+								set: function(v){
+									var val=(parseFloat(v) || 0).toFixed(d);
+									if(val !== pvalue){
+										pvalue=val;
+										prepareUpdate(full_pname,val);
+									}
+								},
+								get: function(){
+									return (parseFloat(pvalue) || 0).toFixed(d);
+								}
+							});
+						});
+
+					}());
+				},
+				
+				repeating = function( section ) {
+					return (function(s){
+						var sectionName = s,
+							attrNames = [],
+							fieldNames = [],
+							operations = [],
+							after = [],
+						
+						repAttrs = function TAS_Repeating_Attrs(){
+							attrNames = namesFromArgs(arguments,attrNames);
+							return this;
+						},
+						repFields = function TAS_Repeating_Fields(){
+							fieldNames = namesFromArgs(arguments,fieldNames);
+							return this;
+						},
+						repReduce = function TAS_Repeating_Reduce(func, initial, final, context) { 
+							operations.push({
+								type: 'reduce',
+								func: (func && _.isFunction(func) && func) || _.noop,
+								memo: (_.isUndefined(initial) && 0) || initial,
+								final: (final && _.isFunction(final) && final) || _.noop,
+								context: context || {}
+							});
+							return this;
+						},
+						repMap = function TAS_Repeating_Map(func, final, context) {
+							operations.push({
+								type: 'map',
+								func: (func && _.isFunction(func) && func) || _.noop,
+								final: (final && _.isFunction(final) && final) || _.noop,
+								context: context || {}
+							});
+							return this;
+						},
+						repEach = function TAS_Repeating_Each(func, final, context) {
+							operations.push({
+								type: 'each',
+								func: (func && _.isFunction(func) && func) || _.noop,
+								final: (final && _.isFunction(final) && final) || _.noop,
+								context: context || {}
+							});
+							return this;
+						},
+						repTap = function TAS_Repeating_Tap(final, context) {
+							operations.push({
+								type: 'tap',
+								final: (final && _.isFunction(final) && final) || _.noop,
+								context: context || {}
+							});
+							return this;
+						},
+						repAfter = function TAS_Repeating_After(callback,context) {
+							after.push({
+								callback: (callback && _.isFunction(callback) && callback) || _.noop,
+								context: context || {}
+							});
+							return this;
+						},
+						repExecute = function TAS_Repeating_Execute(callback,context){
+							var rowSet = {},
+								attrSet = {},
+								fieldIds = [],
+								fullFieldNames = [];
+
+							repAfter(callback,context);
+
+							// call each operation per row.
+							// call each operation's final
+							getSectionIDs("repeating_"+sectionName,function(ids){
+								fieldIds = ids;
+								fullFieldNames = _.reduce(fieldIds,function(memo,id){
+									return memo.concat(_.map(fieldNames,function(name){
+										return 'repeating_'+sectionName+'_'+id+'_'+name;  
+									}));
+								},[]);
+								getAttrs( _.uniq(attrNames.concat(fullFieldNames)), function(values){
+									_.each(attrNames,function(aname){
+										if(values.hasOwnProperty(aname)){
+											addProp(attrSet,aname,values[aname]);
+										}
+									});
+
+									rowSet = _.reduce(fieldIds,function(memo,id){
+										var r={};
+										addId(r,id);
+										_.each(fieldNames,function(name){
+											var fn = 'repeating_'+sectionName+'_'+id+'_'+name;  
+											addProp(r,name,values[fn],fn);
+										});
+
+										memo[id]=r;
+
+										return memo;
+									},{});
+
+									_.each(operations,function(op){
+										var res;
+										switch(op.type){
+											case 'tap':
+												_.bind(op.final,op.context,rowSet,attrSet)();
+												break;
+
+											case 'each':
+												_.each(rowSet,function(r){
+													_.bind(op.func,op.context,r,attrSet,r.id,rowSet)();
+												});
+												_.bind(op.final,op.context,rowSet,attrSet)();
+												break;
+
+											case 'map':
+												res = _.map(rowSet,function(r){
+													return _.bind(op.func,op.context,r,attrSet,r.id,rowSet)();
+												});
+												_.bind(op.final,op.context,res,rowSet,attrSet)();
+												break;
+
+											case 'reduce':
+												res = op.memo;
+												_.each(rowSet,function(r){
+													res = _.bind(op.func,op.context,res,r,attrSet,r.id,rowSet)();
+												});
+												_.bind(op.final,op.context,res,rowSet,attrSet)();
+												break;
+										}
+									});
+
+									// finalize attrs
+									applyQueuedUpdates();
+									_.each(after,function(op){
+										_.bind(op.callback,op.context)();
+									});
+								});
+							});
+						};
+							
+						return {
+							attrs: repAttrs,
+							attr: repAttrs,
+
+							column: repFields,
+							columns: repFields,
+							field: repFields,
+							fields: repFields,
+
+							reduce: repReduce,
+							inject: repReduce,
+							foldl: repReduce,
+
+							map: repMap,
+							collect: repMap,
+
+							each: repEach,
+							forEach: repEach,
+
+							tap: repTap,
+							'do': repTap,
+
+							after: repAfter,
+							last: repAfter,
+							done: repAfter,
+
+							execute: repExecute,
+							go: repExecute,
+							run: repExecute
+						};
+					}(section));
+				},
+
+
+				repeatingSimpleSum = function(section, field, destination){
+					repeating(section)
+						.attr(destination)
+						.field(field)
+						.reduce(function(m,r){
+							return m + (r.F[field]);
+						},0,function(t,r,a){
+							a.S[destination]=t;
+						})
+						.execute();
+				};
+
+
+
+				return {
+					/* Repeating Sections */
+					repeatingSimpleSum: repeatingSimpleSum,
+					repeating: repeating,
+
+					/* Configuration */
+					config: setConfigOption,
+
+					/* Debugging */
+					callback: wrapCallback,
+					callstack: logCallstack,
+					debugMode: debugMode,
+					_fn: wrapCallback,
+
+					/* Logging */
+					debug: logDebug,
+					error: logError,
+					warn: logWarn,
+					info: logInfo,
+					notice: logNotice,
+					log: logLog
+				};
+			}());
+
+
+
+			/* ---- END: TheAaronSheet.js ---- */	
+				on('change:repeating_gear remove:repeating_gear',function(){
+					TAS.repeating("gear")
+						.attr("enc_cur")
+						.field("itemEnc","carried")
+						.reduce(function(m,r){
+								
+								console.log("carried "+(r.F["carried"]));
+								if ( (r.F["carried"]) == 1){
+									console.log("item enc "+(r.F["itemEnc"]));
+									return m + (r.F["itemEnc"]);
+								} else{
+									return m;
+								}
+									
+						
+						},0,function(t,r,a){
+							a.S["enc_cur"]=t;
+						})
+						.execute();
+				});				
+		
+		</script>
+		
+		
+	<!---
+	{{Weapon}}
+	{{Base Dice}} 
+	{{Stress}}
+	{{Damage}}
+	{{Notes}}
+	-->	
+	<rolltemplate class="sheet-rolltemplate-attack">
+	<div class="template_wrapper">
+
+		<div>
+			<span class="template_name"  >{{name}}</span>
+		</div>
+		<div>
+			<span class="template_label">Weapon:</span><span class="template_result" >{{Weapon}}</span>
+		</div>		
+		<div>
+			<span class="template_label">Base Dice:</span><span class="template_result" >{{Base Dice}} </span>
+		</div>	
+		<div>
+			<span class="template_label">Stress Dice:</span><span class="template_result" >{{Stress Dice}} </span>
+		</div>		
+		
+		<div>
+			<span class="template_label" >Damage:</span><span class="template_result"><b>{{Damage}}</b></span>
+		</div>	
+		<div style="text-align:center">
+			<span style="display:inline-block">{{Notes}}</span>
+		</div>	
+	</div>
+	</rolltemplate>		
+
+
+	<rolltemplate class="sheet-rolltemplate-attribute">
+	<div class="template_wrapper">
+
+		<div>
+			<span class="template_name"  >{{name}}</span>
+		</div>
+
+		{{#^rollTotal() type 1}}
+		<div>
+			<span class="template_label">Attribute:</span><span class="template_result" >{{attribute}}</span>
+		</div>
+		{{/^rollTotal() type 1}}
+		
+		{{#rollTotal() type 1}}
+		<div>
+			<span class="template_label">Skill:</span><span class="template_result" >{{attribute}}</span>
+		</div>
+		{{/rollTotal() type 1}}
+		
+		
+		<div>
+			<span class="template_label">Base Dice:</span><span class="template_result" >{{Base Dice}} </span>
+		</div>	
+		<div>
+			<span class="template_label">Stress Dice:</span><span class="template_result" >{{Stress Dice}} </span>
+		</div>		
+		
+	</div>
+	</rolltemplate>	
+
+
+	<rolltemplate class="sheet-rolltemplate-radiation">
+	<div class="template_wrapper">
+
+		<div>
+			<span class="template_name"  >{{name}}</span>
+		</div>
+
+		<div>
+			<span class="template_label">Radiation:</span><span class="template_result" >{{radiation}} </span>
+		</div>	
+	</div>
+	</rolltemplate>	
+
+	<rolltemplate class="sheet-rolltemplate-panic">
+	<div class="template_wrapper">
+
+		<div>
+			<span class="template_name"  >{{name}}</span>
+		</div>
+
+		<div>
+			<span class="template_label">Panic:</span><span class="template_result" >{{panic}} </span>
+		</div>
+
+	</div>
+	</rolltemplate>	
+	
+	
+	<rolltemplate class="sheet-rolltemplate-armor">
+	<div class="template_wrapper">
+
+		<div>
+			<span class="template_name"  >{{name}}</span>
+		</div>
+
+		<div>
+			<span class="template_label">Armor:</span><span class="template_result" >{{armor}} </span>
+		</div>
+
+	</div>
+	</rolltemplate>	
+
+
