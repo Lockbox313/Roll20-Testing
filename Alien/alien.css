@@ -13,6 +13,12 @@
 	}
 
 
+	.charsheet {
+		min-width: 832px;
+		max-width: 832px;	
+	}
+	
+	
 	.sheet-sectionBkgrd{
 		background-color:#bfc7d2;
 	}
