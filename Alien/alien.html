@@ -228,16 +228,23 @@
 					<div  class="freezing"><p class="header2">FREEZING</p></div>
 					<div class="sheet-check-label freezing_input"><label><input type = "checkbox" class ="input_text Attrib_text " name="attr_freezing" title="Freezing"/><span></span> </label></div>					
 					
-					<div  class="air"><p class="header2">AIR</p></div>
+					
+					<button type="roll" class="Skill_roll button_text air" value="&{template:consumables} {{name=@{character_name}}} {{value=[[(@{air})d6<1]]}} {{consumable=Air}} ">Air</button>
+					<!--<div  class="air"><p class="header2">AIR</p></div>-->
 					<input type = "text"   value="0" class ="input_text Attrib_text air_input" name="attr_air" title="Air"/>
 					
-					<div style="position:absolute;top:624px;left:205px" ><p class="header2">FOOD</p></div>
+					
+					<button type="roll" class="Skill_roll button_text food" value="&{template:consumables} {{name=@{character_name}}} {{value=[[(@{food})d6<1]]}} {{consumable=Food}} ">Food</button>
+					<!--<div style="position:absolute;top:624px;left:205px" ><p class="header2">FOOD</p></div>-->
 					<input type = "text"   value="0" class ="input_text Attrib_text  food_input" name="attr_food" title="Food"/>
 					
-					<div class="power"><p class="header2">POWER</p></div>
-					<input type = "text"   value="0" class ="input_text Attrib_text power_input" name="attr_power" title="Power"/>				
 					
-					<div class="water" ><p class="header2">WATER</p></div>					
+					<button type="roll" class="Skill_roll button_text power" value="&{template:consumables} {{name=@{character_name}}} {{value=[[(@{power})d6<1]]}} {{consumable=Power}} ">Power</button>					
+					<!--<div class="power"><p class="header2">POWER</p></div>-->
+					<input type = "text"   value="0" class ="input_text Attrib_text power_input" name="attr_power" title="Power"/>				
+
+					<button type="roll" class="Skill_roll button_text water" value="&{template:consumables} {{name=@{character_name}}} {{value=[[(@{water})d6<1]]}} {{consumable=Water}} ">Water</button>					
+					<!--<div class="water" ><p class="header2">WATER</p></div>-->
 					<input type = "text"   value="0" class ="input_text Attrib_text water_input" name="attr_water" title="Water"/>				
 					
 					
@@ -1082,5 +1089,25 @@
 
 	</div>
 	</rolltemplate>	
+	
+	
+	<rolltemplate class="sheet-rolltemplate-consumables">
+	<div class="template_wrapper">
+
+		<div>
+			<span class="template_name"  >{{name}}</span>
+		</div>
+		<div class="template_label2">Consumable Check</div>
+		<br>
+		<div>
+			<span class="template_label">{{consumable}}:</span><span class="template_result" >{{value}} </span>
+		</div>
+
+	</div>
+	</rolltemplate>	
+	
+	
+	
+	
 
 

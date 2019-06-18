@@ -566,10 +566,10 @@
 	
 	.sheet-itemName{
 
-		width:294px;
+		width:277px;
 	}
 	.sheet-itemEnc{
-		width:35px;
+		width:45px;
 	}	
 	
 	.sheet-carried {
@@ -587,7 +587,7 @@
 	
 	.sheet-itemHeader{
 		display:inline-block;
-		width:293px;
+		width:280px;
 		font-size:x-small;
 		font-weight:bold;
 		text-align:center;
@@ -595,7 +595,7 @@
 	
 	.sheet-encHeader{
 		display:inline-block;
-		width:35px;
+		width:45px;
 		font-size:x-small;
 		font-weight:bold;	
 		text-align:center;
@@ -606,13 +606,13 @@
 		background:transparent;
 		font-family:candal;
 		border-bottom:1px solid #044b44;
-		width:35px;
+		width:45px;
 		text-align: center;
 	}	
 	
 	
 	.sheet-enc_max{
-		margin-right: 37px;	
+		margin-right: 45px;	
 	}
 	.sheet-enc_wrapper{
 		margin-top:10px;
@@ -948,7 +948,7 @@
 	
 	
 	
-		.sheet-rolltemplate-armor .inlinerollresult{
+	.sheet-rolltemplate-armor .inlinerollresult{
 		background-color: transparent;
 		border:none;
 	}
@@ -1016,6 +1016,70 @@
 	
 	
 	
+	.sheet-rolltemplate-consumables .sheet-template_label{
+		 margin-bottom:5px;
+		 text-align:right;
+		 width:40%;
+		 display:inline-block
+	}
+
+	.sheet-rolltemplate-consumables .sheet-template_label2{
+		text-align:center;
+		
+	}	
+	
+	
+	.sheet-rolltemplate-consumables .sheet-template_text{
+		 margin-bottom:5px;
+		 margin-left:9px;
+		 text-align:center;
+		 width:89%;
+		 display:inline-block;
+		 font-size:xx-small;
+	}	
+	
+	.sheet-rolltemplate-consumables .sheet-template_result{
+		text-align:center;
+		width:50%;
+		display:inline-block;
+	}
+	
+	.sheet-rolltemplate-consumables .sheet-template_name{
+		padding: 15px 0 5px 0;
+		text-align:center;
+		font-size:large;
+		width:100%;
+		display:inline-block;
+		color:#044b44;
+	}
+
+
+	.sheet-rolltemplate-consumables .inlinerollresult{
+		background:transparent;
+		border:none;
+	}
+		
+
+	.sheet-rolltemplate-consumables .inlinerollresult.importantroll{
+		border:none;
+	}
+	
+	.sheet-rolltemplate-consumables .inlinerollresult.fullcrit{
+		border:none;
+	}
+	
+	.sheet-rolltemplate-consumables .inlinerollresult.fullfail {
+		border:none;
+	}
+	
+	.sheet-rolltemplate-consumables .sheet-template_wrapper{
+		font-family: Candal;
+		font-size: 12px;
+		background-size: 100% auto;
+		padding-bottom: 10PX; 
+		background-repeat:no-repeat;
+		background-image: url('https://raw.githubusercontent.com/Lockbox313/Roll20-Testing/master/Alien/Graphics/templateBkgrd3.png');
+	}		
 	
 	div.sheet-tab-content { display: none; }
 
