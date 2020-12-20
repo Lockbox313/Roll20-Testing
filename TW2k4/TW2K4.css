@@ -1,0 +1,1183 @@
+@import url('https://fonts.googleapis.com/css?family=Lekton&display=swap');
+/*@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap'); */
+
+
+
+.charsheet {
+	min-width: 832px;
+	max-width: 832px;
+	background-color:#e8e3d3;
+	font-family: Lekton, Arial, Helvetica, sans-serif;
+	color:#7F462C;
+}
+
+
+.sheet-headers{
+	font-weight:bold;
+}
+
+.sheet-grid1{
+	display: grid;
+	grid-template-columns: 1fr 2fr 2fr;
+}
+
+.sheet-grid1 img{
+	max-width:97%;
+    height:auto;
+}
+
+
+.sheet-grid1 span {
+	display:block;
+	font-size:xx-small;
+}
+
+
+.sheet-grid2{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin-top: 5px;
+ }
+
+
+.sheet-grid2 span {
+	display:block;
+	font-size:xx-small;
+}
+
+.sheet-grid3{
+  display: grid;
+  grid-template-columns: 8fr 1fr;
+    margin-top: 5px;
+ }
+
+
+.sheet-grid3 span {
+	display:block;
+	font-size:xx-small;
+}
+
+.sheet-grid3 span {
+	display:block;
+	font-size:xx-small;
+}
+
+.sheet-exp{
+	padding-left:5px;
+}
+
+
+.sheet-grid2fr{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+	grid-gap:5px;
+    margin-top: 5px;
+ }
+
+.sheet-groupGrid{
+	display:grid;
+	grid-template-columns: 1fr;
+}
+
+
+.sheet-grid4{
+	display:grid;
+}
+
+.sheet-grid4 span {
+	Margin-top:5px;
+}
+
+.sheet-attribSkills{
+  display: grid;
+  grid-template-columns: 2fr 1.3fr 0.8fr 1fr  2fr 1.3fr  0.8fr 1fr 2fr 1.3fr 0.8fr 1fr 2fr 1.3fr  0.8fr 1fr;
+ 
+ }
+
+.sheet-attribSkills .sheet-header {
+	font-size:0.5em;
+	text-align:center;
+    align-self: end;
+	width:97%;
+	font-weight:bold;
+}
+
+.sheet-attribSkills button{
+	
+	font-size:xx-small;
+} 
+
+
+
+.sheet-attribSkills select{
+	margin-bottom:0px;
+} 
+
+.sheet-attribSkills input[type="text"]{
+	width:100%;
+	text-align:center;
+}
+
+
+
+.sheet-attribSkills textarea{
+	width:90%;
+}
+
+.sheet-attribSkills .sheet-col1{
+	 grid-column: span 4;
+}
+
+.sheet-attribSkills .sheet-col2{
+	 grid-column: span 4;
+}
+
+
+.sheet-attribSkills .sheet-col3{
+	 grid-column: span 4;
+}
+
+
+.sheet-attribSkills .sheet-col4{
+	 grid-column: span 4;
+}
+
+.sheet-attribSkills .sheet-specialties{
+	grid-column: span 16;
+	text-align:left;
+	font-size:xx-small;
+}
+
+.sheet-attribSkills textarea{
+	width:94%;
+}
+
+
+.sheet-combat{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	row-gap: 0;
+	column-gap: 2px;
+ }
+
+.sheet-combat .sheet-headers{
+	text-align:left;
+
+}
+
+.sheet-combat .sheet-combatCol{
+	grid-column: span 2;
+}
+
+.sheet-combatHeader{
+	width:100%;
+	padding-bottom:0px;
+	Font-size:x-small;
+}
+
+.sheet-markOff{
+	grid-template-columns: 1fr ;
+	grid-gap:0px;
+}
+
+.sheet-armor{
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	grid-gap:0px;
+	padding-bottom: 2px;
+ }
+
+.sheet-armor div{
+	align-self: center;
+}
+
+
+
+.sheet-armor .sheet-rating{
+	align-self:center;
+}
+
+.sheet-armor .sheet-headers{
+	text-align:left;
+	align-self: end;
+}
+
+.sheet-armor span{
+	text-align:center;
+	font-size:x-small;
+	align-self: end;
+}
+
+
+.sheet-armor input{
+	width:100%;
+	text-align:center;
+}
+
+
+.sheet-conditions{
+	display: grid;
+	grid-template-columns: 1fr 0.5fr;
+	grid-gap:0px;
+	grid-auto-rows: 28px;
+	/*height:64px;*/
+}
+
+.sheet-conditions div{
+	align-self: center;
+}
+
+.sheet-conditions input{
+	width:100%;
+}
+
+
+
+.sheet-conditions span{
+	text-align:center;
+	font-size:x-small;
+	align-self: end;
+}
+
+.sheet-combatAttrib{
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	grid-gap:0px;
+	
+ }
+.sheet-combatAttrib input{
+	width:100%;
+}
+
+.sheet-combatAttrib span{
+	text-align:left;
+	font-size:x-small;
+	align-self: end;
+}
+
+.sheet-dmgContainer{
+	display:grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap:0px; 
+}
+
+.sheet-dmgContainer input[type=radio]{
+	border-bottom:1px solid black;
+	width:100%;
+	align-self:center;
+}
+
+
+ .sheet-dmgContainer   input[type='radio']:after {
+        width: 13px;
+        height: 13px;
+        border-radius: 0px;
+        top: -2px;
+        left: 9px;
+        position: relative;
+        background-color: white;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid black;
+    }
+
+ .sheet-dmgContainer  input[type='radio']:checked:after {
+        width: 13px;
+        height: 13px;
+        border-radius: 0px;
+        top: -2px;
+        left: 9px;
+        position: relative;
+        background-color: black;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+
+.sheet-stressContainer{
+	display:grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap:0px; 
+}
+
+/*
+.sheet-stressContainer input[type=radio]{
+	border-bottom:1px solid black;
+	width:100%;
+	align-self:center;
+}
+
+
+ .sheet-stressContainer   input[type='radio']:after {
+        width: 13px;
+        height: 13px;
+        border-radius: 0px;
+        top: -2px;
+        left: 9px;
+        position: relative;
+        background-color: white;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid black;
+    }
+
+ .sheet-stressContainer  input[type='radio']:checked:after {
+        width: 13px;
+        height: 13px;
+        border-radius: 0px;
+        top: -2px;
+        left: 9px;
+        position: relative;
+        background-color: black;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+*/
+
+
+
+.sheet-radiationTemp{
+	display:grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-gap:0px; 
+	margin-top:-14px;
+	margin-left:5px;
+}
+
+
+.sheet-radiationTemp input[type="checkbox"]
+{
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 18px;
+    left: 4px;
+    margin: -4px;
+    cursor: pointer;
+    z-index: 1;
+    background-color:black;
+}
+
+.sheet-radiationTemp input[type=radio]{
+	border-bottom:1px solid black;
+	width:100%;
+	align-self:center;
+}
+
+
+ .sheet-radiationTemp   input[type='radio']:after {
+        width: 13px;
+        height: 13px;
+        border-radius: 0px;
+        top: -2px;
+        left: 9px;
+        position: relative;
+        background-color: white;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid black;
+    }
+
+ .sheet-radiationTemp  input[type='radio']:checked:after {
+        width: 13px;
+        height: 13px;
+        border-radius: 0px;
+        top: -2px;
+        left: 9px;
+        position: relative;
+        background-color: black;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+
+
+.sheet-weapons{
+	display:grid;
+	grid-template-columns: 118px 100px 62px 79px  33px 50px 33px 45px 50px 50px 75px 37px 36px 33px 31px;
+	grid-gap:0px; 
+	text-align:center;
+}
+
+.sheet-weapons select{
+	width:100%;
+	margin-bottom:0px;
+}	
+
+
+.sheet-weapons input{
+	width:100%;	
+	text-align: center;
+	font-weight:bold;
+	
+}
+
+.sheet-weapons input[name="attr_ammoDice"]{
+	width:33px;
+}
+
+
+.sheet-weapons input[name="attr_weapon"]{
+	text-align:left;
+}
+
+
+
+
+.sheet-weapons .sheet-header{
+	font-size:xx-small;	
+	text-align:center;
+	font-weight:bold;
+	align-self:end;
+}
+
+
+.sheet-gear{
+	display:grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap:5px; 
+	
+}
+
+	
+
+.sheet-items{
+	display:grid;
+	grid-template-columns: 4fr 1fr;
+	grid-gap:0px; 
+	text-align:center;
+}
+
+.sheet-items .sheet-units{
+	text-align:center;
+}
+
+.sheet-items .sheet-unitsVal{
+	text-align:center;
+	font-size:small;
+}
+
+.sheet-items input{
+	width:100%;
+}
+
+.sheet-maxEnc{
+	margin-left:5px;
+	width:30px;
+	padding:2px;
+	text-align:center;
+}
+
+.sheet-currentEnc{
+	margin-left:5px;
+	width:40px;
+	padding:2px;
+	text-align:center;
+}
+
+.sheet-encLabels{
+	text-align:left;
+	font-size:xx-small;
+	font-weight:bold;
+}
+
+
+.sheet-gear .sheet-header{
+	display: inline-block;
+    font-size: xx-small;
+    width: 100%;
+	font-weight:bold;
+    text-align: left;
+}
+
+
+
+.sheet-otherGear .sheet-header{
+	display: inline-block;
+    font-size: xx-small;
+    width: 100%;
+	font-weight:bold;
+    text-align: left;
+}
+
+.sheet-units{
+	display: inline-block;
+    font-size: xx-small;
+    width: 100%;
+	font-weight:bold;
+	text-align:center;
+}
+
+
+.sheet-backpack input[type="checkbox"]{
+    position: relative;
+    top: 1px;
+    left: 11px;
+    margin: -4px;
+    cursor: pointer;
+}
+
+
+
+
+.sheet-crits span{f
+	font-size:xx-small;	
+}
+
+.sheet-crits textarea{
+	width:194px;
+	height:23px;
+	margin-bottom:0px;
+	font-size:xx-small;	
+}
+
+.sheet-disease span{
+	font-size:xx-small;	
+}
+
+.sheet-disease textarea{
+	width:194px;
+	height:29px;
+	margin-bottom:0px;
+	font-size:xx-small;	
+}
+
+
+.sheet-rating{
+	width:100%;
+	padding-bottom:0px;
+}
+
+.sheet-attribName{
+	align-self: center;
+}
+
+.sheet-skillName{
+	font-size:xx-small;
+	text-align:left;
+}
+
+.sheet-hideIt{
+	display:none;
+}
+
+.sheet-cntrTxt{
+	text-align:center;
+}
+
+.sheet-borderRight {
+  border-right: 2px solid #7f7063; 
+}
+
+.sheet-borderLeft {
+  border-Left: 2px solid #7f7063; 
+}
+
+.sheet-line {
+  border-bottom: 2px solid #AD9F92;;
+  width: 100%;
+}
+
+.sheet-line2 {
+  border-bottom: 3px solid #7f7063;
+  width: 100%;
+}
+
+
+.sheet-line3 {
+  border-top: 3px solid #7f7063;
+  width: 100%;
+}
+
+.sheet-section{
+
+    margin-left: -5px;
+    margin-top: -5px;
+    padding-left: 5px;
+}
+
+.sheet-sectionColor{
+	background-color: #d2c8ba;	
+}
+
+.sheet-fix1{
+	margin-right:-2px;
+}
+
+.sheet-fillIt{
+	width:100%
+}
+
+.sheet-radHdr{
+	height:19px;
+}
+
+.sheet-fix2{
+	margin-left:2px;
+}
+
+.sheet-fix3{
+	height:26px!important;
+}
+
+.sheet-fix4{
+    padding-bottom: 0px;
+}
+
+.sheet-cmbtSpacer{
+padding-left:5px;
+}
+
+.sheet-cmbtSpacer2{
+padding-left:5px;
+}
+
+/* filled in checkbox  */
+
+/* Hide actual radio/checkbox */
+input[type="radio"],
+input[type="checkbox"]
+{
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 1px;
+    left: 11px;
+    margin: -4px;
+    cursor: pointer;
+    z-index: 1;
+    background-color:black;
+}
+
+/* Fake radio/checkbox */
+input[type="radio"] + span::before,
+input[type="checkbox"] + span::before
+{
+    margin-right: 4px;
+    border: solid 1px #a8a8a8;
+    line-height: 14px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    
+    -moz-box-shadow: 0 0 2px #ccc;
+    -webkit-box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc;
+    
+    background-color: transparent;
+}
+
+/* Fake radio */
+input[type="radio"] + span::before
+{
+    content: "";
+    width: 12px;
+    height: 12px;
+    font-size: 24px;
+    
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+input[type="radio"]:checked + span::before
+{
+    content: "•";
+     background-color:#201904; 
+}
+
+/* Fake checkbox */
+input[type="checkbox"] + span::before
+{
+    content: "";
+    width: 14px;
+    height: 14px;
+    font-size: 12px;
+    
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+input[type="checkbox"]:checked + span::before
+{
+    content: "";
+    background-color:#706951; 
+}
+
+
+/*Configure the tab buttons*/
+.sheet-character,
+.sheet-config,
+.sheet-journal {
+	display: none;
+}
+
+/* show the selected tab */
+.sheet-tabstoggle[value="character"] ~ div.sheet-character,
+.sheet-tabstoggle[value="configuration"] ~ div.sheet-config,
+.sheet-tabstoggle[value="journal"] ~ div.sheet-journal {
+	display: block;
+}
+
+
+div.sheet-tab-content
+{
+	font-family: 'Special Elite';
+	/*font-family: 'Verdana';*/
+	border-top-color: #000;
+    margin: 2px 0 0 5px;
+    padding: 5px;
+}
+
+.sheet-text_input{
+	border: none;
+    box-shadow: none;
+    /*border-bottom: 1px solid #7f7063;*/
+    border-radius: 0;
+	display:inline-block;
+	outline:none;
+	padding:0px;
+	padding-left:3px;
+	line-height:12px;
+	width:100%;
+}	
+
+
+
+
+.repcontainer[data-groupname="repeating_melee2"]{
+													 
+    width:100%!important;
+}
+
+
+.repcontainer[data-groupname="repeating_missle2"]{
+													 
+    width:100%!important;
+}
+
+
+.repcontainer[data-groupname="repeating_mounts"]{
+													 
+    width:100%!important;
+}
+
+
+
+
+
+.itemcontrol {
+    margin-left: -33px;
+}
+
+
+.repcontrol{
+	margin-right: 7px;
+}
+
+div.repcontrol button
+{
+	width: 13px;
+    color: transparent;
+    padding: 0px;
+    padding-left: 2px;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+	 
+}
+
+div.repcontrol button.repcontrol_add::before,
+div.repcontrol button.repcontrol_edit::before
+{
+    font-family: Pictos;
+    position: relative;
+    color: #000;
+	width:12px;
+	height:12px;
+}
+
+/* +Add */
+div.repcontrol button.repcontrol_add::before
+{
+	
+    content: "&"; /* & in Pictos is a + sign, while + is a plus inside a circle */    
+    left: -0px;
+    top: -0px;
+}
+
+/* Modify */
+div.repcontrol button.repcontrol_edit::before
+{
+	text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    content: "x"; /* x in Pictos is a crossed hammer and wrench */
+    left: -0px;
+    top: -0px;
+}
+/* Done */
+div.repcontrol.editmode button.repcontrol_edit::before
+{
+    content: "3"; /* 3 in Pictos is a check mark */
+	 
+}
+
+/* Text button */
+
+button[type=roll].sheet-text_roll::before {    
+    content: " ";
+    background-image: none;
+}
+
+button.sheet-text_roll[type="roll"] {
+	font-size: small;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    padding-right: 3px;
+    padding-left: 3px;
+    display: inline-block;
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    background-image: none;
+    background-color: rgb(239, 239, 239);
+    white-space: nowrap;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: #7F462C;
+
+}
+
+button.sheet-text_roll[type="roll"]:hover {
+    background-color:rgb(230, 239, 230);
+    /*border-color: red;*/
+    /*color:white*/
+}
+
+button.sheet-text_roll[type="roll"] label, button[type="roll"] input {
+    height:24px;
+    line-height: 24px;
+    text-align:center;
+    width: 100%;
+    cursor: pointer;
+    background: none;
+    box-shadow: none;
+    transition: none;
+    border-radius: none;
+    border:none;
+    font-weight:700;
+}
+
+
+button.sheet-text_roll[type="roll"]:hover label, button[type="roll"]:hover input {
+    color: white;
+    border: none;
+}
+
+
+/* End Text button end*/
+
+input[type="text"]{
+	background-color:transparent;
+}
+
+select,textarea{
+	background-color:transparent;
+}
+
+
+
+
+/*Roll template */
+                       
+.sheet-rolltemplate-t2k .sheet-rolltemplate-successImg{
+	background-image: url("https://raw.githubusercontent.com/Lockbox313/imagedump/master/TW2K4/success2.png?raw=true");
+	background-color:white;
+	height:40px;
+	width:40px;
+	background-size: 100% 100%;
+	display:inline-block;
+}
+
+
+.sheet-rolltemplate-t2k .sheet-rolltemplate-mishapImg{
+	background-image: url("https://raw.githubusercontent.com/Lockbox313/imagedump/master/TW2K4/mishap.png?raw=true");
+	background-color:white;
+	height:40px;
+	width:40px;
+	background-size: 100% 100%;
+	display:inline-block;
+	font-size: 30px;
+	line-height:40px;
+	color:transparent;
+}
+
+
+.sheet-rolltemplate-t2k .sheet-rolltemplate-mishapAmmo{
+	background-image: url("https://raw.githubusercontent.com/Lockbox313/imagedump/master/TW2K4/mishap.png?raw=true");
+	background-color:yellow;
+	height:40px;
+	width:40px;
+	background-size: 100% 100%;
+	display:inline-block;
+	font-size: 30px;
+	line-height:40px;
+	color:transparent;
+}
+
+
+.sheet-rolltemplate-t2k .sheet-rolltemplate-ammoHit{
+	background-image: url("https://raw.githubusercontent.com/Lockbox313/imagedump/master/TW2K4/bullet.png?raw=true");
+	background-color:yellow;
+	height:40px;
+	width:40px;
+	background-size: 100% 100%;
+	display:inline-block;
+	font-size: 30px;
+	line-height:40px;
+	color:transparent;
+}
+
+
+.sheet-rolltemplate-t2k .sheet-rolltemplate-ammo{
+	background-color:yellow;
+	height:40px;
+	width:40px;
+	background-size: 100% 100%;
+	text-align:center;
+	display:inline-block;
+	line-height:40px;
+	font-size: 30px;
+	/*fuck off*/
+}	
+
+
+.sheet-rolltemplate-t2k .sheet-rolltemplate-ammoLine2{
+	margin-top:5px;
+}
+
+.sheet-rolltemplate-divider{
+	margin-top:5px;
+	width:100%;
+}
+
+
+.sheet-rolltemplate-t2k{
+	border:1px solid #7f7063;
+	font-family: Lekton, Arial, Helvetica, sans-serif;
+	font-size:medium;
+}
+
+.sheet-rolltemplate-t2k .sheet-header{
+	background-color:#7f7063;
+	text-align:center;
+	padding:5px;
+	color:yellow;
+}
+
+.sheet-rolltemplate-t2k .sheet-body{
+	padding:5px;
+	background-color:#e8e3d3;
+}
+
+ .sheet-rolltemplate-t2k .sheet-rollResult{
+		text-align:center; 
+ }
+
+.sheet-rolltemplate-t2k .sheet-rollHeader{
+		font-size:1.2em;
+		text-align:center;
+}	
+
+.sheet-rolltemplate-t2k .inlinerollresult.fullcrit{
+	border:none;
+}
+.sheet-rolltemplate-t2k  .inlinerollresult.fullfail{
+	border:none;
+}
+
+.sheet-rolltemplate-t2k .inlinerollresult.importantroll {
+    	border:none;
+}
+
+.sheet-rolltemplate-t2k .inlinerollresult  {
+    background-color: transparent;
+    border: none;
+}
+
+
+.sheet-rolltemplate-t2k div.sheet-rolltemplate-hitlocr{
+	text-align:center;
+}
+
+.sheet-rolltemplate-t2k .sheet-rolltemplate-hitlocr a{
+    background-color: #4b5745;
+    padding: 5px;
+    color: #eec360;
+    display: inline-block;
+    border: 1px solid white;
+}
+
+.sheet-rolltemplate-t2k .textchatcontainer a[href^="!"], .textchatcontainer a[href^="~"] {
+    background-color: green;
+    padding: 5px;
+    color: yellow;
+    display: inline-block;
+    border: 1px solid white;
+}
+
+
+.sheet-rolltemplate-hitLoc{
+	border:1px solid #7f7063;
+	font-family: Lekton, Arial, Helvetica, sans-serif;
+	font-size:medium;
+}
+
+
+.sheet-rolltemplate-hitLoc .sheet-header{
+	background-color:#7f7063;
+	text-align:center;
+	padding:5px;
+	color:yellow;
+}
+
+.sheet-rolltemplate-hitLoc .sheet-body{
+	padding:5px;
+	background-color:#e8e3d3;
+	text-align:center;
+}
+
+
+
+.sheet-rolltemplate-hitLoc .sheet-header{
+	background-color:#7f7063;
+	text-align:center;
+	padding:5px;
+	color:yellow;
+}
+
+.sheet-rolltemplate-hitLoc .sheet-body{
+	padding:5px;
+	background-color:#e8e3d3;
+}
+
+ .sheet-rolltemplate-hitLoc .sheet-rollResult{
+		text-align:center; 
+ }
+
+.sheet-rolltemplate-hitLoc .sheet-rollHeader{
+		font-size:1.2em;
+		text-align:center;
+}	
+
+.sheet-rolltemplate-hitLoc .inlinerollresult.fullcrit{
+	border:none;
+}
+.sheet-rolltemplate-hitLoc  .inlinerollresult.fullfail{
+	border:none;
+}
+
+.sheet-rolltemplate-hitLoc .inlinerollresult.importantroll {
+    	border:none;
+}
+
+.sheet-rolltemplate-hitLoc .inlinerollresult  {
+    background-color: transparent;
+    border: none;
+}
+
+.sheet-rolltemplate-skills{
+	border:1px solid #7f7063;
+	font-family: Lekton, Arial, Helvetica, sans-serif;
+	font-size:medium;
+}
+
+
+.sheet-rolltemplate-skills .sheet-header{
+	background-color:#7f7063;
+	text-align:center;
+	padding:5px;
+	color:yellow;
+}
+
+.sheet-rolltemplate-skills .sheet-body{
+	padding:5px;
+	background-color:#e8e3d3;
+	text-align:center;
+}
+
+
+
+.sheet-rolltemplate-skills .sheet-header{
+	background-color:#7f7063;
+	text-align:center;
+	padding:5px;
+	color:yellow;
+}
+
+.sheet-rolltemplate-skills .sheet-body{
+	padding:5px;
+	background-color:#e8e3d3;
+}
+
+ .sheet-rolltemplate-skills .sheet-rollResult{
+		text-align:center; 
+ }
+
+.sheet-rolltemplate-skills .sheet-rollHeader{
+		font-size:1.2em;
+		text-align:center;
+}	
+
+.sheet-rolltemplate-skills .inlinerollresult.fullcrit{
+	border:none;
+}
+.sheet-rolltemplate-skills  .inlinerollresult.fullfail{
+	border:none;
+}
+
+.sheet-rolltemplate-skills .inlinerollresult.importantroll {
+    	border:none;
+}
+
+.sheet-rolltemplate-skills .inlinerollresult  {
+    background-color: transparent;
+    border: none;
+}
+
+.sheet-rolltemplate-skills .sheet-rolltemplate-successImg{
+	background-image: url("https://raw.githubusercontent.com/Lockbox313/imagedump/master/TW2K4/success2.png?raw=true");
+	background-color:white;
+	height:40px;
+	width:40px;
+	background-size: 100% 100%;
+	display:inline-block;
+}
+
+
+.sheet-rolltemplate-skills .sheet-rolltemplate-mishapImg{
+	background-image: url("https://raw.githubusercontent.com/Lockbox313/imagedump/master/TW2K4/mishap.png?raw=true");
+	background-color:white;
+	height:40px;
+	width:40px;
+	background-size: 100% 100%;
+	display:inline-block;
+	font-size: 30px;
+	line-height:40px;
+	color:transparent;
+}

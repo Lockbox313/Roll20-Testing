@@ -1,0 +1,2128 @@
+<div class="grid1">
+	<div>
+		<img src="https://raw.githubusercontent.com/Lockbox313/imagedump/master/TW2K4/twlogo.png">
+	</div>
+	<div class="line">
+		<span class=""  data-il8n="NAME">NAME</span>
+		<div class="borderRight"><input type="text" class="text_input" name="attr_character_name"> </div>
+	</div>
+	<div class="line">
+		<span class=""  data-il8n="NATIONALITY">NATIONALITY</span>
+		<div><input type="text" class="text_input" name="attr_nationality"> </div>
+	</div>
+</div> 
+<div class="grid2">
+	<div class="line">
+		<span class=""  data-il8n="BRANCH">BRANCH</span>
+		<div class="borderRight"><input type="text" class="text_input" name="attr_branch"> </div>
+	</div>
+	<div  class="line">
+		<span class=""  data-il8n="APPEARANCE">APPEARANCE</span>
+		<div> <input type="text" class="text_input" name="attr_appearance"> </div>
+	</div>
+
+	<div class="line">
+		<span class=""  data-il8n="MILITARY-RANK">MILITARY RANK</span>
+		<div class="borderRight"><input  type="text" class="text_input" name="attr_rank"> </div>
+	</div>
+	<div class="line">
+		<span class=""  data-il8n="MORAL-CODE">MORAL CODE</span>
+		<div><input  type="text" class="text_input" name="attr_moralCode"> </div>
+	</div>	
+
+	<div class="line2">
+		<span class=""  data-il8n="BUDDY">BUDDY</span>
+		<div class="borderRight"><input  type="text" class="text_input" name="attr_buddy"> </div>
+	</div>
+	<div class="line2">
+		<span class=""  data-il8n="BIG-DREAM">BIG DREAM</span>
+		<div><input type="text" class="text_input" name="attr_bigDream"> </div>
+	</div>
+	
+</div>
+
+<div class="grid3">
+	<div class="groupGrid line2 borderRight">
+		<span class=""  data-il8n="HOW-YOU-MET-THE-GROUP">HOW YOU MET THE GROUP:</span>
+		<input type="text" class="text_input" name="attr_metGroup">
+	</div>
+	<div  class="groupGrid line2">
+		<div class="exp">
+			<div class="section sectionColor borderLeft line"><span class=""  data-il8n="EXPERIENCE">EXPERIENCE</span></div>
+			<div class="grid2fr">
+				<div class="borderRight">
+					<span class="cntrTxt"  data-il8n="CURRENT">CURRENT</span>
+					<input type="text" class="text_input cntrTxt" name="attr_curExp">
+				</div>
+				<div>
+					<span class="cntrTxt"  data-il8n="TOTAL">TOTAL</span>
+					<input type="text" class="text_input cntrTxt" name="attr_totExp">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="grid4 sectionColor">
+	<span class=""  data-il8n="ATTRIBUTES-SKILLS">ATTRIBUTES & SKILLS</span>
+</div>
+<div class="attribSkills">
+	<span class="line2 sectionColor header borderRight">&nbsp;</span><span class="line2 sectionColor header  borderRight" data-il8n="RATING">RATING</span><span   class="line2  header sectionColor  borderRight" data-il8n="MOD">MOD.</span><span  class="line2   header sectionColor  borderRight" data-il8n="DIE">DIE</span>
+	<span class="line2 sectionColor  header  borderRight">&nbsp;</span><span  class="line2  header sectionColor borderRight"  data-il8n="RATING">RATING</span><span  class="line2  header sectionColor borderRight"  data-il8n="MOD">MOD.</span><span  class="line2  header sectionColor  borderRight" data-il8n="DIE">DIE</span>
+	<span class="line2   header sectionColor borderRight">&nbsp;</span><span  class="line2  header sectionColor borderRight"  data-il8n="RATING">RATING</span><span   class="line2 sectionColor header  borderRight" data-il8n="MOD">MOD.</span><span  class="line2   header sectionColor  borderRight" data-il8n="DIE">DIE</span>
+	<span class="line2 sectionColor  header  borderRight">&nbsp;</span><span  class="line2 sectionColor  header borderRight"  data-il8n="RATING">RATING</span><span  class="line2  header sectionColor borderRight"  data-il8n="MOD">MOD.</span><span  class="line2  header  sectionColor" data-il8n="DIE">DIE</span>
+	<!-- Start Attributes -->
+	<div class="line2"><button type="roll" class="text_roll attribName fillIt" data-il8n="STRENGTH" value="[[d100]]">STRENGTH</button></div>
+	<select class="rating" name="attr_STRENGTH">
+		<option="A"><div  data-il8n="A">A</div></option>
+		<option="B"><div  data-il8n="B">B</div></option>
+		<option="C" selected><div  data-il8n="C">C</div></option>
+		<option="D"><div  data-il8n="D">D</div></option>
+	</select>
+	<input type="text" class="hideIt" value="D8" name="attr_StrengthDie">
+	<input type="text" name="attr_StrengthMod" value="0">
+	<input class="borderRight" type="text" readonly="readonly"  value="D8" name="attr_StrengthFinal">
+
+	<div class="line2"><button  type="roll"  class="text_roll attribName fillIt" data-il8n="AGILITY">AGILITY</button></div>
+	<select class="rating" name="attr_AGILITY">
+		<option="A"><div  data-il8n="A">A</div></option>
+		<option="B"><div  data-il8n="B">B</div></option>
+		<option="C" selected><div  data-il8n="C">C</div></option>
+		<option="D"><div  data-il8n="D">D</div></option>
+	</select>
+	<input type="text"  class="hideIt" value="D8" name="attr_AgilityDie">
+	<input type="text" name="attr_AgilityMod" value="0">
+	<input class="borderRight"type="text"  readonly="readonly"  value="D8" name="attr_AgilityFinal">
+
+	<div class="line2"><button  type="roll"  class="text_roll attribName  fillIt" data-il8n="INTELLIGENCE">INTELLIGENCE</button></div>
+	<select class="rating" name="attr_INTELLIGENCE">
+		<option="A"><div  data-il8n="A">A</div></option>
+		<option="B"><div  data-il8n="B">B</div></option>
+		<option="C" selected><div  data-il8n="C">C</div></option>
+		<option="D"><div  data-il8n="D">D</div></option>
+	</select>
+	<input type="text"  class="hideIt"  value="D8" name="attr_IntelligenceDie">
+	<input type="text" name="attr_IntelligenceMod" value="0">
+	<input class="borderRight"type="text" value="D8"  readonly="readonly" name="attr_IntelligenceFinal">
+
+	<div class="line2"><button  type="roll"  class="text_roll attribName  fillIt" data-il8n="EMPATHY">EMPATHY</button></div>
+	<select class="rating" name="attr_EMPATHY">
+		<option="A"><div  data-il8n="A">A</div></option>
+		<option="B"><div  data-il8n="B">B</div></option>
+		<option="C" selected><div  data-il8n="C">C</div></option>
+		<option="D"><div  data-il8n="D">D</div></option>
+	</select>
+	<input type="text"  class="hideIt" value="D8" name="attr_EmpathyDie">
+	<input type="text" name="attr_EmpathyMod" value="0">
+	<input type="text" readonly="readonly"  value="D8" name="attr_EmpathyFinal">
+	<!-- End Attributes -->
+
+	<!-- Start Skills Line 1 -->
+	<div class="line"><button  type="roll"  class="text_roll skillName  fillIt" data-il8n="Heavy-Weapons" value="&{template:skills} {{source=Heavy Weapon}} {{stat=[[@{StrengthFinal}]]}}  {{skill=[[@{HeavyWeaponsFinal}]]}} {{diff=[[?{Difficulty|6}]]}}">Hvy Wpns</button></div>
+	<select class="rating" name="attr_HeavyWeapons">
+		<option="A"><div  data-il8n="A">A</div></option>
+		<option="B"><div  data-il8n="B">B</div></option>
+		<option="C"><div  data-il8n="C">C</div></option>
+		<option="D"><div  data-il8n="D">D</div></option>
+		<option="F" selected><div  data-il8n="F">F</div></option>
+	</select>
+	<input type="text"  class="hideIt"  value="-" name="attr_HeavyWeaponsDie">
+	<input type="text" name="attr_HeavyWeaponsMod" value="0">
+	<input class="borderRight"type="text" readonly="readonly" value="-" name="attr_HeavyWeaponsFinal">
+
+	<div class="line"><button  type="roll"  class="text_roll skillName  fillIt" data-il8n="Driving" value="&{template:skills} {{source=Driving}} {{stat=[[@{AgilityFinal}]]}}  {{skill=[[@{DrivingFinal}]]}} {{diff=[[?{Difficulty|6}]]}}">Driving</button></div>
+	<select class="rating" name="attr_Driving">
+		<option="A"><div  data-il8n="A">A</div></option>
+		<option="B"><div  data-il8n="B">B</div></option>
+		<option="C"><div  data-il8n="C">C</div></option>
+		<option="D"><div  data-il8n="D">D</div></option>
+		<option="F" selected><div  data-il8n="F">F</div>`	</option>
+	</select>
+	<input type="text"   class="hideIt"  value="-" name="attr_DrivingDie">
+	<input type="text" name="attr_DrivingMod" value="0">
+	<input class="borderRight" type="text"  readonly="readonly" value="-" name="attr_DrivingFinal">
+
+	<div class="line"><button  type="roll"  class="text_roll skillName  fillIt" data-il8n="Recon" value="&{template:skills} {{source=Recon}} {{stat=[[@{IntelligenceFinal}]]}}  {{skill=[[@{ReconFinal}]]}} {{diff=[[?{Difficulty|6}]]}}">Recon</button></div>
+	<select class="rating" name="attr_Recon">
+		<option="A"><div  data-il8n="A">A</div></option>
+		<option="B"><div  data-il8n="B">B</div></option>
+		<option="C"><div  data-il8n="C">C</div></option>
+		<option="D"><div  data-il8n="D">D</div></option>
+		<option="F" selected><div  data-il8n="F">F</div></option>
+	</select>
+	<input type="text"   class="hideIt"  value="-" name="attr_ReconDie">
+	<input type="text" name="attr_ReconMod" value="0">
+	<input class="borderRight"  type="text"  readonly="readonly" value="-" name="attr_ReconFinal">
+
+	<div class="line"><button  type="roll"  class="text_roll skillName  fillIt" data-il8n="Command" value="&{template:skills} {{source=Command}} {{stat=[[@{EmpathyFinal}]]}}  {{skill=[[@{CommandFinal}]]}} {{diff=[[?{Difficulty|6}]]}}">Command</button></div>
+	<select class="rating" name="attr_Command">
+		<option="A"><div  data-il8n="A">A</div></option>
+		<option="B"><div  data-il8n="B">B</div></option>
+		<option="C"><div  data-il8n="C">C</div></option>
+		<option="D"><div  data-il8n="D">D</div></option>
+		<option="F" selected><div  data-il8n="F">F</div></option>
+	</select>
+	<input type="text"  class="hideIt" alue="-" name="attr_CommandDie">
+	<input type="text" name="attr_CommandMod" value="0">
+	<input  type="text"  readonly="readonly" value="-" name="attr_CommandFinal">
+	<!-- End Skills Line 1 -->
+
+	<!-- Start Skills Line 2 -->
+	<div class="line"><button  type="roll"  class="text_roll skillName  fillIt" data-il8n="Melee" value="&{template:skills} {{source=Melee}} {{stat=[[@{StrengthFinal}]]}}  {{skill=[[@{MeleeFinal}]]}} {{diff=[[?{Difficulty|6}]]}}">Melee</button></div>
+	<select class="rating" name="attr_Melee">
+		<option="A"><div  data-il8n="A">A</div></option>
+		<option="B"><div  data-il8n="B">B</div></option>
+		<option="C"><div  data-il8n="C">C</div></option>
+		<option="D"><div  data-il8n="D">D</div></option>
+		<option="F" selected><div  data-il8n="F">F</div></option>
+	</select>
+	<input type="text"  class="hideIt" value="-" name="attr_MeleeDie">
+	<input type="text" name="attr_MeleeMod" value="0">
+	<input class="borderRight"  type="text"  readonly="readonly"  value="-" name="attr_MeleeFinal">
+
+	<div class="line"><button  type="roll"  class="text_roll skillName  fillIt" data-il8n="Mobility" value="&{template:skills} {{source=Mobility}} {{stat=[[@{AgilityFinal}]]}}  {{skill=[[@{MobilityFinal}]]}} {{diff=[[?{Difficulty|6}]]}}">Mobility</button></div>
+	<select class="rating" name="attr_Mobility">
+		<option="A"><div  data-il8n="A">A</div></option>
+		<option="B"><div  data-il8n="B">B</div></option>
+		<option="C"><div  data-il8n="C">C</div></option>
+		<option="D"><div  data-il8n="D">D</div></option>
+		<option="F" selected><div  data-il8n="F">F</div></option>
+	</select>
+	<input type="text"   class="hideIt"  value="-" name="attr_MobilityDie">
+	<input type="text" name="attr_MobilityMod" value="0">
+	<input class="borderRight"  type="text" readonly="readonly" value="-" name="attr_MobilityFinal">
+
+	<div class="line"><button  type="roll"  class="text_roll skillName fillIt" data-il8n="Survival" value="&{template:skills} {{source=Survival}} {{stat=[[@{IntelligenceFinal}]]}}  {{skill=[[@{SurvivalFinal}]]}} {{diff=[[?{Difficulty|6}]]}}">Survival</button></div>
+	<select class="rating" name="attr_Survival">
+		<option="A"><div  data-il8n="A">A</div></option>
+		<option="B"><div  data-il8n="B">B</div></option>
+		<option="C"><div  data-il8n="C">C</div></option>
+		<option="D"><div  data-il8n="D">D</div></option>
+		<option="F" selected><div  data-il8n="F">F</div></option>
+	</select>
+	<input type="text" class="hideIt" value="-" name="attr_SurvivalDie">
+	<input type="text" name="attr_SurvivalMod" value="0">
+	<input class="borderRight"  type="text"  readonly="readonly"  value="-" name="attr_SurvivalFinal">
+
+	<div class="line"><button  type="roll"  class="text_roll skillName fillIt" data-il8n="Manipulation" value="&{template:skills} {{source=Manipulation}} {{stat=[[@{EmpathyFinal}]]}}  {{skill=[[@{ManipulationFinal}]]}} {{diff=[[?{Difficulty|6}]]}}">Manipulation</button></div>
+	<select class="rating" name="attr_Manipulation">
+		<option="A"><div  data-il8n="A">A</div></option>
+		<option="B"><div  data-il8n="B">B</div></option>
+		<option="C"><div  data-il8n="C">C</div></option>
+		<option="D"><div  data-il8n="D">D</div></option>
+		<option="F" selected><div  data-il8n="F">F</div></option>
+	</select>
+	<input type="text"   class="hideIt"  value="-" name="attr_ManipulationDie">
+	<input type="text" name="attr_ManipulationMod" value="0">
+	<input  type="text"  readonly="readonly" value="-" name="attr_ManipulationFinal">
+	<!-- End Skills Line 2 -->
+
+	<!-- Start Skills Line 3 -->
+	<div><button  type="roll"   class="text_roll skillName fillIt data-il8n="Stamina" value="&{template:skills} {{source=Stamina}} {{stat=[[@{StrengthFinal}]]}}  {{skill=[[@{StaminaFinal}]]}} {{diff=[[?{Difficulty|6}]]}}">Stamina</button></div>
+	<select class="rating" name="attr_Stamina">
+		<option="A"><div  data-il8n="A">A</div></option>
+		<option="B"><div  data-il8n="B">B</div></option>
+		<option="C"><div  data-il8n="C">C</div></option>
+		<option="D"><div  data-il8n="D">D</div></option>
+		<option="F" selected><div  data-il8n="F">F</div></option>
+	</select>
+	<input type="text"  class="hideIt"   value="-" name="attr_StaminaDie">
+	<input type="text" name="attr_StaminaMod" value="0">
+	<input class="borderRight"  type="text"  readonly="readonly" value="-" name="attr_StaminaFinal">
+
+	<div><button  type="roll"  class="text_roll skillName fillIt" data-il8n="Ranged-Combat" value="&{template:skills} {{source=Ranged  Combat}} {{stat=[[@{AgilityFinal}]]}}  {{skill=[[@{rangedCombatFinal}]]}} {{diff=[[?{Difficulty|6}]]}}">Rngd Cmbt</button></div>
+	<select class="rating" name="attr_rangedCombat">
+		<option="A"><div  data-il8n="A">A</div></option>
+		<option="B"><div  data-il8n="B">B</div></option>
+		<option="C"><div  data-il8n="C">C</div></option>
+		<option="D"><div  data-il8n="D">D</div></option>
+		<option="F" selected><div  data-il8n="F">F</div></option>
+	</select>
+	<input type="text"  class="hideIt"  value="-" name="attr_rangedCombatDie">
+	<input type="text" name="attr_rangedCombatMod" value="0">
+	<input class="borderRight"  type="text"  readonly="readonly" value="-" name="attr_rangedCombatFinal">
+
+	<div class="line"><button  type="roll"  class="text_roll skillName fillIt" data-il8n="Tech" value="&{template:skills} {{source=Tech}} {{stat=[[@{IntelligenceFinal}]]}}  {{skill=[[@{TechFinal}]]}} {{diff=[[?{Difficulty|6}]]}}">Tech</button></div>
+	<select class="rating" name="attr_Tech">
+		<option="A"><div  data-il8n="A">A</div></option>
+		<option="B"><div  data-il8n="B">B</div></option>
+		<option="C"><div  data-il8n="C">C</div></option>
+		<option="D"><div  data-il8n="D">D</div></option>
+		<option="F" selected><div  data-il8n="F">F</div></option>
+	</select>
+	<input type="text"  class="hideIt"  value="-" name="attr_TechDie">
+	<input type="text" name="attr_TechMod" value="0">
+	<input class="borderRight"  type="text"  readonly="readonly" value="-" name="attr_TechFinal">
+
+	<div><button  type="roll"  class="text_roll skillName fillIt" data-il8n="Medical-Aid" value="&{template:skills} {{source=Medical Aid}} {{stat=[[@{EmpathyFinal}]]}}  {{skill=[[@{medicalAidFinal}]]}} {{diff=[[?{Difficulty|6}]]}}">Medical Aid</button></div>
+	<select class="rating" name="attr_medicalAid">
+		<option="A"><div  data-il8n="A">A</div></option>
+		<option="B"><div  data-il8n="B">B</div></option>
+		<option="C"><div  data-il8n="C">C</div></option>
+		<option="D"><div  data-il8n="D">D</div></option>
+		<option="F" selected><div  data-il8n="F">F</div></option>
+	</select>
+	<input type="text"  class="hideIt" value="-" name="attr_medicalAidDie">
+	<input type="text" name="attr_medicalAidMod" value="0">
+	<input type="text"  readonly="readonly"  value="-" name="attr_medicalAidFinal">
+
+	<div  class="specialties line3" data-il8n="SPECIALTIES">SPECIALTIES</div> 
+	<textarea class="col1" name="attr_specialtiesStr"></textarea>
+	<textarea  class="col2"  name="attr_specialtiesAgl"></textarea>
+	<textarea  class="col3"  name="attr_specialtiesInt"></textarea>
+	<textarea  class="col4" name="attr_specialtiesEMP"></textarea>
+
+</div>
+<!-- End Skills Line 3 -->
+<div class="line2"></div>
+<div class="attribSkills">
+
+</div>
+<div class="line2"></div>
+
+<div class="combat">
+	<!--- ROW 1 --> 
+	<div class="combatCol line borderRight">
+		<div  class="headers" data-il8n="COMBAT">COMBAT</div> 
+	</div>
+	<div>
+		<div class="armor line sectionColor borderRight">
+			<div  class="headers cmbtSpacer" data-il8n="ARMOR">ARMOR</div>
+			<span class="rating" data-il8n="RATING">RATING</span>  
+		</div>	
+	</div>
+	<div  class="headers line sectionColor">	
+		<div  class="headers cmbtSpacer"  data-il8n="CONDITIONS">CONDITIONS</div>
+	</div>
+	<!--- --> 	
+	<!--- ROW 2 -->  
+	<div class="borderRight">
+		<span class="combatHeader" data-il8n="DAMAGE">DAMAGE</span>
+		<div class="markOff">
+			<div class="dmgContainer">
+				<div><input type="checkbox" value="1" name="attr_dmg1"  /><span></span></div>					
+				<div><input type="checkbox" value="2" name="attr_dmg2"  /><span></span></div>					
+				<div><input type="checkbox" value="3"  name="attr_dmg3"  /><span></span></div>					
+				<div><input type="checkbox" value="4"  name="attr_dmg4"  /><span></span></div>					
+				<div><input type="checkbox" value="5"  name="attr_dmg5"  /><span></span></div>					
+				<div><input type="checkbox" value="6"  name="attr_dmg6"  /><span></span></div>
+				<div><input type="text" style="display:none;width:100%" name="attr_curDamage" /></div>			
+			</div>
+			<div  class="dmgContainer line">
+				<div><input type="checkbox" value="7" name="attr_dmg7"  /><span></span></div>					
+				<div><input type="checkbox" value="8" name="attr_dmg8"  /><span></span></div>					
+				<div><input type="checkbox" value="9" name="attr_dmg9"  /><span></span></div>					
+				<div><input type="checkbox" value="10" name="attr_dmg10"  /><span></span></div>					
+				<div><input type="checkbox" value="11" name="attr_dmg11"  /><span></span></div>					
+				<div><input type="checkbox" value="12" name="attr_dmg12"  /><span></span></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="borderRight fix1">
+		<span class="combatHeader cmbtSpacer" data-il8n="STRESS">STRESS</span>
+		<div class="markOff">
+			<div class="stressContainer">
+				<div><input type="checkbox" value="1" name="attr_stress1"  /><span></span></div>					
+				<div><input type="checkbox" value="2" name="attr_stress2"  /><span></span></div>					
+				<div><input type="checkbox" value="3"  name="attr_stress3"  /><span></span></div>					
+				<div><input type="checkbox" value="4"  name="attr_stress4"  /><span></span></div>					
+				<div><input type="checkbox" value="5"  name="attr_stress5"  /><span></span></div>					
+				<div><input type="checkbox" value="6"  name="attr_stress6"  /><span></span></div>
+				<div><input type="text" style="display:none;width:100%" name="attr_curStress" /></div>			
+			</div>
+			<div  class="stressContainer line">
+				<div><input type="checkbox" value="7" name="attr_stress7"  /><span></span></div>					
+				<div><input type="checkbox" value="8" name="attr_stress8"  /><span></span></div>					
+				<div><input type="checkbox" value="9" name="attr_stress9"  /><span></span></div>					
+				<div><input type="checkbox" value="10" name="attr_stress10"  /><span></span></div>					
+				<div><input type="checkbox" value="11" name="attr_stress11"  /><span></span></div>					
+				<div><input type="checkbox" value="12" name="attr_stress12"  /><span></span></div>
+			</div>
+		</div>
+	</div>
+	<div  > <!-- Armor -->
+		<div class="armor cmbtSpacer borderRight fix1">
+			<div ><span  data-il8n="Head" >Head</span></div>
+			<div><input type="text" name="attr_headArmor"></div>
+			<div><span  data-il8n="Arms" >Arms</span></div>
+			<div><input type="text" name="attr_armArmor"></div>
+		</div>
+	</div>
+	<div> <!-- Conditions -->
+		<div class="conditions">
+			<div class="cmbtSpacer"><span  data-il8n="Starving" >Starving</span></div>
+			<div><input type="checkbox" name="attr_starveCondition"><span></span></div>
+			<div class="cmbtSpacer"><span  data-il8n="Dehydrated" >Dehydrated</span></div>
+			<div ><input type="checkbox" name="attr_DehydratedCondition"><span></span></div>
+		</div>
+	</div>
+	<!--- End of Row 2 -->
+	<!--- Start of Row 3 --> 
+	<!-- Start col1 -->
+	<div  class="borderRight">
+		<div class="combatAttrib">
+			<span   class="cmbtSpacer" data-il8n="Hit-Capacity" >Hit Capacity</span>
+			<input type="text" name="attr_hitCap">
+			<span   class="cmbtSpacer" data-il8n="Stress-Capacity" >Stress Capacity</span>
+			<input type="text" name="attr_stressCap">
+			<span class="cmbtSpacer"  data-il8n="Coolness-Under-Fire" >Coolness Under Fire</span>
+			<input type="text" name="attr_hitCap">
+			<span  class="cmbtSpacer" data-il8n="Unit-Morale" >Unit Morale</span>
+			<input type="text" name="attr_unitMorale">
+		</div>	
+	</div>
+	<!-- Start col2 -->
+	<div  class="borderRight fix1">
+		<div class="crits line2">
+			<span  class="cmbtSpacer" data-il8n="CRITICAL-INJURIES" >CRITICAL INJURIES</span>
+			<textarea class="crits" name="attr_crits"></textarea>
+		</div>	
+		<div class="disease">
+			<span  class="cmbtSpacer" data-il8n="DISEASES" >DISEASES</span>
+			<textarea name="attr_disease"></textarea>
+		</div>	
+
+	</div>
+	<!-- Start col3 -->
+	<div >
+		<div class="armor line2 borderRight">
+			<div  class="cmbtSpacer" ><span  data-il8n="Torso" >Torso</span></div>
+			<div><input type="text" name="attr_torsoArmor"></div>
+			<div  class="cmbtSpacer" ><span  data-il8n="Legs" >Legs</span></div>
+			<div><input class="fix3" type="text" name="attr_legArmor"></div>
+		</div>
+		<div>
+			<div  class="cmbtSpacer line2 sectionColor fix2 radHdr fix4"  data-il8n="RADIATION" >RADIATION</div>
+			<div  class="cmbtSpacer borderRight" ><span  data-il8n="Tempory" >Tempory</span></div>
+			<div class="radiationTemp  borderRight">
+				<div><input type="checkbox" value="1" name="attr_radTemp1"  /><span></span></div>					
+				<div><input type="checkbox" value="2" name="attr_radTemp2"  /><span></span></div>					
+				<div><input type="checkbox" value="3"  name="attr_radTemp3"  /><span></span></div>					
+				<div><input type="checkbox" value="4"  name="attr_radTemp4"  /><span></span></div>					
+				<div><input type="checkbox" value="5"  name="attr_radTemp5"  /><span></span></div>					
+				<div><input type="checkbox" value="6"  name="attr_radTemp6"  /><span></span></div>
+				<div><input type="checkbox" value="7" name="attr_radTemp7"  /><span></span></div>					
+				<div><input type="checkbox" value="8" name="attr_radTemp8"  /><span></span></div>					
+				<div><input type="checkbox" value="9"  name="attr_radTemp9"  /><span></span></div>					
+				<div><input type="checkbox" value="10"  name="attr_radTemp10"  /><span></span></div>
+
+				<div><input type="text" style="display:none;width:100%" name="attr_curRadTemp" /></div>			
+			</div>
+		</div>
+	</div>
+	<!-- Start col4 -->
+	<div>
+		<div class="conditions line2">
+			<div  class="cmbtSpacer" ><span  data-il8n="Sleep-Deprived" >Sleep Deprived</span></div>
+			<div><input type="checkbox" name="attr_slpDprvd"><span></span></div>
+			<div  class="cmbtSpacer" ><span  data-il8n="Hypothermic" >Hypothermic</span></div>
+			<div><input type="checkbox" name="attr_Hypthrmc"><span></span></div>
+		</div>
+		<!--<div>-->
+			<div class="line2 sectionColor radHdr"></div>	
+			<div  class="cmbtSpacer" ><span  data-il8n="Permanent" >Permanent</span></div>
+			<div class="radiationTemp">
+				<div style="height:25px;"><input type="checkbox" value="1" name="attr_radPerm1"  /><span></span></div>					
+				<div ><input type="checkbox" value="2" name="attr_radPerm2"  /><span></span></div>					
+				<div><input type="checkbox" value="3"  name="attr_radPerm3"  /><span></span></div>					
+				<div><input type="checkbox" value="4"  name="attr_radPerm4"  /><span></span></div>					
+				<div><input type="checkbox" value="5"  name="attr_radPerm5"  /><span></span></div>					
+				<div><input type="checkbox" value="6"  name="attr_radPerm6"  /><span></span></div>
+				<div><input type="checkbox" value="7" name="attr_radPerm7"  /><span></span></div>					
+				<div><input type="checkbox" value="8" name="attr_radPerm8"  /><span></span></div>					
+				<div><input type="checkbox" value="9"  name="attr_radPerm9"  /><span></span></div>					
+				<div><input type="checkbox" value="10"  name="attr_radPerm10"  /><span></span></div>
+
+				<div><input type="text" style="display:none;width:100%" name="attr_curRadPerm" /></div>			
+			</div>
+		<!--</div>	-->
+	</div>
+	<!--- End of Row 3 -->  
+</div>
+<div class="line2"></div>	
+<div class="weapons sectionColor line2">
+	<div class="header"><span data-il8n="WEAPON	" >WEAPON</span></div>
+	<div class="header"><span data-il8n="TYPE" >TYPE</span></div>	
+	<div class="header"><span data-il8n="CARTRIDGE" >CARTRIDGE</span></div>	
+	<div class="header"><span data-il8n="SKILL" >SKILL</span></div>	
+	<div class="header"><span data-il8n="ROF" >ROF</span></div>	
+	<div class="header"><span data-il8n="DAMAGE" >DAMAGE</span></div>	
+	<div class="header"><span data-il8n="CRIT" >CRIT</span></div>	
+	<div class="header"><span data-il8n="ARMOR" >ARMOR</span></div>	
+	<div class="header"><span data-il8n="RANGE" >RANGE</span></div>	
+	<div class="header"><span data-il8n="MAG" >MAG</span></div>	
+	<div class="header"><span data-il8n="RELIABILITY" >RELIABILITY</span></div>
+	<div  class="header"><span data-il8n="BLAST" >BLAST</span></div>
+	<div class="header"><span data-il8n="AMMO-DICE" >AMMO DICE</span></div>
+	<div  class="header" ><span data-il8n="MOD" >MOD.</span></div>	
+	<div></div>
+</div>
+<fieldset class="repeating_weapons">
+	<div class="weapons line">
+		<div class="borderRight" ><input type="text" name="attr_weapon"></div>
+		<div class="borderRight" ><input type="text" name="attr_type"></div>
+		<div class="borderRight" ><input type="text" name="attr_cartridge"></div>
+		<div class="borderRight" >
+			<select name="attr_wpnSkill">
+				<option value="Heavy"><span  data-il8n="Heavy">Heavy</span></option>
+				<option value="Ranged" selected><span  data-il8n="Ranged">Ranged</span></option>	
+				<option value="Melee"><span  data-il8n="Melee"></span>Melee</option>	
+			</select>
+		</div>
+		<div class="borderRight" ><input type="text" name="attr_rof" value="3"></div>
+		<div class="borderRight" ><input type="text" name="attr_damage" value="3"></div>
+		<div class="borderRight" ><input type="text" name="attr_crit" value="4"></div>
+		<div class="borderRight" ><input type="text" name="attr_armor" value="0"></div>
+		<div class="borderRight" ><input type="text" name="attr_range" value=""></div>
+		<div class="borderRight" ><input type="text" name="attr_mag" value="30/30"></div>
+		<div class="borderRight" >				
+			<select name="attr_reliabilty">
+				<option value="A" selected><span  data-il8n="A">A</span></option>
+				<option value="B"><span  data-il8n="B">B</span></option>	
+				<option value="C"><span  data-il8n="C">C</span></option>	
+				<option value="D"><span  data-il8n="D">D</span></option>
+				<option value="Broken"><span  data-il8n="Broken">Broken</span></option>	
+			</select>
+		</div>
+		<div class="borderRight" ><input type="text" name="attr_blast" value="-"></div>
+		<div class="borderRight" ><input type="text" name="attr_ammoDice" value="0"></div>
+		<div class="borderRight" ><input type="text" name="attr_mod" value="0"></div>
+		<button type="roll" name="roll_attack" value="&{template:t2k} {{source=@{skillName}}} {{weapon=@{weapon}}}     @{skillCode} {{reliabilty=@{reliabilty}}} {{diff=[[?{Difficulty|6}]]}} {{dmg=[[@{damage}]]}}  {{critDmg=[[@{crit}]]}}  {{ammoDice=[[@{ammoDice}]]}}  {{ammoDie1=[[1d6]]}}   {{ammoDie2=[[1d6]]}}  {{ammoDie3=[[1d6]]}}  {{ammoDie4=[[1d6]]}}  {{ammoDie5=[[1d6]]}}  {{ammoDie6=[[1d6]]}} {{hitLoc=[[1d6]]}} {{injury=[[1d10]]}} {{hitLocButton=[Another Hit Location](~@{character_name}|hitLoc)}}"></button>
+		<div><input type="text" class="hideIt" name="attr_skillDie" value="0"></div>
+		<input  class="hideIt" name="attr_wpnSkill" value="Heavy">
+		<input  class="hideIt" name="attr_skillCode" value="{{stat=[[@{StrengthFinal}]]}}  {{skill=[[@{HeavyWeaponsFinal}]]}}">
+		<input  class="hideIt" name="attr_skillName" value="Heavy Weapons">	
+
+	</div>
+</fieldset>
+<div class="line3">
+<button type="roll" name="roll_hitLoc" class="text_roll" data-il8n="Hit-Location" value="&{template:hitLoc} {{hitLoc=[[1d6]]}}  {{injury=[[1d10]]}}">Hit Location</button>
+</div>
+<div class="line2 line3 sectionColor"  data-il8n="GEAR">GEAR</div> 
+<div class="gear">
+	
+	<div class="borderRight">
+		<div><span  class="header"  data-il8n="COMBAT-GEAR">COMBAT GEAR</span></div>	
+		<div class="items">
+			<div class="header">
+				<span  data-il8n="Item">Item</span> 
+			</div>
+			<div class="units">
+				<span  data-il8n="Item">Units</span> 
+			</div>			
+		</div>
+		<fieldset class="repeating_combatGear">
+			<div class="items line">
+				<div class="borderRight"><input type="text" name="attr_item" value=""></div>
+				<div><input type="text" name="attr_units" class="unitsVal" value="0.25"></div>
+			</div>
+		</fieldset>
+			<span class="encLabels "   data-il8n="Max-ENC-UNITS">Max Enc. Units</span><input readonly="readonly" type="text" value="8" class="maxEnc" name="attr_maxCmbtEnc"/>
+			<span class="encLabels" data-il8n="TOTAL-UNITS">Total Units</span><input type="text"  readonly="readonly"  value="8" class="currentEnc" name="attr_totalCmbtEnc"/>
+
+	</div>
+	<div class="backpack borderRight">
+		<div><span  class="header"  data-il8n="BACKPACK">BACKPACK</span></div>
+		<div class="items">
+			<div class="header">
+				<span  data-il8n="Item">Item</span> 
+			</div>
+			<div class="units">
+				<span  data-il8n="Item">Units</span> 
+			</div>			
+		</div>
+		<fieldset class="repeating_bkpkGear">
+			<div class="items line">
+				<div class="borderRight"><input type="text" name="attr_item" value=""></div>
+				<div><input type="text" name="attr_units"  class="unitsVal"  value="0.25"></div>
+			</div>
+		</fieldset>
+		<div>
+
+			<span class="encLabels" data-il8n="Carried">Carried</span><input type="checkbox" value="1" name="attr_bkpkCarried"/><span></span>
+			<span class="encLabels" data-il8n="Max-ENC-UNITS">Max Enc. Units</span><input type="text" readonly="readonly"  value="8" class="maxEnc" name="attr_maxEnc"/>
+			<span class="encLabels" data-il8n="TOTAL-UNITS">Total Units</span><input type="text" value="0" readonly="readonly"  class="currentEnc" name="attr_totalBkPkEnc"/>
+
+		</div>
+	</div>
+	<div class="otherGear">
+		<span  class="header" data-il8n="TINY-ITEMS">TINY ITEMS</span>
+		<textarea name="attr_tinyItems"></textarea>
+		<span  class="header" data-il8n="OTHER-GEAR">OTHER GEAR</span>
+		<textarea name="attr_OtherGear"></textarea>
+	</div>
+</div>
+<div class="line2"></div>
+
+<rolltemplate class="sheet-rolltemplate-t2k">
+	<div class="header" >{{source}}</div>
+	<div class="header" >{{weapon}}</div>
+	<div class="body">
+		<div>Reliabilty {{reliabilty}}</div>
+		<div>Difficulty {{diff}}</div>
+		<div><span  data-il8n="Roll">Roll</span>: {{stat}} {{skill}}</div>
+		<div>
+			{{#^rollLess() stat diff}} 
+					<!--//<img src="https://raw.githubusercontent.com/Lockbox313/imagedump/master/TW2K4/success.png">-->
+					<div class="rolltemplate-successImg"></div>
+			{{/^rollLess() stat diff}}
+			{{#rollGreater() stat 9}} 
+					<div class="rolltemplate-successImg"></div>
+			{{/rollGreater() stat 9}}
+			{{#^rollLess() skill diff}} 
+					<div class="rolltemplate-successImg"></div>
+			{{/^rollLess() skill diff}}
+			{{#rollGreater() skill 9}} 
+					<div class="rolltemplate-successImg"></div>
+			{{/rollGreater() skill 9}}
+			{{#rollTotal() stat 1}} 
+					<div class="rolltemplate-mishapImg"></div>
+			{{/rollTotal() stat 1}}
+			{{#rollTotal() skill 1}} 
+				<div class="rolltemplate-mishapImg"></div>
+			{{/rollTotal() skill 1}}
+		</div>
+		<div>Ammo Dice:</div>
+		<div> 
+		{{#rollGreater() ammoDice 0}} <!-- AMMO DIE ONE -->
+			<span>
+				{{#rollTotal() ammoDie1 1}} 
+						<div class="rolltemplate-mishapAmmo">1</div> 
+				{{/rollTotal() ammoDie1 1}}
+				{{#rollTotal() ammoDie1 2}} 
+						<div class="rolltemplate-ammo">2</div> 
+				{{/rollTotal() ammoDie1 2}}
+				{{#rollTotal() ammoDie1 3}} 
+						<div class="rolltemplate-ammo">3</div> 
+				{{/rollTotal() ammoDie1 3}}
+				{{#rollTotal() ammoDie1 4}} 
+						<div class="rolltemplate-ammo">4</div> 
+				{{/rollTotal() ammoDie1 4}}
+				{{#rollTotal() ammoDie1 5}} 
+						<div class="rolltemplate-ammo">5</div> 
+				{{/rollTotal() ammoDie1 5}}
+				{{#rollTotal() ammoDie1 6}} 
+					<div class="rolltemplate-ammoHit">6</div> 
+				{{/rollTotal() ammoDie1 6}}
+			</span>
+		{{/rollGreater() ammoDice 0}}
+		{{#rollGreater() ammoDice 1}} <!-- AMMO DIE TWO -->
+			<span>
+				{{#rollTotal() ammoDie2 1}} 
+						<div class="rolltemplate-mishapAmmo">1</div>  
+				{{/rollTotal() ammoDie2 1}}
+				{{#rollTotal() ammoDie2 2}} 
+						<div class="rolltemplate-ammo">2</div>
+				{{/rollTotal() ammoDie2 2}}
+				{{#rollTotal() ammoDie2 3}} 
+						<div class="rolltemplate-ammo">3</div>
+				{{/rollTotal() ammoDie2 3}}
+				{{#rollTotal() ammoDie2 4}} 
+						<div class="rolltemplate-ammo">4</div>
+				{{/rollTotal() ammoDie2 4}}
+				{{#rollTotal() ammoDie2 5}} 
+						<div class="rolltemplate-ammo">5</div>
+				{{/rollTotal() ammoDie2 5}}
+				{{#rollTotal() ammoDie2 6}} 
+						<div class="rolltemplate-ammoHit">6</div>
+				{{/rollTotal() ammoDie2 6}}
+			</span>
+		{{/rollGreater() ammoDice 1}}
+		{{#rollGreater() ammoDice 2}} <!-- AMMO DIE THREE-->
+			<span>
+				{{#rollTotal() ammoDie3 1}} 
+						<div class="rolltemplate-mishapAmmo">1</div> 
+				{{/rollTotal() ammoDie3 1}}
+				{{#rollTotal() ammoDie3 2}} 
+						<div class="rolltemplate-ammo">2</div>
+				{{/rollTotal() ammoDie3 2}}
+				{{#rollTotal() ammoDie3 3}} 
+						<div class="rolltemplate-ammo">3</div> 
+				{{/rollTotal() ammoDie3 3}}
+				{{#rollTotal() ammoDie3 4}} 
+						<div class="rolltemplate-ammo">4</div>
+				{{/rollTotal() ammoDie3 4}}
+				{{#rollTotal() ammoDie3 5}} 
+						<div class="rolltemplate-ammo">5</div> 
+				{{/rollTotal() ammoDie3 5}}
+				{{#rollTotal() ammoDie3 6}} 
+						<div class="rolltemplate-ammoHit">6</div>
+				{{/rollTotal() ammoDie3 6}}
+			</span>
+		{{/rollGreater() ammoDice 2}}
+		</div>
+		<div class="rolltemplate-divider"></div>
+		<div class="sheet-rolltemplate-ammoLine2">
+		{{#rollGreater() ammoDice 3}} <!-- AMMO DIE FOUR-->
+			<span>
+				{{#rollTotal() ammoDie4 1}} 
+						<div class="rolltemplate-mishapAmmo">1</div> 
+				{{/rollTotal() ammoDie4 1}}
+				{{#rollTotal() ammoDie4 2}} 
+						<div class="rolltemplate-ammo">2</div>
+				{{/rollTotal() ammoDie4 2}}
+				{{#rollTotal() ammoDie4 3}} 
+						<div class="rolltemplate-ammo">3</div>
+				{{/rollTotal() ammoDie4 3}}
+				{{#rollTotal() ammoDie4 4}} 
+						<div class="rolltemplate-ammo">4</div>
+				{{/rollTotal() ammoDie4 4}}
+				{{#rollTotal() ammoDie4 5}} 
+						<div class="rolltemplate-ammo">5</div> 
+				{{/rollTotal() ammoDie4 5}}
+				{{#rollTotal() ammoDie4 6}} 
+						<div class="rolltemplate-ammoHit">6</div>
+				{{/rollTotal() ammoDie4 6}}
+			</span>
+		{{/rollGreater() ammoDice 3}}
+		{{#rollGreater() ammoDice 4}} <!-- AMMO DIE FIVE-->
+			<span>
+				{{#rollTotal() ammoDie5 1}} 
+						<div class="rolltemplate-mishapAmmo">1</div>  
+				{{/rollTotal() ammoDie5 1}}
+				{{#rollTotal() ammoDie5 2}} 
+						<div class="rolltemplate-ammo">2</div>
+				{{/rollTotal() ammoDie5 2}}
+				{{#rollTotal() ammoDie5 3}} 
+						<div class="rolltemplate-ammo">3</div> 
+				{{/rollTotal() ammoDie5 3}}
+				{{#rollTotal() ammoDie5 4}} 
+						<div class="rolltemplate-ammo">4</div> 
+				{{/rollTotal() ammoDie5 4}}
+				{{#rollTotal() ammoDie5 5}} 
+						<div class="rolltemplate-ammo">5</div> 
+				{{/rollTotal() ammoDie5 5}}
+				{{#rollTotal() ammoDie5 6}} 
+						<div class="rolltemplate-ammoHit">6</div>
+				{{/rollTotal() ammoDie5 6}}
+			</span>
+		{{/rollGreater() ammoDice 4}}
+
+		{{#rollGreater() ammoDice 5}} <!-- AMMO DIE SIX-->
+			<span>
+				{{#rollTotal() ammoDie6 1}} 
+						<div class="rolltemplate-mishapAmmo">1</div> 
+				{{/rollTotal() ammoDie6 1}}
+				{{#rollTotal() ammoDie6 2}} 
+						<div class="rolltemplate-ammo">2</div> 
+				{{/rollTotal() ammoDie6 2}}
+				{{#rollTotal() ammoDie6 3}} 
+						<div class="rolltemplate-ammo">3</div> 
+				{{/rollTotal() ammoDie6 3}}
+				{{#rollTotal() ammoDie6 4}} 
+						<div class="rolltemplate-ammo">4</div> 
+				{{/rollTotal() ammoDie6 4}}
+				{{#rollTotal() ammoDie6 5}} 
+						<div class="rolltemplate-ammo">5</div>
+				{{/rollTotal() ammoDie6 5}}
+				{{#rollTotal() ammoDie6 6}} 
+						<div class="rolltemplate-ammoHit">6</div>
+				{{/rollTotal() ammoDie6 6}}
+			</span>
+		{{/rollGreater() ammoDice 5}}
+		</div>
+		<div class="rolltemplate-divider"></div>
+		<div>
+		<span  data-il8n="Damage">Damage</span>: {{dmg}} <span  data-il8n="Critical">Critical</span>: {{critDmg}}</div>
+
+		<div>	<span  data-il8n="Hit Location">Hit Location</span>:{{hitLoc}} 
+				{{#rollTotal() hitLoc 1}} 
+						<span  data-il8n="Legs">Legs</span> 
+				{{/rollTotal() hitLoc 1}}
+				{{#rollBetween() hitLoc 2 4}}
+						<span  data-il8n="Torso">Torso</span> 
+				{{/rollBetween() hitLoc 2 4}}
+				{{#rollTotal() hitLoc 5}} 
+						<span  data-il8n="Arm">Arm</span> 
+				{{/rollTotal() hitLoc 5}}
+				{{#rollTotal() hitLoc 6}} 
+						<span  data-il8n="Head">Head</span> 
+				{{/rollTotal() hitLoc 6}}	
+				
+		</div>
+		<div class="rolltemplate-divider"></div>
+		<div data-il8n="Injury">Injury {{injury}}</div>
+		<div class="rolltemplate-hitlocr">{{hitLocButton}}</div>
+	</div>
+</rolltemplate>
+
+<rolltemplate class="sheet-rolltemplate-hitLoc">
+<div class="header">
+	<span  data-il8n="Hit-Location" >Hit Location</span>
+</div>
+<div class="body">
+{{hitLoc}} 
+<span>		{{#rollTotal() hitLoc 1}} 
+					<span  data-il8n="Legs">Legs</span> 
+			{{/rollTotal() hitLoc 1}}
+			{{#rollBetween() hitLoc 2 4}}
+					<span  data-il8n="Torso">Torso</span> 
+			{{/rollBetween() hitLoc 2 4}}
+			{{#rollTotal() hitLoc 5}} 
+					<span  data-il8n="Arm">Arm</span> 
+			{{/rollTotal() hitLoc 5}}
+			{{#rollTotal() hitLoc 6}} 
+					<span  data-il8n="Head">Head</span> 
+			{{/rollTotal() hitLoc 6}}	
+		<span  data-il8n="Injury">Injury</span>  {{injury}}	
+</span>
+</div>
+</rolltemplate>
+
+
+<rolltemplate class="sheet-rolltemplate-skills">
+	<div class="header" >{{source}}</div>
+	<div class="body">
+		<div>Difficulty {{diff}}</div>
+		<div><span  data-il8n="Roll">Roll</span>: {{stat}} {{skill}}</div>
+		<div>
+			{{#^rollLess() stat diff}} 
+					<!--//<img src="https://raw.githubusercontent.com/Lockbox313/imagedump/master/TW2K4/success.png">-->
+					<div class="rolltemplate-successImg"></div>
+			{{/^rollLess() stat diff}}
+			{{#rollGreater() stat 9}} 
+					<div class="rolltemplate-successImg"></div>
+			{{/rollGreater() stat 9}}
+			{{#^rollLess() skill diff}} 
+					<div class="rolltemplate-successImg"></div>
+			{{/^rollLess() skill diff}}
+			{{#rollGreater() skill 9}} 
+					<div class="rolltemplate-successImg"></div>
+			{{/rollGreater() skill 9}}
+			{{#rollTotal() stat 1}} 
+					<div class="rolltemplate-mishapImg"></div>
+			{{/rollTotal() stat 1}}
+			{{#rollTotal() skill 1}} 
+				<div class="rolltemplate-mishapImg"></div>
+			{{/rollTotal() skill 1}}
+		</div>
+	</div>	
+</rolltemplate>
+
+
+
+
+
+
+
+
+
+<script type="text/worker">	
+
+	const dice = ["0","D6","D8","D10","D12"];
+
+	on("change:repeating_weapons:wpnSkill" , function() {
+	   getAttrs(["repeating_weapons_wpnskill"], function(values) {
+			let skillCode = "";
+			let skillName = "";
+			let wpnskill  = values.repeating_weapons_wpnskill;
+console.log("values "+JSON.stringify(values));
+console.log("wpnSkill "+wpnskill);
+			switch (wpnskill){
+				case "Heavy":
+					skillCode = "{{stat=[[@{StrengthFinal}]]}}  {{skill=[[@{HeavyWeaponsFinal}]]}}";
+					skillName = "Heavy Weapons";
+					break;
+				case "Ranged":
+					skillCode="{{stat=[[@{AgilityFinal}]]}}  {{skill=[[@{rangedCombatFinal}]]}}";
+					skillName = "Ranged Combat";
+					break;
+				case "Melee":
+					skillCode ="{{stat=[[@{StrengthFinal}]]}}  {{skill=[[@{MeleeFinal}]]}}";
+					skillName = "Melee";
+					break;
+			}
+console.log("Sk "+skillCode);
+console.log("SN "+skillName);
+			setAttrs({repeating_weapons_skillCode: skillCode, repeating_weapons_skillName:skillName});
+	   });
+	});
+
+
+
+	on("change:strength change:StrengthMod" , function(eventInfo) {
+	   getAttrs(["strength","StrengthMod"], function(values) {
+			console.log("strength: "+values.strength);
+			console.log("StrengthMod: "+values.StrengthMod);
+			let dieVal=getCurDieVal(values.strength)
+			let newDie = dice[dieVal];
+			let modDieVal = dieVal+parseInt(values.StrengthMod);
+			modDieVal = Math.min(modDieVal,4);	
+			modDieVal = Math.max(modDieVal,0);
+			let modDie = dice[modDieVal];
+			console.log("modDie: "+modDie)
+			let encMax = modDie.replace("D", "");
+			setAttrs({StrengthFinal: modDie, StrengthDie:newDie,maxCmbtEnc:encMax,maxEnc:encMax});
+	   });
+	});
+
+	on("change:agility change:AgilityMod" , function(eventInfo) {
+	   getAttrs(["agility","AgilityMod"], function(values) {
+			console.log("agility: "+values.agility);
+			console.log("AgilityMod: "+values.AgilityMod);
+			let dieVal=getCurDieVal(values.agility)
+			let newDie = dice[dieVal];
+			let modDieVal = dieVal+parseInt(values.AgilityMod);
+console.log(" modDieVal: "+ modDieVal);
+			modDieVal = Math.min(modDieVal,4);	
+			modDieVal = Math.max(modDieVal,0);
+			let modDie = dice[modDieVal];
+console.log("modDie: "+ modDie);
+			setAttrs({AgilityFinal: modDie, AgilityDie:newDie});
+	   });
+	})	
+
+	on("change:empathy change:EmpathyMod" , function(eventInfo) {
+	   getAttrs(["empathy","EmpathyMod"], function(values) {
+			let dieVal=getCurDieVal(values.empathy)
+console.log("dieVal: "+ dieVal);
+			let newDie = dice[dieVal];
+console.log("newDie: "+ newDie);
+			let modDieVal = dieVal+parseInt(values.EmpathyMod);
+console.log(" modDieVal: "+ modDieVal);
+			modDieVal = Math.min(modDieVal,4);	
+			modDieVal = Math.max(modDieVal,0);
+			let modDie = dice[modDieVal];
+console.log("modDie:"+modDie);
+                      
+			setAttrs({EmpathyFinal: modDie, EmpathyDie:newDie});
+	   });
+	})	
+
+	on("change:HeavyWeapons change:HeavyWeaponsMod" , function(eventInfo) {
+	   getAttrs(["HeavyWeapons","HeavyWeaponsMod"], function(values) {
+			let dieVal=getCurDieVal(values.HeavyWeapons)
+			let newDie = dice[dieVal];
+			let modDieVal = dieVal+parseInt(values.HeavyWeaponsMod);
+			modDieVal = Math.min(modDieVal,4);	
+			modDieVal = Math.max(modDieVal,0);
+			let modDie = dice[modDieVal];
+			setAttrs({HeavyWeaponsFinal: modDie, HeavyWeaponsDie:newDie});
+	   });
+	})
+
+	on("change:Melee change:MeleeMod" , function(eventInfo) {
+	   getAttrs(["Melee","MeleeMod"], function(values) {
+			let dieVal=getCurDieVal(values.Melee)
+			let newDie = dice[dieVal];
+			let modDieVal = dieVal+parseInt(values.MeleeMod);
+			modDieVal = Math.min(modDieVal,4);	
+			modDieVal = Math.max(modDieVal,0);
+			let modDie = dice[modDieVal];
+			setAttrs({MeleeFinal: modDie, MeleeDie:newDie});
+	   });
+	})
+
+	on("change:Stamina change:StaminaMod" , function(eventInfo) {
+	   getAttrs(["Stamina","StaminaMod"], function(values) {
+			let dieVal=getCurDieVal(values.Stamina)
+			let newDie = dice[dieVal];
+			let modDieVal = dieVal+parseInt(values.StaminaMod);
+			modDieVal = Math.min(modDieVal,4);	
+			modDieVal = Math.max(modDieVal,0);
+			let modDie = dice[modDieVal];
+			setAttrs({StaminaFinal: modDie, StaminaDie:newDie});
+	   });
+	})	
+
+	on("change:Driving change:DrivingMod" , function(eventInfo) {
+	   getAttrs(["Driving","DrivingMod"], function(values) {
+			let dieVal=getCurDieVal(values.Driving)
+			let newDie = dice[dieVal];
+			let modDieVal = dieVal+parseInt(values.DrivingMod);
+			modDieVal = Math.min(modDieVal,4);	
+			modDieVal = Math.max(modDieVal,0);
+			let modDie = dice[modDieVal];
+			setAttrs({DrivingFinal: modDie, DrivingDie:newDie});
+	   });
+	})	
+
+
+	on("change:Mobility change:MobilityMod" , function(eventInfo) {
+	   getAttrs(["Mobility","MobilityMod"], function(values) {
+			let dieVal=getCurDieVal(values.Mobility)
+			let newDie = dice[dieVal];
+			let modDieVal = dieVal+parseInt(values.MobilityMod);
+			modDieVal = Math.min(modDieVal,4);	
+			modDieVal = Math.max(modDieVal,0);
+			let modDie = dice[modDieVal];
+			setAttrs({MobilityFinal: modDie, MobilityDie:newDie});
+	   });
+	})	
+
+	on("change:rangedCombat change:rangedCombatMod" , function(eventInfo) {
+	   getAttrs(["rangedCombat","rangedCombatMod"], function(values) {
+			let dieVal=getCurDieVal(values.rangedCombat)
+			let newDie = dice[dieVal];
+			let modDieVal = dieVal+parseInt(values.rangedCombatMod);
+			modDieVal = Math.min(modDieVal,4);	
+			modDieVal = Math.max(modDieVal,0);
+			let modDie = dice[modDieVal];
+			setAttrs({rangedCombatFinal: modDie, rangedCombatDie:newDie});
+	   });
+	})	
+
+
+	on("change:Recon change:ReconMod" , function(eventInfo) {
+	   getAttrs(["Recon","ReconMod"], function(values) {
+			let dieVal=getCurDieVal(values.Recon)
+			let newDie = dice[dieVal];
+			let modDieVal = dieVal+parseInt(values.ReconMod);
+			modDieVal = Math.min(modDieVal,4);	
+			modDieVal = Math.max(modDieVal,0);
+			let modDie = dice[modDieVal];
+			setAttrs({ReconFinal: modDie, ReconDie:newDie});
+	   });
+	})	
+
+	on("change:Survival change:SurvivalMod" , function(eventInfo) {
+	   getAttrs(["Survival","SurvivalMod"], function(values) {
+			let dieVal=getCurDieVal(values.Survival)
+			let newDie = dice[dieVal];
+			let modDieVal = dieVal+parseInt(values.SurvivalMod);
+			modDieVal = Math.min(modDieVal,4);	
+			modDieVal = Math.max(modDieVal,0);
+			let modDie = dice[modDieVal];
+			setAttrs({SurvivalFinal: modDie, SurvivalDie:newDie});
+	   });
+	})
+
+	on("change:Tech change:TechMod" , function(eventInfo) {
+	   getAttrs(["Tech","TechMod"], function(values) {
+			let dieVal=getCurDieVal(values.Tech)
+			let newDie = dice[dieVal];
+			let modDieVal = dieVal+parseInt(values.TechMod);
+			modDieVal = Math.min(modDieVal,4);	
+			modDieVal = Math.max(modDieVal,0);
+			let modDie = dice[modDieVal];
+			setAttrs({TechFinal: modDie, TechDie:newDie});
+	   });
+	})	
+
+	on("change:Command change:CommandMod" , function(eventInfo) {
+	   getAttrs(["Command","CommandMod"], function(values) {
+			let dieVal=getCurDieVal(values.Command)
+			let newDie = dice[dieVal];
+			let modDieVal = dieVal+parseInt(values.CommandMod);
+			modDieVal = Math.min(modDieVal,4);	
+			modDieVal = Math.max(modDieVal,0);
+			let modDie = dice[modDieVal];
+			setAttrs({CommandFinal: modDie, CommandDie:newDie});
+	   });
+	})	
+
+	on("change:Manipulation change:ManipulationMod" , function(eventInfo) {
+	   getAttrs(["Manipulation","ManipulationMod"], function(values) {
+			let dieVal=getCurDieVal(values.Manipulation)
+			let newDie = dice[dieVal];
+			let modDieVal = dieVal+parseInt(values.ManipulationMod);
+			modDieVal = Math.min(modDieVal,4);	
+			modDieVal = Math.max(modDieVal,0);
+			let modDie = dice[modDieVal];
+			setAttrs({ManipulationFinal: modDie, ManipulationDie:newDie});
+	   });
+	})	
+
+	on("change:medicalAid change:medicalAidMod" , function(eventInfo) {
+	   getAttrs(["medicalAid","medicalAidMod"], function(values) {
+			let dieVal=getCurDieVal(values.medicalAid)
+			let newDie = dice[dieVal];
+			let modDieVal = dieVal+parseInt(values.medicalAidMod);
+			modDieVal = Math.min(modDieVal,4);	
+			modDieVal = Math.max(modDieVal,0);
+			let modDie = dice[modDieVal];
+			setAttrs({medicalAidFinal: modDie, medicalAidDie:newDie});
+	   });
+	})	
+
+	function getCurDieVal(code){
+		let val="0"
+		switch (code){
+			case "D":
+				val=1;
+				break;
+			case "C":
+				val=2;
+				break;
+			case "B":
+				val=3;
+				break;
+			case "A":
+				val=4;
+				break;
+		}
+		return val;	
+	}
+
+	function getDie(selected,dmg){
+		
+	}
+
+	on("change:radPerm1 change:radPerm2 change:radPerm3 chnage:radPerm4 change:radPerm5 change:radPerm6 radPerm7 change:radPerm8 change:radPerm9 change:radPerm10", function(eventInfo) {
+		let source =eventInfo.sourceAttribute;
+		let newValue=eventInfo.newValue;
+		var selected = parseInt(source.replace("radperm", ""));
+		resetPermRad(selected,newValue)
+
+	})
+
+	function resetPermRad(selected,dmg){
+		if (dmg!=0){
+			var attrsToSet2 = {}; 
+			attrsToSet2 = setPermRad1(selected);
+			attrsToSet2["curRadPerm"] = selected;
+		} else {
+			var attrsToSet = {};
+			attrsToSet2 = setPermRad2(selected);
+			attrsToSet2["curRadPerm"] = selected-1;				
+		}
+
+		setAttrs(attrsToSet2,{silent:true});
+	}
+
+	function setPermRad1(selected) {
+		let attrsToSet = {};
+		for (var i=1; i < 13; i++) {
+			if (i<selected){
+				var x = "radPerm"+(i)
+				attrsToSet[x] = i;
+			}else if (i>selected){
+				var x = "radPerm"+(i)
+				attrsToSet[x] = "0";				
+			}
+		}
+		return attrsToSet;
+	}
+
+	function setPermRad2(selected) {
+
+		let attrsToSet = {};
+		for (var i=1; i < 13; i++) {
+			if (i<selected){
+				var x = "radPerm"+(i)
+				attrsToSet[x] = i;
+			}else{
+				var x = "radPerm"+(i)
+				attrsToSet[x] = "0";				
+			}
+		}
+		return attrsToSet;
+	}
+
+	on("change:radTemp1 change:radTemp2 change:radTemp3 chnage:radTemp4 change:radTemp5 change:radTemp6 radTemp7 change:radTemp8 change:radTemp9 change:radTemp10", function(eventInfo) {
+		let source =eventInfo.sourceAttribute;
+		let newValue=eventInfo.newValue;
+		var selected = parseInt(source.replace("radtemp", ""));
+		resetTempRad(selected,newValue)
+
+	})
+
+	function resetTempRad(selected,dmg){
+		if (dmg!=0){
+			var attrsToSet2 = {}; 
+			attrsToSet2 = setTempRad1(selected);
+			attrsToSet2["curRadTemp"] = selected;
+		} else {
+			var attrsToSet = {};
+			attrsToSet2 = setTempRad2(selected);
+			attrsToSet2["curRadTemp"] = selected-1;				
+		}
+
+		setAttrs(attrsToSet2,{silent:true});
+	}
+
+	function setTempRad1(selected) {
+		let attrsToSet = {};
+		for (var i=1; i < 13; i++) {
+			if (i<selected){
+				var x = "radTemp"+(i)
+				attrsToSet[x] = i;
+			}else if (i>selected){
+				var x = "radTemp"+(i)
+				attrsToSet[x] = "0";				
+			}
+		}
+		return attrsToSet;
+	}
+
+	function setTempRad2(selected) {
+
+		let attrsToSet = {};
+		for (var i=1; i < 13; i++) {
+			if (i<selected){
+				var x = "radTemp"+(i)
+				attrsToSet[x] = i;
+			}else{
+				var x = "radTemp"+(i)
+				attrsToSet[x] = "0";				
+			}
+		}
+		return attrsToSet;
+	}
+
+
+
+	on("change:dmg1", function(eventInfo) {
+	   getAttrs(["dmg1"], function(values) {
+			var selected =1;
+			var dmg = parseInt(values.dmg1);
+			resetDamage(selected,dmg)
+	   });
+	})	
+
+
+	on("change:dmg2", function() {
+	   getAttrs(["dmg2"], function(values) {
+			var selected =2;
+			var dmg = parseInt(values.dmg2);
+			resetDamage(selected,dmg)
+	   });
+	})	
+
+	on("change:dmg3", function() {
+	   getAttrs(["dmg3"], function(values) {
+			var selected =3;
+			var dmg = parseInt(values.dmg3);
+			resetDamage(selected,dmg)
+	   });
+	})	
+
+	on("change:dmg4", function() {
+	   getAttrs(["dmg4"], function(values) {
+			var selected =4;
+			var dmg = parseInt(values.dmg4);
+			resetDamage(selected,dmg)
+	   });
+	})	
+
+
+	on("change:dmg5", function() {
+	   getAttrs(["dmg5"], function(values) {
+			var selected =5;
+			var dmg = parseInt(values.dmg5);
+			resetDamage(selected,dmg)
+	   });
+	})	
+
+
+	on("change:dmg6", function() {
+	   getAttrs(["dmg2"], function(values) {
+			var selected =6;
+			var dmg = parseInt(values.dmg6);
+			resetDamage(selected,dmg)
+	   });
+	})	
+
+	on("change:dmg7", function() {
+	   getAttrs(["dmg7"], function(values) {
+			var selected =7;
+			var dmg = parseInt(values.dmg7);
+			resetDamage(selected,dmg)
+	   });
+	})	
+
+
+	on("change:dmg8", function() {
+	   getAttrs(["dmg8"], function(values) {
+			var selected =8;
+			var dmg = parseInt(values.dmg8);
+			resetDamage(selected,dmg)
+	   });
+	})	
+
+	on("change:dmg9", function() {
+	   getAttrs(["dmg9"], function(values) {
+			var selected =9;
+			var dmg = parseInt(values.dmg9);
+			resetDamage(selected,dmg)
+	   });
+	})	
+
+	on("change:dmg10", function() {
+	   getAttrs(["dmg10"], function(values) {
+			var selected =10;
+			var dmg = parseInt(values.dmg10);
+			resetDamage(selected,dmg)
+	   });
+	})	
+
+
+	on("change:dmg11", function() {
+	   getAttrs(["dmg11"], function(values) {
+			var selected =11;
+			var dmg = parseInt(values.dmg11);
+			resetDamage(selected,dmg)
+	   });
+	})	
+
+
+	on("change:dmg12", function() {
+	   getAttrs(["dmg12"], function(values) {
+			var selected =12;
+			var dmg = parseInt(values.dmg12);
+			resetDamage(selected,dmg)
+	   });
+	})	
+
+
+
+	function resetDamage(selected,dmg){
+		if (dmg!=0){
+			var attrsToSet2 = {}; 
+			attrsToSet2 = setDamage1(selected);
+			attrsToSet2["curDamage"] = selected;
+		} else {
+			var attrsToSet = {};
+			attrsToSet2 = setDamage2(selected);
+			attrsToSet2["curDamage"] = selected-1;				
+		}
+
+		setAttrs(attrsToSet2,{silent:true});
+	}
+
+
+
+	function setDamage1(selected) {
+
+		let attrsToSet = {};
+		for (var i=1; i < 13; i++) {
+			if (i<selected){
+				var x = "dmg"+(i)
+				attrsToSet[x] = i;
+			}else if (i>selected){
+				var x = "dmg"+(i)
+				attrsToSet[x] = "0";				
+			}
+		}
+		return attrsToSet;
+	}
+
+	function setDamage2(selected) {
+
+		let attrsToSet = {};
+		for (var i=1; i < 13; i++) {
+			if (i<selected){
+				var x = "dmg"+(i)
+				attrsToSet[x] = i;
+			}else{
+				var x = "dmg"+(i)
+				attrsToSet[x] = "0";				
+			}
+		}
+		return attrsToSet;
+	}
+
+
+
+	on("change:stress1", function() {
+	   getAttrs(["stress1"], function(values) {
+			var selected =1;
+			var stress = parseInt(values.stress1);
+			resetStress(selected,stress)
+	   });
+	})	
+
+
+	on("change:stress2", function() {
+	   getAttrs(["stress2"], function(values) {
+			var selected =2;
+			var stress = parseInt(values.stress2);
+			resetStress(selected,stress)
+	   });
+	})	
+
+	on("change:stress3", function() {
+	   getAttrs(["stress3"], function(values) {
+			var selected =3;
+			var stress = parseInt(values.stress3);
+			resetStress(selected,stress)
+	   });
+	})	
+
+	on("change:stress4", function() {
+	   getAttrs(["stress4"], function(values) {
+			var selected =4;
+			var stress = parseInt(values.stress4);
+			resetStress(selected,stress)
+	   });
+	})	
+
+
+	on("change:stress5", function() {
+	   getAttrs(["stress5"], function(values) {
+			var selected =5;
+			var stress = parseInt(values.stress5);
+			resetStress(selected,stress)
+	   });
+	})	
+
+
+	on("change:stress6", function() {
+	   getAttrs(["stress2"], function(values) {
+			var selected =6;
+			var stress = parseInt(values.stress6);
+			resetStress(selected,stress)
+	   });
+	})	
+
+	on("change:stress7", function() {
+	   getAttrs(["stress7"], function(values) {
+			var selected =7;
+			var stress = parseInt(values.stress7);
+			resetStress(selected,stress)
+	   });
+	})	
+
+
+	on("change:stress8", function() {
+	   getAttrs(["stress8"], function(values) {
+			var selected =8;
+			var stress = parseInt(values.stress8);
+			resetStress(selected,stress)
+	   });
+	})	
+
+	on("change:stress9", function() {
+	   getAttrs(["stress9"], function(values) {
+			var selected =9;
+			var stress = parseInt(values.stress9);
+			resetStress(selected,stress)
+	   });
+	})	
+
+	on("change:stress10", function() {
+	   getAttrs(["stress10"], function(values) {
+			var selected =10;
+			var stress = parseInt(values.stress10);
+			resetStress(selected,stress)
+	   });
+	})	
+
+
+	on("change:stress11", function() {
+	   getAttrs(["stress11"], function(values) {
+			var selected =11;
+			var stress = parseInt(values.stress11);
+			resetStress(selected,stress)
+	   });
+	})	
+
+
+	on("change:stress12", function() {
+	   getAttrs(["stress12"], function(values) {
+			var selected =12;
+			var stress = parseInt(values.stress12);
+			resetStress(selected,stress)
+	   });
+	})	
+
+	function resetStress(selected,stress){
+		if (stress!=0){
+			var attrsToSet2 = {}; 
+			attrsToSet2 = setStress1(selected);
+			attrsToSet2["curStress"] = selected;
+		} else {
+			var attrsToSet = {};
+			attrsToSet2 = setStress2(selected);
+			attrsToSet2["curStress"] = selected-1;				
+		}
+
+		setAttrs(attrsToSet2,{silent:true});
+	}
+
+
+
+	function setStress1(selected) {
+
+		let attrsToSet = {};
+		for (var i=1; i < 13; i++) {
+			if (i<selected){
+				var x = "stress"+(i)
+				attrsToSet[x] = i;
+			}else if (i>selected){
+				var x = "stress"+(i)
+				attrsToSet[x] = "0";				
+			}
+		}
+		return attrsToSet;
+	}
+
+	function setStress2(selected) {
+
+		let attrsToSet = {};
+		for (var i=1; i < 13; i++) {
+			if (i<selected){
+				var x = "stress"+(i)
+				attrsToSet[x] = i;
+			}else{
+				var x = "stress"+(i)
+				attrsToSet[x] = "0";				
+			}
+		}
+		return attrsToSet;
+	}
+
+		/* ---- BEGIN: TheAaronSheet.js ---- */
+		// Github:   https://github.com/shdwjk/TheAaronSheet/blob/master/TheAaronSheet.js
+		// By:       The Aaron, Arcane Scriptomancer
+		// Contact:  https://app.roll20.net/users/104025/the-aaron
+
+		var TAS = TAS || (function(){
+			'use strict';
+
+			var version = '0.2.4',
+				lastUpdate = 1457098091,
+
+				loggingSettings = {
+					debug: {
+						key:     'debug',
+						title:   'DEBUG',
+						color: {
+							bgLabel: '#7732A2',
+							label:   '#F2EF40',
+							bgText:  '#FFFEB7',
+							text:    '#7732A2'
+						}
+					},
+					error: {
+						key:     'error',
+						title:   'Error',
+						color: {
+							bgLabel: '#C11713',
+							label:   'white',
+							bgText:  '#C11713',
+							text:    'white'
+						}
+					},
+					warn: {
+						key:     'warn',
+						title:   'Warning',
+						color: {
+							bgLabel: '#F29140',
+							label:   'white',
+							bgText:  '#FFD8B7',
+							text:    'black'
+						}
+					},
+					info: {
+						key:     'info',
+						title:   'Info',
+						color: {
+							bgLabel: '#413FA9',
+							label:   'white',
+							bgText:  '#B3B2EB',
+							text:    'black'
+						}
+					},
+					notice: {
+						key:     'notice',
+						title:   'Notice',
+						color: {
+							bgLabel: '#33C133',
+							label:   'white',
+							bgText:  '#ADF1AD',
+							text:    'black'
+						}
+					},
+					log: {
+						key:     'log',
+						title:   'Log',
+						color: {
+							bgLabel: '#f2f240',
+							label:   'black',
+							bgText:  '#ffff90',
+							text:    'black'
+						}
+					},
+					callstack: {
+						key:     'TAS',
+						title:   'function',
+						color: {
+							bgLabel: '#413FA9',
+							label:   'white',
+							bgText:  '#B3B2EB',
+							text:    'black'
+						}
+					},
+					callstack_async: {
+						key:     'TAS',
+						title:   'ASYNC CALL',
+						color: {
+							bgLabel: '#413FA9',
+							label:   'white',
+							bgText:  '#413FA9',
+							text:    'white'
+						}
+					},
+					TAS: {
+						key:     'TAS',
+						title:   'TAS',
+						color: {
+							bgLabel: 'grey',
+							label:   'black;background:linear-gradient(#304352,#d7d2cc,#d7d2cc,#d7d2cc,#304352)',
+							bgText:  'grey',
+							text:    'black;background:linear-gradient(#304352,#d7d2cc,#d7d2cc,#d7d2cc,#304352)'
+						}
+					}
+				},
+
+
+				config = {
+					debugMode: false,
+					logging: {
+						log: true,
+						notice: true,
+						info: true,
+						warn: true,
+						error: true,
+						debug: false
+					}
+				},
+
+				callstackRegistry = [],
+				queuedUpdates = {}, //< Used for delaying saves till the last momment.
+
+			complexType = function(o){
+				switch(typeof o){
+					case 'string':
+						return 'string';
+					case 'boolean':
+						return 'boolean';
+					case 'number':
+						return (_.isNaN(o) ? 'NaN' : (o.toString().match(/\./) ? 'decimal' : 'integer'));
+					case 'function':
+						return 'function: '+(o.name ? o.name+'()' : '(anonymous)');
+					case 'object':
+						return (_.isArray(o) ? 'array' : (_.isArguments(o) ? 'arguments' : ( _.isNull(o) ? 'null' : 'object')));
+					default:
+						return typeof o;
+				}
+			},
+
+			dataLogger = function(primaryLogger,secondaryLogger,data){
+				_.each(data,function(m){
+					var type = complexType(m);
+					switch(type){
+						case 'string':
+							primaryLogger(m);
+							break;
+						case 'undefined':
+						case 'null':
+						case 'NaN':
+							primaryLogger('['+type+']');
+							break;
+						case 'number':
+						case 'not a number':
+						case 'integer':
+						case 'decimal':
+						case 'boolean':
+							primaryLogger('['+type+']: '+m);
+							break;
+						default:
+							primaryLogger('['+type+']:=========================================');
+							secondaryLogger(m);
+							primaryLogger('=========================================================');
+							break;
+					}
+				});
+			},
+
+
+			colorLog = function(options){
+				var coloredLoggerFunction,
+					key = options.key,
+					label = options.title || 'TAS',
+					lBGColor = (options.color && options.color.bgLabel) || 'blue',
+					lTxtColor = (options.color && options.color.label) || 'white',
+					mBGColor = (options.color && options.color.bgText) || 'blue',
+					mTxtColor = (options.color && options.color.text) || 'white';
+
+				coloredLoggerFunction = function(message){
+					console.log(
+						'%c '+label+': %c '+message + ' ',
+						'background-color: '+lBGColor+';color: '+lTxtColor+'; font-weight:bold;',
+						'background-color: '+mBGColor+';color: '+mTxtColor+';'
+					); 
+				};
+				return function(){
+					if('TAS'===key || config.logging[key]){
+					   dataLogger(coloredLoggerFunction,function(m){console.log(m);},_.toArray(arguments)); 
+					}
+				};
+			},
+
+			logDebug  = colorLog(loggingSettings.debug),
+			logError  = colorLog(loggingSettings.error),
+			logWarn   = colorLog(loggingSettings.warn),
+			logInfo   = colorLog(loggingSettings.info),
+			logNotice = colorLog(loggingSettings.notice),
+			logLog    = colorLog(loggingSettings.log),
+			log       = colorLog(loggingSettings.TAS),
+			logCS     = colorLog(loggingSettings.callstack),
+			logCSA    = colorLog(loggingSettings.callstack_async),
+
+			registerCallstack = function(callstack,label){
+				var idx=_.findIndex(callstackRegistry,function(o){
+					return (_.difference(o.stack,callstack).length === _.difference(callstack,o.stack).length) &&
+						_.difference(o.stack,callstack).length === 0 &&
+						o.label === label;
+				});
+				if(-1 === idx){
+					idx=callstackRegistry.length;
+					callstackRegistry.push({
+						stack: callstack,
+						label: label
+					});
+				}
+				return idx;
+			},
+
+			setConfigOption = function(options){
+				var newconf =_.defaults(options,config);
+				newconf.logging=_.defaults(
+					(options && options.logging)||{},
+					config.logging
+				);
+				config=newconf;
+			},
+			
+			debugMode = function(){
+				config.logging.debug=true;
+				config.debugMode = true;
+			},
+
+			getCallstack = function(){
+				var e = new Error('dummy'),
+					stack = _.map(_.rest(e.stack.replace(/^[^\(]+?[\n$]/gm, '')
+					.replace(/^\s+at\s+/gm, '')
+					.replace(/^Object.<anonymous>\s*\(/gm, '{anonymous}()@')
+					.split('\n')),function(l){
+						return l.replace(/\s+.*$/,'');
+					});
+				return stack;
+			},
+			logCallstackSub = function(cs){
+				var matches, csa;
+				_.find(cs,function(line){
+					matches = line.match(/TAS_CALLSTACK_(\d+)/);
+					if(matches){
+					   csa=callstackRegistry[matches[1]];
+					   logCSA( '===================='+(csa.label ? '> '+csa.label+' <' : '')+'====================');
+					   logCallstackSub(csa.stack);
+					   return true;
+					} 
+					logCS(line);
+					return false;
+				});
+			},
+			logCallstack = function(){
+				var cs;
+				if(config.debugMode){
+					cs = getCallstack();
+					cs.shift();
+					log('==============================> CALLSTACK <==============================');
+					logCallstackSub(cs);
+					log('=========================================================================');
+				}
+			},
+
+
+			wrapCallback = function (label, callback, context){
+				var callstack;
+				if('function' === typeof label){
+					context=callback;
+					callback=label;
+					label=undefined;
+				}
+				if(!config.debugMode){
+					return (function(cb,ctx){
+						return function(){
+							cb.apply(ctx||{},arguments);
+						};
+					}(callback,context));
+				}
+				
+				callstack = getCallstack();
+				callstack.shift();
+				
+				return (function(cb,ctx,cs,lbl){
+					var ctxref=registerCallstack(cs,lbl);
+
+					/*jshint -W054 */
+					return new Function('cb','ctx','TASlog',
+						"return function TAS_CALLSTACK_"+ctxref+"(){"+
+							"TASlog('Entering: '+(cb.name||'(anonymous function)'));"+
+							"cb.apply(ctx||{},arguments);"+
+							"TASlog('Exiting: '+(cb.name||'(anonymous function)'));"+
+						"};")(cb,ctx,log);
+					/*jshint +W054 */
+				}(callback,context,callstack,label));
+			},
+
+
+			prepareUpdate = function( attribute, value ){
+				queuedUpdates[attribute]=value;
+			},
+
+			applyQueuedUpdates = function() {
+			  setAttrs(queuedUpdates);
+			  queuedUpdates = {};
+			},
+
+			namesFromArgs = function(args,base){
+				return _.chain(args)
+					.reduce(function(memo,attr){
+						if('string' === typeof attr) {
+							memo.push(attr);
+						} else if(_.isArray(args) || _.isArguments(args)){
+							memo = namesFromArgs(attr,memo);
+						}
+						return memo;
+					},(_.isArray(base) && base) || [])
+					.uniq()
+					.value();
+			},
+
+			addId = function(obj,value){
+				Object.defineProperty(obj,'id',{
+					value: value,
+					writeable: false,
+					enumerable: false
+				});
+			},
+
+			addProp = function(obj,prop,value,fullname){
+				(function(){
+					var pname=(_.contains(['S','F','I','D'],prop) ? '_'+prop : prop),
+						full_pname = fullname || prop,
+						pvalue=value;
+
+					_.each(['S','I','F'],function(p){
+						if( !_.has(obj,p)){
+							Object.defineProperty(obj, p, {
+								value: {},
+								enumerable: false,
+								readonly: true
+							});
+						}
+					});
+					if( !_.has(obj,'D')){
+						Object.defineProperty(obj, 'D', {
+							value: _.reduce(_.range(10),function(m,d){
+									Object.defineProperty(m, d, {
+										value: {},
+										enumerable: true,
+										readonly: true
+									});
+									return m;
+								},{}),
+							enumerable: false,
+							readonly: true
+						});
+					}
+
+
+					// Raw value
+					Object.defineProperty(obj, pname, {
+						enumerable: true,
+						set: function(v){
+							if(v!==pvalue) {
+								pvalue=v;
+								prepareUpdate(full_pname,v);
+							}
+						},
+						get: function(){
+							return pvalue;
+						}
+					});
+					
+					// string value
+					Object.defineProperty(obj.S, pname, {
+						enumerable: true,
+						set: function(v){
+							var val=v.toString();
+							if(val !== pvalue) {
+								pvalue=val;
+								prepareUpdate(full_pname,val);
+							}
+						},
+						get: function(){
+							return pvalue.toString();
+						}
+					});
+
+					// int value
+					Object.defineProperty(obj.I, pname, {
+						enumerable: true,
+						set: function(v){
+							var val=parseInt(v,10) || 0;
+							if(val !== pvalue){
+								pvalue=val;
+								prepareUpdate(full_pname,val);
+							}
+						},
+						get: function(){
+							return parseInt(pvalue,10) || 0;
+						}
+					});
+
+					// float value
+					Object.defineProperty(obj.F, pname, {
+						enumerable: true,
+						set: function(v){
+							var val=parseFloat(v) || 0;
+							if(val !== pvalue) {
+								pvalue=val;
+								prepareUpdate(full_pname,val);
+							}
+						},
+						get: function(){
+							return parseFloat(pvalue) || 0;
+						}
+					});
+					_.each(_.range(10),function(d){
+						Object.defineProperty(obj.D[d], pname, {
+							enumerable: true,
+							set: function(v){
+								var val=(parseFloat(v) || 0).toFixed(d);
+								if(val !== pvalue){
+									pvalue=val;
+									prepareUpdate(full_pname,val);
+								}
+							},
+							get: function(){
+								return (parseFloat(pvalue) || 0).toFixed(d);
+							}
+						});
+					});
+
+				}());
+			},
+			
+			repeating = function( section ) {
+				return (function(s){
+					var sectionName = s,
+						attrNames = [],
+						fieldNames = [],
+						operations = [],
+						after = [],
+					
+					repAttrs = function TAS_Repeating_Attrs(){
+						attrNames = namesFromArgs(arguments,attrNames);
+						return this;
+					},
+					repFields = function TAS_Repeating_Fields(){
+						fieldNames = namesFromArgs(arguments,fieldNames);
+						return this;
+					},
+					repReduce = function TAS_Repeating_Reduce(func, initial, final, context) { 
+						operations.push({
+							type: 'reduce',
+							func: (func && _.isFunction(func) && func) || _.noop,
+							memo: (_.isUndefined(initial) && 0) || initial,
+							final: (final && _.isFunction(final) && final) || _.noop,
+							context: context || {}
+						});
+						return this;
+					},
+					repMap = function TAS_Repeating_Map(func, final, context) {
+						operations.push({
+							type: 'map',
+							func: (func && _.isFunction(func) && func) || _.noop,
+							final: (final && _.isFunction(final) && final) || _.noop,
+							context: context || {}
+						});
+						return this;
+					},
+					repEach = function TAS_Repeating_Each(func, final, context) {
+						operations.push({
+							type: 'each',
+							func: (func && _.isFunction(func) && func) || _.noop,
+							final: (final && _.isFunction(final) && final) || _.noop,
+							context: context || {}
+						});
+						return this;
+					},
+					repTap = function TAS_Repeating_Tap(final, context) {
+						operations.push({
+							type: 'tap',
+							final: (final && _.isFunction(final) && final) || _.noop,
+							context: context || {}
+						});
+						return this;
+					},
+					repAfter = function TAS_Repeating_After(callback,context) {
+						after.push({
+							callback: (callback && _.isFunction(callback) && callback) || _.noop,
+							context: context || {}
+						});
+						return this;
+					},
+					repExecute = function TAS_Repeating_Execute(callback,context){
+						var rowSet = {},
+							attrSet = {},
+							fieldIds = [],
+							fullFieldNames = [];
+
+						repAfter(callback,context);
+
+						// call each operation per row.
+						// call each operation's final
+						getSectionIDs("repeating_"+sectionName,function(ids){
+							fieldIds = ids;
+							fullFieldNames = _.reduce(fieldIds,function(memo,id){
+								return memo.concat(_.map(fieldNames,function(name){
+									return 'repeating_'+sectionName+'_'+id+'_'+name;  
+								}));
+							},[]);
+							getAttrs( _.uniq(attrNames.concat(fullFieldNames)), function(values){
+								_.each(attrNames,function(aname){
+									if(values.hasOwnProperty(aname)){
+										addProp(attrSet,aname,values[aname]);
+									}
+								});
+
+								rowSet = _.reduce(fieldIds,function(memo,id){
+									var r={};
+									addId(r,id);
+									_.each(fieldNames,function(name){
+										var fn = 'repeating_'+sectionName+'_'+id+'_'+name;  
+										addProp(r,name,values[fn],fn);
+									});
+
+									memo[id]=r;
+
+									return memo;
+								},{});
+
+								_.each(operations,function(op){
+									var res;
+									switch(op.type){
+										case 'tap':
+											_.bind(op.final,op.context,rowSet,attrSet)();
+											break;
+
+										case 'each':
+											_.each(rowSet,function(r){
+												_.bind(op.func,op.context,r,attrSet,r.id,rowSet)();
+											});
+											_.bind(op.final,op.context,rowSet,attrSet)();
+											break;
+
+										case 'map':
+											res = _.map(rowSet,function(r){
+												return _.bind(op.func,op.context,r,attrSet,r.id,rowSet)();
+											});
+											_.bind(op.final,op.context,res,rowSet,attrSet)();
+											break;
+
+										case 'reduce':
+											res = op.memo;
+											_.each(rowSet,function(r){
+												res = _.bind(op.func,op.context,res,r,attrSet,r.id,rowSet)();
+											});
+											_.bind(op.final,op.context,res,rowSet,attrSet)();
+											break;
+									}
+								});
+
+								// finalize attrs
+								applyQueuedUpdates();
+								_.each(after,function(op){
+									_.bind(op.callback,op.context)();
+								});
+							});
+						});
+					};
+						
+					return {
+						attrs: repAttrs,
+						attr: repAttrs,
+
+						column: repFields,
+						columns: repFields,
+						field: repFields,
+						fields: repFields,
+
+						reduce: repReduce,
+						inject: repReduce,
+						foldl: repReduce,
+
+						map: repMap,
+						collect: repMap,
+
+						each: repEach,
+						forEach: repEach,
+
+						tap: repTap,
+						'do': repTap,
+
+						after: repAfter,
+						last: repAfter,
+						done: repAfter,
+
+						execute: repExecute,
+						go: repExecute,
+						run: repExecute
+					};
+				}(section));
+			},
+
+
+			repeatingSimpleSum = function(section, field, destination){
+				repeating(section)
+					.attr(destination)
+					.field(field)
+					.reduce(function(m,r){
+						return m + (r.F[field]);
+					},0,function(t,r,a){
+						a.S[destination]=t;
+					})
+					.execute();
+			};
+
+
+
+			return {
+				/* Repeating Sections */
+				repeatingSimpleSum: repeatingSimpleSum,
+				repeating: repeating,
+
+				/* Configuration */
+				config: setConfigOption,
+
+				/* Debugging */
+				callback: wrapCallback,
+				callstack: logCallstack,
+				debugMode: debugMode,
+				_fn: wrapCallback,
+
+				/* Logging */
+				debug: logDebug,
+				error: logError,
+				warn: logWarn,
+				info: logInfo,
+				notice: logNotice,
+				log: logLog
+			};
+		}());
+
+
+
+			on('change:repeating_bkpkgear remove:repeating_bkpkgear',function(){
+				TAS.repeatingSimpleSum('bkpkgear','units','totalBkPkEnc');
+			});
+			on('change:repeating_combatgear remove:repeating_combatgear',function(){
+				TAS.repeatingSimpleSum('combatGear','units','totalCmbtEnc');
+			});					
+
+
+		/* ---- END: TheAaronSheet.js ---- */	
+
+
+		
+
+
+
+</script>
