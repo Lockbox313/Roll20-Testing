@@ -247,6 +247,7 @@
  }
 .sheet-combatAttrib input{
 	width:100%;
+	text-align:center;
 }
 
 .sheet-combatAttrib span{
@@ -254,6 +255,12 @@
 	font-size:x-small;
 	align-self: end;
 }
+
+.sheet-combatAttrib select{
+	margin-bottom:0px;
+	width:100%
+} 
+
 
 .sheet-dmgContainer{
 	display:grid;
